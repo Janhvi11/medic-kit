@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'register',
     'admin_side',
+    'todo',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
