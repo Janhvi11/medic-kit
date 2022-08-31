@@ -13,6 +13,8 @@ class RegisterForm(UserCreationForm):
     
     email = forms.EmailField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Email', 'class': 'form-control',}))
     
+    # address = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Address', 'class': 'form-control',}))
+    
     password1 = forms.CharField(max_length=50, required=True, widget=forms.PasswordInput(attrs={'placeholder': 'Password', 'class':'form-control', 'data-toggle': 'password', 'id': 'password',}))
     
     password2 = forms.CharField(max_length=50, required=True, widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password', 'class': 'form-control','data-toggle': 'password', 'id': 'password',}))
