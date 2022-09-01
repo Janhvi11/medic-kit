@@ -4,5 +4,7 @@ from ..views import *
 reg_url_list = [
     path('home/', reg_home, name='users-home'),
     path('main/', MainView.as_view(), name='main-view'), 
-    path('register/', RegisterView.as_view(), name='users-register'), 
+    path('register/', RegisterView.as_view(), name='users-register'),
+    path('log/', CustomLoginView.as_view(template_name='login.html', 
+    authentication_form=LoginForm), name='log')     #redirect_authenticated_user=True,
 ]

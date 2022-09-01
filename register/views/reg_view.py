@@ -1,3 +1,4 @@
+from urllib import request
 from django.shortcuts import render, redirect 
 from django.contrib import messages
 from django.views import View
@@ -68,4 +69,5 @@ class CustomLoginView(LoginView):
             self.request.session.modified = True
 
         # else browser session will be as long as the session cookie time "SESSION_COOKIE_AGE" defined in settings.py
-        return super(CustomLoginView, self).form_valid(form)
+        # return super(CustomLoginView, self).form_valid(form)
+        return redirect(to='/reg/main')
