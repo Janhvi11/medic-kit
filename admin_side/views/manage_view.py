@@ -44,3 +44,42 @@ def editDoc(request,username):
     
     context['form'] = form
     return render(request, "docAdd.html",context)
+def viewPharma(request):
+	context = {}
+	context["pharmacists"] = pharma.objects.all()
+	return render(request, "pharma-view.html", context)
+
+def addPharma(request):
+	context = {}
+	form = RegisterPharmaForm(request.POST)
+	
+	if form.is_valid():
+			sign_up = form.save(commit=False)
+			sign_up.password = make_password(form.cleaned_data['password'])
+			sign_up.save()
+			return redirect("/ad/viewPharma/")
+
+	context['form'] = form
+	return render(request, "pharmaAdd.html",context)
+
+def deletePharma(request,username):
+	context={}
+	obj = get_object_or_404(pharma, username=username)
+	if request.method == "GET":
+		obj.delete()
+		return redirect("/ad/viewPharma/")
+	return render(request, "pharma-view.html", context)
+
+def editPharma(request,username):
+    context = {}
+    obj = get_object_or_404(pharma, username=username)
+    form = RegisterPharmaForm(request.POST, instance=obj)
+    if form.is_valid():
+        sign_up = form.save(commit=False)
+        sign_up.password = make_password(form.cleaned_data['password'])
+        sign_up.save()
+        return redirect("/ad/viewPharma/")
+    
+    context['form'] = form
+    return render(request, "PharmaAdd.html",context)
+
