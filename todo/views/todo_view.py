@@ -19,7 +19,7 @@ def todo_home(request):
              "list" : item_list,
              "title" : "TODO LIST",
            }
-    return render(request, 'index.html', page)
+    return render(request, 'to-do-index.html', page)
 
 def remove(request, item_id):
     item = Todo.objects.get(id=item_id)

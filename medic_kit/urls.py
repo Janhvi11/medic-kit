@@ -15,15 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from django.contrib.auth import views as auth_views
-# from register.views.reg_view import CustomLoginView     #
-# from register.forms import LoginForm   #
+# from django.contrib.auth import views as auth_views
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('reg/', include('register.urls')),
     path('ad/', include('admin_side.urls')),
-    path('todo/', include('todo.urls')),
+    path('todo/', include('todo.urls'), name="todo"),
+    path('about/', views.about, name="about"),
+    path('news/', views.news, name="news"),
+    path('blog/', views.blog, name="blog"),
+    path('buy/', views.buy, name="buy"),
+    path('client/', views.client, name="client"),
+    path('contact/', views.contact, name="contact"),
+    path('doctors/', views.doctors, name="doctors"),
+    path('index/', views.index, name="index")
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]
