@@ -1,7 +1,7 @@
-from django.shortcuts import render
 from register.models import doc
 from register.forms import *
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.hashers import make_password
 
 def index_manage(req):
     return render(req, "login.html")
@@ -14,10 +14,12 @@ def viewDoc(request):
 def addDoc(request):
 	context = {}
 	form = RegisterDocForm(request.POST)
-	
+
 	if form.is_valid():
-		form.save()
-		return redirect("/ad/viewDoc/")
+			sign_up = form.save(commit=False)
+			sign_up.password = make_password(form.cleaned_data['password'])
+			sign_up.save()
+			return redirect("/ad/viewDoc")
 
 	context['form'] = form
 	return render(request, "docAdd.html",context)
@@ -35,7 +37,9 @@ def editDoc(request,username):
     obj = get_object_or_404(doc, username=username)
     form = RegisterDocForm(request.POST, instance=obj)
     if form.is_valid():
-        form.save()
+        sign_up = form.save(commit=False)
+        sign_up.password = make_password(form.cleaned_data['password'])
+        sign_up.save()
         return redirect("/ad/viewDoc/")
     
     context['form'] = form
