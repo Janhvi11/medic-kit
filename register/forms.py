@@ -32,3 +32,21 @@ class LoginUserForm(forms.Form):
     class Meta:
         model = user
         fields = ['username', 'password']
+
+class LoginDocForm(forms.Form):    
+    username = forms.CharField(max_length=100)
+    password = forms.CharField(max_length=50)
+    # remember_me = forms.BooleanField(required=False)
+
+    class Meta:
+        model = doc
+        fields = ['username', 'password']
+
+class LoginPharmaForm(forms.Form):    
+    username = forms.CharField(max_length=100)
+    password = forms.CharField(max_length=50)
+    # remember_me = forms.BooleanField(required=False)
+
+    class Meta:
+        model = pharma
+        fields = ['username', 'password']
