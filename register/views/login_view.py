@@ -43,34 +43,34 @@ def login_home(request):
 #                     template_name = "login.html",
 #                     context={"form":form})
 
-# def login_request(request):
-#     # template_name = "login.html"
-#     # form_class = LoginUserForm
-#     if request.method == 'POST':
-#         form = LoginUserForm(request.POST)
-#         # form = AuthenticationForm(request=request, data=request.POST)
-#         if form.is_valid():
-#             username_got = form.cleaned_data.get('username')
-#             password = form.cleaned_data.get('password')
+def login_request(request):
+    # template_name = "login.html"
+    # form_class = LoginUserForm
+    if request.method == 'POST':
+        form = LoginUserForm(request.POST)
+        # form = AuthenticationForm(request=request, data=request.POST)
+        if form.is_valid():
+            username_got = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
             
-#             #     # password = make_password(request.POST['password'])
-#             #     # return render(request, 'demo.html') #, {'access':check_password}
+            #     # password = make_password(request.POST['password'])
+            #     # return render(request, 'demo.html') #, {'access':check_password}
             
-#             obj = get_object_or_404(user, username=username_got)
-#             res = check_password(password,obj.password1)
+            obj = get_object_or_404(user, username=username_got)
+            res = check_password(password,obj.password1)
             
-#             if res == True:
-#                 # login(request, user_check)
-#                 messages.info(request, f"You are now logged in as {username_got}")
-#                 return HttpResponseRedirect('/reg/login/')
-#             else:
-#                 messages.error(request, "Invalid username or password.")
+            if res == True:
+                # login(request, user_check)
+                messages.info(request, f"You are now logged in as {username_got}")
+                return HttpResponseRedirect('/reg/login/')
+            else:
+                messages.error(request, "Invalid username or password.")
                 
-#     else:
-#         form = LoginUserForm()
-#         # messages.error(request, "error 2.")
-#     # form = AuthenticationForm()
-#     return render(request, template_name = "login.html", context = {"form":form})
+    else:
+        form = LoginUserForm()
+        # messages.error(request, "error 2.")
+    # form = AuthenticationForm()
+    return render(request, template_name = "login.html", context = {"form":form})
     
 # class UserLoginView(LoginView):
 #     form_class = LoginUserForm
