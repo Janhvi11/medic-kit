@@ -20,7 +20,7 @@ class RegisterPharmaForm(forms.ModelForm):
 # not null field define karna
     class Meta:
         model = pharma
-        fields = ['name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email']
+        fields = ('name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email')
 
 
 ###

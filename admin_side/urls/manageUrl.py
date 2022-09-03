@@ -11,4 +11,4 @@ m_url = [
     path('editPharma/<username>', editPharma, name="edit-pharma"),
     path('deletePharma/<username>', deletePharma, name="delete-pharma"),
     path('addPharma/', addPharma, name="add-pharma"),
-]
+] 

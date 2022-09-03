@@ -51,7 +51,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td>City</td>
                             <td>Email</td>
                             <td>Nation-Wide Delivery</td>
-                            <td>Password</td>
+                            
                 
                         {% for data in pharmacists %}
                         <tr>
@@ -63,7 +63,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td> {{ data.city }}</td>
                             <td> {{ data.email }}</td>
                             <td> {{ data.nationwideDel }}</td>
-                            <td> {{ data.password }}</td>
                             <td> <a href="{% url 'delete-pharma' data.username %}"> delete </a> </td>
                             <td> <a href="{% url 'edit-pharma' data.username %}"> edit </a> </td>
                         </tr>
