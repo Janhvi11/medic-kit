@@ -1,7 +1,7 @@
 from django import forms
-from .models import Todo
+from .models import *
  
-class TodoForm(forms.ModelForm):
+class TodoListForm(forms.ModelForm):
     class Meta:
-        model = Todo
+        model = ToDoList
         fields="__all__"
