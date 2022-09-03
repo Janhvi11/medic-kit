@@ -40,3 +40,44 @@ def editToDoList(request,id):
     
     context['form'] = form
     return render(request, "ToDoListAdd.html",context)
+
+# ==================================================================================
+# TO-DO-ITEM
+# ==================================================================================
+
+def viewToDoItem(request,id):
+    context = {}
+    # obj = get_object_or_404(ToDoItem, id=id)
+    context["todoitem"] = ToDoItem.objects.filter(todo_list=id)
+    return render(request, "ToDoItem-view.html", context)
+
+def addToDoItem(request):
+	context = {}
+	form = ToDoItemForm(request.POST)
+	
+	if form.is_valid():
+			form.save()
+			return redirect("/todo/viewToDoList")
+
+	context['form'] = form
+	return render(request, "ToDoItemAdd.html",context)
+
+def deleteToDoItem(request,id):
+	context={}
+	obj = get_object_or_404(ToDoItem, id=id)
+	if request.method == "GET":
+		obj.delete()
+		return redirect("/todo/viewToDoList/")
+	return render(request, "ToDoItem-view.html", context)
+
+def editToDoItem(request,id):
+    context = {}    
+    obj = get_object_or_404(ToDoItem, id=id)
+   
+    form = ToDoItemForm(request.POST or None, instance=obj)
+    if form.is_valid():
+        form.save()
+        return redirect("/todo/viewToDoList/")
+    
+    context['form'] = form
+    return render(request, "ToDoItemAdd.html",context)

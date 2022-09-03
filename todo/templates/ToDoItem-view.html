@@ -43,17 +43,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table border="10" style="width:100%">
                     <tbody>
                         <tr>
-                            <td>Title</td>
-                            <td>Name of owner(admin)</td>
+                            <td>Item Title</td>
+                            <td>Item Description</td>
+                            <td>Item Created Date</td>
+                            <td>Item Due Date</td>
+                            <td>List Title</td>
+                            <td><a href="{% url 'todoItem-add' %}">Add</a></td>    
+                            {% comment %} {% url 'todoItem-add' %} {% endcomment %}
                             
                         </tr>
-                        {% for data in todolist %}
+                        {% for data in todoitem %}
                         <tr>
                             <td>{{ data.title }}</td>
-                            <td>{{ data.name_of_admin }}</td>
-                            <td> <a href="{% url 'todoItem-view' data.id %}"> View content </a> </td>
-                            <td> <a href="{% url 'todolist-delete' data.id %}"> delete </a> </td>
-                            <td> <a href="{% url 'todolist-edit' data.id %}"> edit </a> </td>
+                            <td>{{ data.description }}</td>
+                            <td>{{ data.created_date }}</td>
+                            <td>{{ data.due_date }}</td>
+                            <td>{{ data.todo_list }}</td>
+                            <td> <a href="{% url 'todoItem-delete' data.id %}"> delete </a> </td>
+                            <td> <a href="{% url 'todoItem-edit' data.id %}"> edit </a> </td>
+                            <td> <a href="{% url 'todolist-view' %}"> Back </a> </td>
                         </tr>
                         {% endfor %}
                     </tbody>
