@@ -16,9 +16,9 @@ def addPharma(request):
 	
 	if form.is_valid():
             # return HttpResponseRedirect('hi')
-			# sign_up = form.save(commit=False)
-			# sign_up.password = make_password(form.cleaned_data['password'])
-			# sign_up.save()
+			sign_up = form.save(commit=False)
+			sign_up.password = make_password(form.cleaned_data['password'])
+			sign_up.save()
 			
 			form.save()
 			return redirect("/ad/viewPharma/")
@@ -34,10 +34,10 @@ def deletePharma(request,username):
 		return redirect("/ad/viewPharma/")
 	return render(request, "pharma-view.html", context_2)
 
-def editPharma(request,username):
+def editPharma(request,id):
     context_3 = {}
-    obj = get_object_or_404(pharma, username=username)
-    form = RegisterPharmaForm(request.POST, instance=obj)
+    obj = get_object_or_404(pharma, id=id)
+    form = RegisterPharmaForm(request.POST or None, instance=obj)
     if form.is_valid():
         sign_up = form.save(commit=False)
         sign_up.password = make_password(form.cleaned_data['password'])

@@ -24,18 +24,18 @@ def addDoc(request):
 	context['form'] = form
 	return render(request, "docAdd.html",context)
 
-def deleteDoc(request,username):
+def deleteDoc(request,id):
 	context={}
-	obj = get_object_or_404(doc, username=username)
+	obj = get_object_or_404(doc, id=id)
 	if request.method == "GET":
 		obj.delete()
 		return redirect("/ad/viewDoc/")
 	return render(request, "doc-view.html", context)
 
-def editDoc(request,username):
+def editDoc(request,id):
     context = {}
-    obj = get_object_or_404(doc, username=username)
-    form = RegisterDocForm(request.POST, instance=obj)
+    obj = get_object_or_404(doc, id=id)
+    form = RegisterDocForm(request.POST or None, instance=obj)
     if form.is_valid():
         sign_up = form.save(commit=False)
         sign_up.password = make_password(form.cleaned_data['password'])

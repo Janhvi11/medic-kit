@@ -21,9 +21,9 @@ def addToDoList(request):
 	context['form'] = form
 	return render(request, "ToDoListAdd.html",context)
 
-def deleteToDoList(request,title):
+def deleteToDoList(request,id):
 	context={}
-	obj = get_object_or_404(ToDoList, title=title)
+	obj = get_object_or_404(ToDoList, id=id)
 	if request.method == "GET":
 		obj.delete()
 		return redirect("/todo/viewToDoList/")

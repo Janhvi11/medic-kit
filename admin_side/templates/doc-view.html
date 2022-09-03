@@ -64,8 +64,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td> {{ data.hosLocation }}</td>
                             <td> {{ data.email }}</td>
                             <td> {{ data.degree }}</td>
-                            <td> <a href="{% url 'delete-doc' data.username %}"> delete </a> </td>
-                            <td> <a href="{% url 'edit-doc' data.username %}"> edit </a> </td>
+                            <td> <a href="{% url 'delete-doc' data.id %}"> delete </a> </td>
+                            <td> <a href="{% url 'edit-doc' data.id %}"> edit </a> </td>
                         </tr>
                         {% endfor %}
                     </tbody>

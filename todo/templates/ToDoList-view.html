@@ -44,10 +44,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <tbody>
                         <tr>
                             <td>Title</td>
+                            <td>Name of owner(admin)</td>
+                            
                         </tr>
                         {% for data in todolist %}
                         <tr>
                             <td>{{ data.title }}</td>
+                            <td>{{ data.name_of_admin }}</td>
                             <td> <a href="{% url 'todolist-delete' data.id %}"> delete </a> </td>
                             <td> <a href="{% url 'todolist-edit' data.id %}"> edit </a> </td>
                         </tr>
