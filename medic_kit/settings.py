@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'todo',
     'medic_kit',
     'crispy_forms',
+    'disease',
 ]
 
 MIDDLEWARE = [
