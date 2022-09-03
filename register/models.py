@@ -7,7 +7,7 @@ class user(models.Model):
     
     last_name = models.CharField(max_length=100)
     
-    username = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, unique=True)
     
     email = models.EmailField()
     
@@ -29,7 +29,7 @@ class doc(models.Model):
     hosName = models.CharField(max_length=100)
     hosLocation = models.CharField(max_length=500)
     
-    username = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, unique=True)
     
     email = models.EmailField()
     
@@ -45,7 +45,7 @@ class pharma(models.Model):
     shopAddr = models.CharField(max_length=500)
     licenseNumber = models.IntegerField()
     
-    username = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, unique=True)
     
     email = models.EmailField()
     nationwideDel = models.BooleanField()
