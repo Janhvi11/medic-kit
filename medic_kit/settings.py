@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'disease',
     'feedback',
     'contact',
+    'hospital'
 ]
 
 MIDDLEWARE = [
