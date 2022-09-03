@@ -19,6 +19,9 @@ def client(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def feedback(request):
+    return render(request, 'feedback.html')
+
 def doctors(request):
     return render(request, 'doctors.html')
 

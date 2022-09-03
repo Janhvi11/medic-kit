@@ -85,6 +85,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'client' %}">Clients</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'feedback' %}">Feedback</a>
+            </li>
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
@@ -120,23 +123,24 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Get in Touch</h1>
 
-      <form class="contact-form mt-5">
+      <form class="contact-form mt-5" method="POST">
+        {% csrf_token %} 
         <div class="row mb-3">
           <div class="col-sm-6 py-2 wow fadeInLeft">
             <label for="fullName">Name</label>
-            <input type="text" id="fullName" class="form-control" placeholder="Full name..">
+            {{ form.name }}
           </div>
           <div class="col-sm-6 py-2 wow fadeInRight">
             <label for="emailAddress">Email</label>
-            <input type="text" id="emailAddress" class="form-control" placeholder="Email address..">
+            {{ form.email }}
           </div>
           <div class="col-12 py-2 wow fadeInUp">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" placeholder="Enter subject..">
+            {{ form.subject }}
           </div>
           <div class="col-12 py-2 wow fadeInUp">
             <label for="message">Message</label>
-            <textarea id="message" class="form-control" rows="8" placeholder="Enter Message.."></textarea>
+            {{ form.message }}
           </div>
         </div>
         <button type="submit" class="btn btn-primary wow zoomIn">Send Message</button>
