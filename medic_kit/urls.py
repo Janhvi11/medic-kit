@@ -17,18 +17,23 @@ from django.contrib import admin
 from django.urls import path,include
 # from django.contrib.auth import views as auth_views
 from . import views
+from feedback.views import addFeedback
+from contact.views import addContact
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('reg/', include('register.urls')),
     path('ad/', include('admin_side.urls')),
     path('todo/', include('todo.urls'), name="todo"),
+    path('feedback/', include('feedback.urls'), name="feedback"),
+    path('contact/', include('contact.urls'), name="contact"),
     path('about/', views.about, name="about"),
     path('blog/', views.news, name="blog"),
     path('news/', views.blog, name="news"),
     path('buy/', views.buy, name="buy"),
     path('client/', views.client, name="client"),
-    path('contact/', views.contact, name="contact"),
+    path('addContact/', addContact, name="contact"),
+    path('addFeedback/', addFeedback, name="feedback"),
     path('doctors/', views.doctors, name="doctors"),
     path('index/', views.index, name="index")
     # path('login/', include('register.urls')),#

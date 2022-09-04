@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'medic_kit',
     'crispy_forms',
     'disease',
+    'feedback',
+    'contact',
 ]
 
 MIDDLEWARE = [
