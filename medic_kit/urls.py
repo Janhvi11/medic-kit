@@ -24,6 +24,8 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('reg/', include('register.urls')),
     path('ad/', include('admin_side.urls')),
+    path('medhistory/', include('medhistory.urls')),
+    path('ill/', include('disease.urls')),
     path('todo/', include('todo.urls'), name="todo"),
     path('feedback/', include('feedback.urls'), name="feedback"),
     path('contact/', include('contact.urls'), name="contact"),
