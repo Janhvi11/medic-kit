@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'disease',
     'medhistory',
+    'feedback',
+    'contact',
 ]
 
 MIDDLEWARE = [
