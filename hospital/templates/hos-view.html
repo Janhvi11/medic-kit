@@ -67,9 +67,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td>{{ data.state }}</td>
                             <td>{{ data.phone }}</td>
                             <td>{{ data.email }}</td>
-                            <td> <a href="{% url 'todoItem-delete' data.id %}"> delete </a> </td>
-                            <td> <a href="{% url 'todoItem-edit' data.id %}"> edit </a> </td>
-                            <td> <a href="{% url 'todolist-view' %}"> Back </a> </td>
+                            <td> <a href="{% url 'delete-hos' data.id %}"> delete </a> </td>
+                            <td> <a href="{% url 'edit-hos' data.id %}"> edit </a> </td>
                         </tr>
                         {% endfor %}
                     </tbody>

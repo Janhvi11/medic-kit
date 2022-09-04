@@ -12,10 +12,10 @@ def viewhos(request):
 
 def addhos(request):
     context = {}
-    form = hospitalForm(request.POST)
+    form = hospitalForm(request.POST or None)
     
     if form.is_valid():
-        return HttpResponse(form)
+        # return HttpResponse(form)
         form.save()
         return redirect("/hospital/viewHos")
 
@@ -37,7 +37,7 @@ def edithos(request,id):
     form = hospitalForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
-        return redirect("/todo/viewhos/")
+        return redirect("/hospital/viewHos/")
     
     context['form'] = form
     return render(request, "hosAdd.html",context)

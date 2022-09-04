@@ -13,5 +13,5 @@ class hos(models.Model):
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     
-    phone = models.IntegerField()
+    phone = models.BigIntegerField()
     email = models.EmailField()
