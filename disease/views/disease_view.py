@@ -15,7 +15,7 @@ def addDisease(request):
 	if form.is_valid():
 			
 			form.save()
-			return redirect("ill/viewDisease/")
+			return redirect("/ill/diseaseView/")
 
 	context['form'] = form
 	return render(request, "diseaseAdd.html",context)
@@ -25,7 +25,7 @@ def deleteDisease(request,id):
 	obj = get_object_or_404(disease, id=id)#
 	if request.method == "GET":
 		obj.delete()
-		return redirect("ill/viewDisease/")
+		return redirect("/ill/diseaseView/")
 	return render(request, "diseaseview.html", context)
 
 def editDisease(request,id):
@@ -34,7 +34,7 @@ def editDisease(request,id):
     form = RegisterDisForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save() #
-        return redirect("ill/viewDoc/")
+        return redirect("/ill/diseaseView/")
     
     context['form'] = form
     return render(request, "diseaseAdd.html",context)

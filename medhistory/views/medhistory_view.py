@@ -15,7 +15,7 @@ def addMedhistory(request):
 	if form.is_valid():
 			
 			form.save()
-			return redirect("medhistory/viewMedhistory/")
+			return redirect("/medhistory/medhistoryView/")
 
 	context['form'] = form
 	return render(request, "medhistoryAdd.html",context)
@@ -25,7 +25,7 @@ def deleteMedhistory(request,id):
 	obj = get_object_or_404(medhistory, id=id)#
 	if request.method == "GET":
 		obj.delete()
-		return redirect("medhistory/viewMedhistory/")
+		return redirect("/medhistory/medhistoryView/")
 	return render(request, "medhistoryview.html", context)
 
 def editMedhistory(request,id):
@@ -34,7 +34,7 @@ def editMedhistory(request,id):
     form = RegisterMedhistoryForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save() #
-        return redirect("medhistory/viewMedhistory/")
+        return redirect("/medhistory/medhistoryView/")
     
     context['form'] = form
     return render(request, "MedhistoryAdd.html",context)

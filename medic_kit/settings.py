@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'register',
     'admin_side',
     'todo',
+    'news',
+    'blogs',
     'medic_kit',
     'crispy_forms',
     'disease',
