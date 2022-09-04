@@ -32,6 +32,7 @@ urlpatterns = [
     path('feedback/', include('feedback.urls'), name="feedback"),
     path('contact/', include('contact.urls'), name="contact"),
     path('hospital/', include('hospital.urls'), name="hospital"),
+    path('timeline/', include('timeline.urls'), name="hospital"),
     path('about/', views.about, name="about"),
     path('blog/', views.news, name="blog"),
     path('news/', views.blog, name="news"),

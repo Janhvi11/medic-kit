@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'medhistory',
     'feedback',
     'contact',
-    'hospital'
+    'hospital',
+    'timeline',
 ]
 
 MIDDLEWARE = [
