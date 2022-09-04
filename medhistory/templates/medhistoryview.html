@@ -43,12 +43,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table border="10" style="width:100%">
                     <tbody>
                         <tr>
+                            <td>Doctor Id</td>
+                            <td>Patient Id</td>
                             <td>Date</td>
                             <td>Problem</td>
                             <td>prescription</td>
                 
                         {% for data in medhistory %}
                         <tr>
+                            <td>{{ data.doctorId }}</td>
+                            <td>{{ data.patientId }}</td>
                             <td>{{ data.date }}</td>
                             <td> {{ data.problems }}</td>
                             <td> {{ data.prescription }}</td>

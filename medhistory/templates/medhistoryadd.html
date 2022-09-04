@@ -22,6 +22,16 @@
         <table border=5 align="center" style="padding:15px;">
             <tr>
                 <td style="padding:15px">
+                    <label class="small mb-1">Doctor ID</label>
+                    {{ form.doctorId }}
+                </td>
+                <td style="padding:15px">
+                    <label class="small mb-1">Patient ID</label>
+                    {{ form.patientId }}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:15px">
                     <label class="small mb-1">Date</label>
                     {{ form.date }}
                 </td>
@@ -36,8 +46,6 @@
                     <label class="small mb-1">Prescription</label>
                     {{ form.prescription }}
                 </td>
-            </tr>
-            <tr>
                 <td style="padding:15px">
                     <button type="submit" class="col-md-12 btn btn-dark">Add</button><br><br>
                 </td>
