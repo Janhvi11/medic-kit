@@ -133,6 +133,57 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
+                Diseases
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{% url 'disease-view' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Diseases List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'disease-add' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Disease List</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Medical History
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{% url 'medhistory-view' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Medical History</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'medhistory-add' %}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Medical History</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+
+          
+        
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
                 Feedback
                 <i class="right fas fa-angle-left"></i>
               </p>
