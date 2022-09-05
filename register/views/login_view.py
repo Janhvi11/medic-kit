@@ -62,9 +62,10 @@ def login_doc_request(request):
             res = check_password(password,obj.password)
             
             if res == True:
+                request.session['user'] = username_got
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/reg/login/')
+                return HttpResponseRedirect('/docIndex')
             else:
                 messages.error(request, "Invalid username or password.")
                 

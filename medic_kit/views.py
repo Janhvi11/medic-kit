@@ -27,3 +27,23 @@ def doctors(request):
 
 def index(request):
     return render(request, 'index.html')
+
+# =============================================================
+
+def docIndex(request):
+    return render(request, 'doc/doc-index.html')
+
+def docAbout(request):
+    return render(request,'doc/doc-about.html')
+
+def docNews(request):
+    return render(request, 'doc/doc-blog-details.html')
+
+def docBlog(request):
+    return render(request, 'doc/doc-blog.html')
+
+def docContact(request):
+    return render(request, 'doc/doc-contact.html')
+
+def docFeedback(request):
+    return render(request, 'doc/doc-feedback.html')
