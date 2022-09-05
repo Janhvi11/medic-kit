@@ -4,4 +4,4 @@ from .models import *
 class timelineForm(forms.ModelForm):
     class Meta:
         model = timeline
-        fields="__all__"
+        fields=['userId','update']
