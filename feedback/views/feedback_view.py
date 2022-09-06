@@ -29,3 +29,15 @@ def addFeedback(request):
 
     context['form'] = form
     return render(request, "feedback.html",context)
+
+def user_addFeedback(request):
+    context = {}
+    form = FeedbackForm(request.POST)
+    
+    if form.is_valid():
+        # return HttpResponse(form)
+        form.save()
+        return redirect("/index")
+
+    context['form'] = form
+    return render(request, "user_feedback.html",context)

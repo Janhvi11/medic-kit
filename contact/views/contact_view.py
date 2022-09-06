@@ -30,6 +30,18 @@ def addContact(request):
     context['form'] = form
     return render(request, "contact.html",context)
 
+def user_addContact(request):
+    context = {}
+    form = ContactForm(request.POST)
+    
+    if form.is_valid():
+        # return HttpResponse(form)
+        form.save()
+        return redirect("/index")
+
+    context['form'] = form
+    return render(request, "user_contact.html",context)
+
 def editContact(request,id):
     context = {}
     obj = get_object_or_404(contact, id=id)

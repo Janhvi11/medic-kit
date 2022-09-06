@@ -5,7 +5,7 @@ def about(request):
     return render(request,'about.html')
 
 def news(request):
-    return render(request, 'blog-details.html')
+    return render(request, 'news.html')
 
 def blog(request):
     return render(request, 'blog.html')
@@ -27,3 +27,30 @@ def doctors(request):
 
 def index(request):
     return render(request, 'index.html')
+
+
+#User 
+def user_index(request):
+    return render(request, 'user_index.html')
+
+def user_doctors(request):
+    return render(request, 'user_doctors.html')
+
+def user_buy(request):
+    return render(request, 'user_buy.html')
+
+def user_news(request):
+    return render(request, 'user_news.html')
+
+def user_blog(request):
+    return render(request, 'user_blog.html')
+
+def user_about(request):
+    return render(request,'user_about.html')
+
+def user_feedback(request):
+    return render(request, 'user_feedback.html')
+
+def user_contact(request):
+    return render(request, 'user_contact.html')
+

@@ -9,8 +9,7 @@ from django.contrib.auth.views import LoginView #
 from django.contrib.auth import authenticate, login
 from ..models import user,doc,pharma
 # from django.shortcuts import 
-# from ..forms import LoginUserForm #
-
+# from ..forms import LoginUserForm 
 from ..forms import LoginUserForm, LoginDocForm, LoginPharmaForm
 
 def login_home(request):
@@ -30,7 +29,7 @@ def login_request(request):
             #     # return render(request, 'demo.html') #, {'access':check_password}
             
             obj = get_object_or_404(user, username=username_got)
-            res = check_password(password,obj.password1)
+            res = check_password(password,obj.password1)            #check_password is an hashing method
             
             if res == True:
                 # login(request, user_check)
