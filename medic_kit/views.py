@@ -28,6 +28,7 @@ def doctors(request):
 def index(request):
     return render(request, 'index.html')
 
+<<<<<<< HEAD
 
 #User 
 def user_index(request):
@@ -54,3 +55,24 @@ def user_feedback(request):
 def user_contact(request):
     return render(request, 'user_contact.html')
 
+=======
+# =============================================================
+
+def docIndex(request):
+    return render(request, 'doc/doc-index.html')
+
+def docAbout(request):
+    return render(request,'doc/doc-about.html')
+
+def docNews(request):
+    return render(request, 'doc/doc-blog-details.html')
+
+def docBlog(request):
+    return render(request, 'doc/doc-blog.html')
+
+def docContact(request):
+    return render(request, 'doc/doc-contact.html')
+
+def docFeedback(request):
+    return render(request, 'doc/doc-feedback.html')
+>>>>>>> e08bb4bb05d708b69dc1ea8f4aa3bed4f4c73eae

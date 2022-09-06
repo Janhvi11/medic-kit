@@ -32,7 +32,7 @@ def login_request(request):
             res = check_password(password,obj.password1)            #check_password is an hashing method
             
             if res == True:
-                # login(request, user_check)
+                # login(request, username_got)
                 messages.info(request, f"You are now logged in as {username_got}")
                 return HttpResponseRedirect('/reg/login/')
             else:
@@ -61,9 +61,10 @@ def login_doc_request(request):
             res = check_password(password,obj.password)
             
             if res == True:
+                request.session['user'] = username_got
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/reg/login/')
+                return HttpResponseRedirect('/docIndex')
             else:
                 messages.error(request, "Invalid username or password.")
                 
@@ -101,3 +102,6 @@ def login_pharma_request(request):
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
     return render(request, template_name = "login.html", context = {"form":form})
+
+def logout():
+    return redirect("/index/")

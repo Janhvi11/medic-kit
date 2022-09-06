@@ -34,6 +34,7 @@ urlpatterns = [
     path('contact/', include('contact.urls'), name="contact"),
     path('hospital/', include('hospital.urls'), name="hospital"),
     path('timeline/', include('timeline.urls'), name="hospital"),
+    
     path('about/', views.about, name="about"),
     path('news/', views.news, name="news"),
     path('blog/', views.blog, name="blog"),
@@ -43,6 +44,7 @@ urlpatterns = [
     path('addFeedback/', addFeedback, name="feedback"),
     path('doctors/', views.doctors, name="doctors"),
     path('index/', views.index, name="index"),
+<<<<<<< HEAD
 
     #User
     path('user_index/', views.user_index, name="user_index"),
@@ -54,6 +56,15 @@ urlpatterns = [
     path('user_addFeedback/', user_addFeedback, name="user_feedback"),
     path('user_addContact/', user_addContact, name="user_contact"),
 
+=======
+    
+    path('docIndex/', views.docIndex, name="docindex"),
+    path('docAbout/', views.docAbout, name="docabout"),
+    path('docNews/', views.docNews, name="docnews"),
+    path('docBlog/', views.docBlog, name="docblog"),
+    path('docContact/', views.docContact, name="doccontact"),
+    path('docFeedback/', views.docFeedback, name="docfeedback"),
+>>>>>>> e08bb4bb05d708b69dc1ea8f4aa3bed4f4c73eae
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]
