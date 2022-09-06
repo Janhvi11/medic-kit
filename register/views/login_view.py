@@ -33,7 +33,7 @@ def login_request(request):
             res = check_password(password,obj.password1)
             
             if res == True:
-                # login(request, user_check)
+                # login(request, username_got)
                 messages.info(request, f"You are now logged in as {username_got}")
                 return HttpResponseRedirect('/reg/login/')
             else:
@@ -103,3 +103,6 @@ def login_pharma_request(request):
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
     return render(request, template_name = "login.html", context = {"form":form})
+
+def logout():
+    return redirect("/index/")
