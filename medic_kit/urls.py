@@ -44,8 +44,6 @@ urlpatterns = [
     path('addFeedback/', addFeedback, name="feedback"),
     path('doctors/', views.doctors, name="doctors"),
     path('index/', views.index, name="index"),
-<<<<<<< HEAD
-
     #User
     path('user_index/', views.user_index, name="user_index"),
     path('user_doctors/', views.user_doctors, name="user_doctors"),
@@ -56,7 +54,6 @@ urlpatterns = [
     path('user_addFeedback/', user_addFeedback, name="user_feedback"),
     path('user_addContact/', user_addContact, name="user_contact"),
 
-=======
     
     path('docIndex/', views.docIndex, name="docindex"),
     path('docAbout/', views.docAbout, name="docabout"),
@@ -64,7 +61,6 @@ urlpatterns = [
     path('docBlog/', views.docBlog, name="docblog"),
     path('docContact/', views.docContact, name="doccontact"),
     path('docFeedback/', views.docFeedback, name="docfeedback"),
->>>>>>> e08bb4bb05d708b69dc1ea8f4aa3bed4f4c73eae
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]
