@@ -25,6 +25,7 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('reg/', include('register.urls')),
     path('ad/', include('admin_side.urls')),
+    path('treatment/', include('treatment.urls')),
     path('newss/', include('news.urls')),
     path('blogss/', include('blogs.urls')),
     path('medhistory/', include('medhistory.urls')),

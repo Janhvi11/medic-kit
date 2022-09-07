@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'contact',
     'hospital',
     'timeline',
+    'treatment',
 ]
 
 MIDDLEWARE = [
