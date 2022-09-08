@@ -33,8 +33,12 @@ def login_request(request):
             
             if res == True:
                 # login(request, username_got)
+                request.session['type']=0
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/reg/login/')
+      
+                return redirect('/index/')
+
+         
             else:
                 messages.error(request, "Invalid username or password.")
                 
@@ -61,10 +65,11 @@ def login_doc_request(request):
             res = check_password(password,obj.password)
             
             if res == True:
-                request.session['user'] = username_got
+                request.session['type']=1
+                #request.session['type']=1
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/docIndex')
+                return HttpResponseRedirect('/index')
             else:
                 messages.error(request, "Invalid username or password.")
                 
@@ -91,9 +96,9 @@ def login_pharma_request(request):
             res = check_password(password,obj.password)
             
             if res == True:
-                # login(request, user_check)
+                request.session['type']=2
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/reg/login/')
+                return HttpResponseRedirect('/index/')
             else:
                 messages.error(request, "Invalid username or password.")
                 
@@ -103,5 +108,8 @@ def login_pharma_request(request):
     # form = AuthenticationForm()
     return render(request, template_name = "login.html", context = {"form":form})
 
-def logout():
-    return redirect("/index/")
+def logout(request):
+    del request.session['type']
+    # except KeyError:
+    #     pass
+    return redirect('/index/')
