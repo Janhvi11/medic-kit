@@ -1,5 +1,6 @@
 from django.db import models
-
+from tkinter import CASCADE
+from register.models import doc,user
 # Create your models here.
 
 
@@ -25,8 +26,14 @@ day = (
     ('SUNDAY','SUNDAY'),
 )
 
+status = (
+    ('Pending' , 'Pending'),
+    ('Accepted' , 'Accepted'),
+    ('Rejected' , 'Rejected'),
+)
 
-class appointment(models.Model):
+
+class Appointment(models.Model):
     fname = models.CharField(max_length=100)
     lname = models.CharField(max_length=100)
     email = models.EmailField()
@@ -34,3 +41,10 @@ class appointment(models.Model):
     time = models.CharField(max_length=500,choices=time)
     day = models.CharField(max_length=500,choices=day)
     request = models.TextField(max_length=500)
+    status = models.CharField(max_length=500,choices=status,default='Pending')
+    doctorId = models.IntegerField(null=True,default=0)
+
+#class acceotappointment(models.Model):
+#    doctorId = models.ForeignKey(doc, on_delete=models.CASCADE)
+#    patientId = models.ForeignKey(user, on_delete=models.CASCADE)
+#    status = models.CharField(max_length=500,choices=status,default=0)

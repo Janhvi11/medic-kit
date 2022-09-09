@@ -7,5 +7,14 @@ from .models import *
 class AppointmentForm(forms.ModelForm):
 # not null field define karna
     class Meta:
-        model = appointment
-        fields = '__all__'
+        model = Appointment
+        fields = ['fname','lname','email','address','time','day','request','status']
+
+# 'fname','lname','email','address','time','day','request','status'
+
+
+#class AcceptAppointmentForm(forms.ModelForm):
+## not null field define karna
+#    class Meta:
+#        model = acceptappointment
+#        fields = '__all__'

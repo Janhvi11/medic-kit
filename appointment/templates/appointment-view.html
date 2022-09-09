@@ -60,6 +60,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td>{{ data.time }}</td>
                             <td>{{ data.day }}</td>
                             <td>{{ data.request }}</td>
+                            <td>{{ data.status }}</td>
+                            <td>{{ data.doctorId }}</td>
                             <td> <a href="{% url 'delete-appointment' data.id %}"> delete </a> </td>
                             {% comment %} <td> <a href="{% url 'edit-contact' data.id %}"> edit </a> </td> {% endcomment %}
                         </tr>

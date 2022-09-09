@@ -55,7 +55,16 @@
                     <label class="small mb-1">Request</label>
                     {{ form.request }}
                 </td>
+                <td style="padding:15px">
+                    <label class="small mb-1">Request</label>
+                    {{ form.status }}
+                </td>
             </tr>
+
+            {% comment %} <td style="padding:15px">
+                <label class="small mb-1">Request</label>
+                {{ form.doctorId }}
+            </td> {% endcomment %}
             <tr>
                 {% comment %} <td style="padding:15px">
                     <label class="small mb-1">Is Solved</label>
