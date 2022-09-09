@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'medic_kit',
     'crispy_forms',
     'disease',
+    'appointment',
     'medhistory',
     'feedback',
     'contact',
