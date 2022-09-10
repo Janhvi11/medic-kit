@@ -19,7 +19,8 @@ from django.urls import path,include
 from . import views
 from feedback.views import *
 from contact.views import *
-
+#from ..appointment.views.appointment_view import viewAppointment 
+from appointment.views.appointment_view import viewAppointment
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -45,7 +46,7 @@ urlpatterns = [
     path('addContact/', addContact, name="contact"),
     path('addFeedback/', addFeedback, name="feedback"),
     path('doctors/', views.doctors, name="doctors"),
-    path('index/', views.index, name="index"),
+    path('index/', viewAppointment, name="index"),
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]
