@@ -15,7 +15,7 @@ def addTreatment(request):
 	if form.is_valid():
 			
 			form.save()
-			return redirect("/ill/treatView/")
+			return redirect("/treatment/treatView/")
 
 	context['form'] = form
 	return render(request, "treatmentAdd.html",context)
@@ -25,7 +25,7 @@ def deleteTreatment(request,id):
 	obj = get_object_or_404(treatment, id=id)#
 	if request.method == "GET":
 		obj.delete()
-		return redirect("/ill/treatmentView/")
+		return redirect("/treatment/treatView/")
 	return render(request, "treatmentview.html", context)
 
 def editTreatment(request,id):
@@ -34,7 +34,7 @@ def editTreatment(request,id):
     form = RegisterTreatForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save() #
-        return redirect("/ill/treatView/")
+        return redirect("/treatment/treatView/")
     
     context['form'] = form
     return render(request, "treatmentAdd.html",context)
