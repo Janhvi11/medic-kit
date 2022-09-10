@@ -63,3 +63,10 @@ def index(request):
         return render(request,'index.html')
     else:
         return render(request, 'index.html')
+    
+def userProfile(request):
+    type= request.session.get('type')
+    if type == None:
+        return render(request,'index.html')
+    else:
+        return render(request, 'user-profile.html')

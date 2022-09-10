@@ -16,23 +16,17 @@ def login_home(request):
     return render(request, "login-main.html")
 
 def login_request(request):
-    # template_name = "login.html"
-    # form_class = LoginUserForm
     if request.method == 'POST':
         form = LoginUserForm(request.POST)
-        # form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
             username_got = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            
-            #     # password = make_password(request.POST['password'])
-            #     # return render(request, 'demo.html') #, {'access':check_password}
-            
             obj = get_object_or_404(user, username=username_got)
             res = check_password(password,obj.password1)            #check_password is an hashing method
             
             if res == True:
                 # login(request, username_got)
+                request.session['username']=username_got
                 request.session['type']=0
                 messages.info(request, f"You are now logged in as {username_got}")
       
@@ -113,3 +107,14 @@ def logout(request):
     # except KeyError:
     #     pass
     return redirect('/index/')
+
+# ============================PROFILES============================================================
+
+def userprofile(request):
+    return render(request, "user-profile.html")
+
+def docprofile(request):
+    return render(request, "doc-profile.html")
+
+def pharmaprofile(request):
+    return render(request, "pharma-profile.html")
