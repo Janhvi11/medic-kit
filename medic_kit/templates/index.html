@@ -495,7 +495,7 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
 
-      <form class="main-form" method="POST">
+      <form class="main-form" method="POST" >
         {% csrf_token %}
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
@@ -511,8 +511,9 @@
             {{ form.email }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control">
-            {{ form.request }}
+            <h1>Day</h1>
+            {{ form.day }}
+
           </div>
           {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
             <input type="date" class="form-control">
@@ -527,7 +528,7 @@
             </select>
           </div> {% endcomment %}
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <textarea class="form-control" rows="6" placeholder="Enter Request.."><a {{ form.request }}</textarea>
+            <textarea class="form-control" rows="6" placeholder="Enter Request..">{{ form.request }}</textarea>
           </div>
         </div>
 

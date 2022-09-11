@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from appointment import *
+from medic_kit.forms import AppointmentForm
+
 
 def about(request):
     type= request.session.get('type')
@@ -63,3 +66,15 @@ def index(request):
         return render(request,'index.html')
     else:
         return render(request, 'index.html')
+
+def addAppointment(request):
+    context = {}
+    form = AppointmentForm(request.POST)
+    
+    if form.is_valid():
+        #return HttpResponse(form)
+        form.save()
+        return redirect("/index")
+
+    context['form'] = form
+    return render(request, "index.html",context)
