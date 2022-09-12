@@ -37,30 +37,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">View User BMI</h5>
+                <h5 class="card-title">View Ideal BMI</h5>
                 <br>
                 <br>
                 <table border="10" style="width:100%">
                     <tbody>
                         <tr>
-                            <td>user id</td>
-                            <td>user gender</td>
-                            <td>user age</td>
-                            <td>user height</td>
-                            <td>user weight</td>
-                            <td>user bmi</td>
-                            
+                            <td>Age range</td>
+                            <td>Gender</td>
+                            <td>Ideal Weight</td>
+                            <td>Ideal Height</td>
+                            <td>Ideal BMI</td>
                         </tr>
-                        {% for data in bmi %}
+                        {% for data in ideal_bmi %}
                         <tr>
-                            <td>{{ data.userId }}</td>
+                            <td>{{ data.age_range }}</td>
                             <td>{{ data.gender }}</td>
-                            <td>{{ data.age }}</td>
-                            <td>{{ data.user_height }}</td>
-                            <td>{{ data.user_weight }}</td>
-                            <td>{{ data.user_bmi }}</td>
-                            <td> <a href="{% url 'bmi-delete' data.id %}"> delete </a> </td>
-                            <td> <a href="{% url 'bmi-edit' data.id %}"> edit </a> </td>
+                            <td>{{ data.ideal_weight }}</td>
+                            <td>{{ data.ideal_height }}</td>
+                            <td>{{ data.ideal_bmi }}</td>
+                            <td> <a href="{% url 'ideal-bmi-delete' data.id %}"> delete </a> </td>
+                            <td> <a href="{% url 'ideal-bmi-edit' data.id %}"> edit </a> </td>
                         </tr>
                         {% endfor %}
                     </tbody>

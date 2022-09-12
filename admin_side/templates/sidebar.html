@@ -36,7 +36,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Doctors
@@ -60,7 +60,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Pharmacists
@@ -83,7 +83,7 @@
             </ul>
           </li>
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
               Users
@@ -106,7 +106,7 @@
             </ul>
           </li>
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 To-Do List
@@ -130,7 +130,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Diseases
@@ -154,7 +154,7 @@
           </li>
           
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Remedies
@@ -179,7 +179,7 @@
 
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Medical History
@@ -207,7 +207,7 @@
           
         
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Feedback
@@ -225,7 +225,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Contact
@@ -243,7 +243,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Hospital
@@ -267,7 +267,7 @@
           </li>
           
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 News
@@ -293,7 +293,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Blog
@@ -319,7 +319,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Appointment Booking
@@ -343,7 +343,7 @@
         </li>
 
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Timeline
@@ -367,6 +367,55 @@
               </li>
             </ul>
           </li>
+
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i><p>Ideal BMI<i class="right fas fa-angle-left"></i></p>
+              </a>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{% url 'ideal-bmi-view' %}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>View Ideal BMI</p>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{% url 'ideal-bmi-add' %}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add Ideal BMIs</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link  ">
+                <i class="nav-icon fas fa-tachometer-alt"></i><p>User BMI<i class="right fas fa-angle-left"></i></p>
+              </a>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{% url 'bmi-view' %}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>View User BMI</p>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{% url 'bmi-add' %}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add User BMIs</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

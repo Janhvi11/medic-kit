@@ -9,6 +9,10 @@ class bmi(models.Model):
     user_weight = models.IntegerField(default=10)
     user_height = models.IntegerField(default=10)
     user_bmi = models.IntegerField(default=10)
+    
+    def save(self,*args, **kwargs):
+        self.user_bmi=(self.user_height*self.user_weight)/10
+        super(bmi, self).save(*args, **kwargs)
 
 range = (
     (10,10),
@@ -46,4 +50,8 @@ class ideal_bmi(models.Model):
     gender = models.CharField(max_length=20,choices=gender)
     ideal_weight = models.IntegerField(choices=range)
     ideal_height = models.IntegerField(choices=ideal_height)
-    ideal_bmi = models.IntegerField()    
+    ideal_bmi = models.IntegerField()
+    
+    def save(self,*args, **kwargs):
+        self.ideal_bmi=(self.ideal_height*self.ideal_weight)/10
+        super(ideal_bmi, self).save(*args, **kwargs)

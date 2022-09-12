@@ -1,1 +1,1 @@
-from bmi_view import *
+from .bmi_view import *

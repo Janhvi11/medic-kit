@@ -1,3 +1,3 @@
-from bmi_url import *
+from .bmi_url import *
 
-urlpatterns = bmi_url
+urlpatterns = bmi_url_def
