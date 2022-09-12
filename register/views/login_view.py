@@ -26,7 +26,7 @@ def login_request(request):
             
             if res == True:
                 # login(request, username_got)
-                request.session['username']=username_got
+                request.session['username']=form.cleaned_data.get('username')
                 request.session['type']=0
                 messages.info(request, f"You are now logged in as {username_got}")
       
@@ -104,6 +104,7 @@ def login_pharma_request(request):
 
 def logout(request):
     del request.session['type']
+    del request.session['username']
     # except KeyError:
     #     pass
     return redirect('/index/')

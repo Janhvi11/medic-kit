@@ -17,9 +17,9 @@ def viewTime(request):
     username = request.session.get('username')
     # return HttpResponse(username)
     user_filter = user.objects.filter(username = username)
-    # uid = user_filter[0]
+    uid = user_filter[0]
     # uid = user_filter.first()
-    uid = 1
+    # uid = 1
     context["timeline"] = timeline.objects.filter(userId=uid)
     return render(request, "userside-view-time.html", context)
 
