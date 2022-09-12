@@ -346,6 +346,7 @@
           <div class="card-doctor">
             <div class="header">
               <img src="{% static 'img/doctors/doctor_2.jpg' %}" alt="">
+
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -499,23 +500,26 @@
         {% csrf_token %}
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %}
+            {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %} 
+            <label class="small mb-1">First name</label>
             {{ form_user.fname }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
             {% comment %} <input type="text" class="form-control" placeholder="Last name"> {% endcomment %}
+            <label class="small mb-1">Last name</label>
             {{ form_user.lname }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
             {% comment %} <input type="text" class="form-control" placeholder="Email  "> {% endcomment %}
+            <label class="small mb-1">Email</label>
             {{ form_user.email }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <h1>Day</h1>
+            <label class="small mb-1">Enter the Day you </label>
             {{ form_user.day }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <h1>Day</h1>
+            <label class="small mb-1">Day</label>
             {{ form_user.time }}
           </div>
           {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
@@ -531,8 +535,10 @@
             </select>
           </div> {% endcomment %}
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <h1>Request</h1>
-            {{ form_user.request }}
+            <h3>Request</h3>
+            {% comment %} <label class="small mb-1">Request</label> {% endcomment %}
+            {{ form_user.request }}            
+            
           </div>
         </div>
 
