@@ -495,25 +495,28 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
 
-      <form class="main-form" method="POST" >
+      <form method="POST" >
         {% csrf_token %}
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="First name">
-            {{ form.fname }}
+            {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %}
+            {{ form_user.fname }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="Last name">
-            {{ form.lname }}
+            {% comment %} <input type="text" class="form-control" placeholder="Last name"> {% endcomment %}
+            {{ form_user.lname }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control" placeholder="Email  ">
-            {{ form.email }}
+            {% comment %} <input type="text" class="form-control" placeholder="Email  "> {% endcomment %}
+            {{ form_user.email }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
             <h1>Day</h1>
-            {{ form.day }}
-
+            {{ form_user.day }}
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+            <h1>Day</h1>
+            {{ form_user.time }}
           </div>
           {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
             <input type="date" class="form-control">
@@ -528,7 +531,8 @@
             </select>
           </div> {% endcomment %}
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <textarea class="form-control" rows="6" placeholder="Enter Request..">{{ form.request }}</textarea>
+            <h1>Request</h1>
+            {{ form_user.request }}
           </div>
         </div>
 

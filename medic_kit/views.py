@@ -67,14 +67,14 @@ def index(request):
     else:
         return render(request, 'index.html')
 
-def addAppointment(request):
-    context = {}
-    form = AppointmentForm(request.POST)
+# def addAppointment(request):
+#     context = {}
+#     form = AppointmentForm(request.POST)
     
-    if form.is_valid():
-        #return HttpResponse(form)
-        form.save()
-        return redirect("/index")
+#     if form.is_valid():
+#         #return HttpResponse(form)
+#         form.save()
+#         return redirect("/index")
 
-    context['form'] = form
-    return render(request, "index.html",context)
+#     context['form'] = form
+#     return render(request, "index.html",context)

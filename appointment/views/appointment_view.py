@@ -30,6 +30,18 @@ def addAppointment(request):
     context['form'] = form
     return render(request, "appointment-add.html",context)
 
+def addAppointmentUser(request):
+    context = {}
+    form = UserAppointmentForm(request.POST)
+    
+    if form.is_valid():
+        #return HttpResponse(form)
+        form.save()
+        return redirect("/index/")
+
+    context['form_user'] = form
+    return render(request, "index.html", context)
+
 #def acceptappointment(request):
 #    context = {}
 #    form = AcceptAppointmentForm(request.POST)
