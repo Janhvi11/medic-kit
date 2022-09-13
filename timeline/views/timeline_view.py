@@ -14,6 +14,7 @@ def viewAdminTime(request):
 #==================USER===========================================
 def viewTime(request):
     context = {}
+    context['username'] = request.session.get('username')
     username = request.session.get('username')
     # return HttpResponse(username)
     user_filter = user.objects.filter(username = username)
@@ -24,15 +25,28 @@ def viewTime(request):
     return render(request, "userside-view-time.html", context)
 
 def addTime(request):
-	context = {}
-	form = timelineForm(request.POST)
+    context = {}
+    
+    username = request.session.get('username')
+    # user_filter = user.objects.filter(username = username)
+    # uid = user_filter[0]
+    context['user'] = user.objects.filter(username=username)
+    
+    form = timelineForm(request.POST)
+    # uid = form.cleaned_data['userId']
+    # uname = request.session.get('username')
+    # fil = get_object_or_404(user,username=uname)
+    # form.cleaned_data.set['userId'] = fil.id
+    
+    # return HttpResponse(form)
 	# form.cleaned_data['datetime'] = timezone.now()
-	if form.is_valid():
-			form.save()
-			return redirect("/timeline/viewTimeline")
+    if form.is_valid():
+        return HttpResponse(form)
+        form.save()
+        return redirect("/timeline/viewTimeline")
+    context['form'] = form
+    return render(request, "timelineAdd.html",context)
 
-	context['form'] = form
-	return render(request, "timelineAdd.html",context)
 
 def deleteTime(request,id):
 	context={}
@@ -40,7 +54,7 @@ def deleteTime(request,id):
 	if request.method == "GET":
 		obj.delete()
 		return redirect("/timeline/viewTimeline/")
-	return render(request, "timeline-view.html", context)
+	return render(request, "userside-view-time.html", context)
 
 def editTime(request,id):
     context = {}    

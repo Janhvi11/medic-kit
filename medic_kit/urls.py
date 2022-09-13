@@ -48,6 +48,7 @@ urlpatterns = [
     path('doctors/', views.doctors, name="doctors"),
     path('index/', views.index, name="index"),
     path('userProfile/', views.userProfile, name="user-profile"),
+    path('edituserProfile<int:id>/', views.edituserProfile, name="edit-user-profile"),
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]

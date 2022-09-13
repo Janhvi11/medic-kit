@@ -73,35 +73,35 @@
                        alt="User profile picture">
                 </div>
 
-                <h3 class="profile-username text-center">{{ username }}</h3>
-                <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a>
-
-              </div>
-            </div>
-
-                <div class="card card-primary card-outline">
-                  <div class="card-body box-profile">
-                {% for data in timeline %}
+                {% comment %} <h3 class="profile-username text-center">{{ username }}</h3> {% endcomment %}
+                <form method="POST">
+                {% csrf_token %}
                 <ul class="list-group list-group-unbordered mb-3">
-                  {% comment %} <li class="list-group-item">
-                    <b>User Id</b> <a class="float-right">{{ data.userId }}</a>
-                  </li> {% endcomment %}
                   <li class="list-group-item">
-                    <b>Date and Time</b> <a class="float-right">{{ data.datetime }}</a>
+                    <b>UserName</b> <a class="float-right">{{ form.username }}</a>
                   </li>
                   <li class="list-group-item">
-                    <b>Update</b> <a class="float-right">{{ data.update }}</a>
+                    <b>First Name</b> <a class="float-right">{{ form.first_name }}</a>
                   </li>
-                  
-                  {% comment %} <li class="list-group-item">
-                    <b>Password</b> <a class="float-right">{{ data.password1 }}</a>
-                  </li> {% endcomment %}
+                  <li class="list-group-item">
+                    <b>Last Name</b> <a class="float-right">{{ form.last_name }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Email</b> <a class="float-right">{{ form.email }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Address</b> <a class="float-right">{{ form.address }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Password</b> <a class="float-right">{{ form.password1 }}</a>
+                  </li> 
                 </ul>
-                
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                {% comment %} <a class="btn btn-primary btn-block"><b>Submit </b></a> {% endcomment %}
+                </form>
 
-                <a href="{% url 'edit-time' data.id %}" class="btn btn-primary btn-block"><b>Edit</b></a>
-                <a href="{% url 'delete-time' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a>
-                {% endfor %}
+                {% comment %} <a href="{% url 'edit-user-profile' data.id %}" class="btn btn-primary btn-block"><b>Edit Profile</b></a> {% endcomment %}
+                
               </div>
               <!-- /.card-body -->
             </div>
