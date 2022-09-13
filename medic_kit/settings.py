@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'hospital',
     'timeline',
     'treatment',
+    'prescription',
 ]
 
 MIDDLEWARE = [
