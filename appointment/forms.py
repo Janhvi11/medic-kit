@@ -10,12 +10,6 @@ class AppointmentForm(forms.ModelForm):
         model = Appointment
         fields = ['fname','lname','email','address','time','day','request','status']
 
-class UserAppointmentForm(forms.ModelForm):
-# not null field define karna
-    class Meta:
-        model = Appointment
-        fields = ['fname','lname','email','time','day','request']
-
 # 'fname','lname','email','address','time','day','request','status'
 
 
