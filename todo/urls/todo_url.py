@@ -18,3 +18,17 @@ to_do_item_url = [
     path('editToDoItem/<id>', editToDoItem, name='todoItem-edit'),
 
 ]
+
+userside_todolist_url = [
+    path('user_viewToDoList/', userside_viewToDoList, name='user-todoList-view'),
+    path('user_addToDoList/', userside_addToDoList, name='user-todoList-add'),
+    path('user_editToDoList/<int:id>', userside_editToDoList, name='user-todoList-edit'),
+    path('user_deleteToDoList/<int:id>', userside_deleteToDoList, name='user-todoList-delete'),
+]
+
+userside_todoitem_url = [
+    path('user_viewToDoItem/<int:id>', userside_viewToDoItem, name='user-todoItem-view'),
+    path('user_addToDoItem/<int:id>', userside_addToDoItem, name='user-todoItem-add'),
+    path('user_editToDoItem/<int:id>', userside_editToDoItem, name='user-todoItem-edit'),
+    path('user_deleteToDoItem/<int:id>', userside_deleteToDoItem, name='user-todoItem-delete'),
+]

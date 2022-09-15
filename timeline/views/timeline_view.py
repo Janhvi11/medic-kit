@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from ..models import timeline, timeline_doc, timeline_pharma
 from ..forms import timelineForm, timeline_pharmaForm, timeline_docForm
 from django.utils import timezone
-from register.models import user
+from register.models import user,doc,pharma
 
 #==================ADMIN==========================================
 def viewAdminTime(request):
@@ -62,76 +62,98 @@ def editTime(request,id):
 
 def viewdocTime(request):
     context = {}
+    context['username'] = request.session.get('username')
+    username = request.session.get('username')
+    doc_filter = doc.objects.filter(username = username)
+    docid = doc_filter[0]
     # obj = get_object_or_404(ToDoItem, id=id)
-    context["timeline"] = timeline_doc.objects.all()
-    return render(request, "timeline-view.html", context)
+    context["timeline"] = timeline_doc.objects.filter(docId=docid)
+    return render(request, "docside-view-time.html", context)
 
 def adddocTime(request):
-	context = {}
-	form = timeline_docForm(request.POST)
-	# form.cleaned_data['datetime'] = timezone.now()
-	if form.is_valid():
-			form.save()
-			return redirect("/timeline/viewTimeline")
-
-	context['form'] = form
-	return render(request, "timelineAdd.html",context)
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    context['doc'] = doc.objects.filter(username=username)
+ 
+    form = timeline_docForm(request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("/timeline/viewTimeline-doc/")
+    
+    context['form'] = form
+    return render(request, "doctimelineAdd.html",context)
 
 def deletedocTime(request,id):
 	context={}
 	obj = get_object_or_404(timeline_doc, id=id)
 	if request.method == "GET":
 		obj.delete()
-		return redirect("/timeline/viewTimeline/")
-	return render(request, "timeline-view.html", context)
+		return redirect("/timeline/viewTimeline-doc/")
+	return render(request, "docside-view-time.html", context)
 
 def editdocTime(request,id):
     context = {}    
     obj = get_object_or_404(timeline_doc, id=id)
-   
+    
+    username = request.session.get('username')
+    context['username'] = username
+    context['doc'] = doc.objects.filter(username=username)
+    
     form = timeline_docForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
-        return redirect("/timeline/viewTimeline/")
+        return redirect("/timeline/viewTimeline-doc/")
     
     context['form'] = form
-    return render(request, "timelineAdd.html",context)
+    return render(request, "doctimelineAdd.html",context)
 
 #============PHARMACIST======================================================
 
 def viewpharmaTime(request):
     context = {}
+    context['username'] = request.session.get('username')
+    username = request.session.get('username')
+    pharma_filter = pharma.objects.filter(username = username)
+    pharmaid = pharma_filter[0]
     # obj = get_object_or_404(ToDoItem, id=id)
-    context["timeline"] = timeline_pharma.objects.all()
-    return render(request, "timeline-view.html", context)
+    context["timeline"] = timeline_pharma.objects.filter(pharmaId=pharmaid)
+    return render(request, "pharmaside-view-time.html", context)
 
 def addpharmaTime(request):
-	context = {}
-	form = timeline_pharmaForm(request.POST)
-	# form.cleaned_data['datetime'] = timezone.now()
-	if form.is_valid():
-			form.save()
-			return redirect("/timeline/viewTimeline")
-
-	context['form'] = form
-	return render(request, "timelineAdd.html",context)
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    context['pharma'] = pharma.objects.filter(username=username)
+ 
+    form = timeline_pharmaForm(request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("/timeline/viewTimeline-pharma/")
+    
+    context['form'] = form
+    return render(request, "pharmatimelineAdd.html",context)
 
 def deletepharmaTime(request,id):
 	context={}
 	obj = get_object_or_404(timeline_pharma, id=id)
 	if request.method == "GET":
 		obj.delete()
-		return redirect("/timeline/viewTimeline/")
-	return render(request, "timeline-view.html", context)
+		return redirect("/timeline/viewTimeline-pharma/")
+	return render(request, "pharmaside-view-time.html", context)
 
 def editpharmaTime(request,id):
     context = {}    
     obj = get_object_or_404(timeline_pharma, id=id)
-   
+    
+    username = request.session.get('username')
+    context['username'] = username
+    context['pharma'] = pharma.objects.filter(username=username)
+    
     form = timeline_pharmaForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
-        return redirect("/timeline/viewTimeline/")
+        return redirect("/timeline/viewTimeline-pharma/")
     
     context['form'] = form
-    return render(request, "timelineAdd.html",context)
+    return render(request, "pharmatimelineAdd.html",context)

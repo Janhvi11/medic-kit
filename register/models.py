@@ -15,6 +15,7 @@ class user(models.Model):
     
     password1 = models.CharField(max_length=500)
     
+    # pfp = models.ImageField(upload_to="avatars/")
     # REQUIRED_FIELDS = ('username','password1',)  
     # USERNAME_FIELD = 'username'
     

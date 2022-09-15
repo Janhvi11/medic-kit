@@ -1,8 +1,8 @@
 from django.shortcuts import render,redirect,get_object_or_404
 from django.http import HttpResponse
-from register.models import user
+from register.models import user,doc,pharma
 from django.contrib.auth.hashers import make_password
-from register.forms import RegisterForm
+from register.forms import RegisterForm,RegisterDocForm,RegisterPharmaForm
 # from django.shortcuts import render, redirect, ,HttpResponse
 
 
@@ -99,3 +99,67 @@ def edituserProfile(request,id):
     
     context_3['form'] = form
     return render(request, "edit-user-profile.html",context_3)
+
+def docProfile(request):
+    context={}
+    type= request.session.get('type')
+    uname = request.session.get('username')
+    context['username'] = uname
+    
+    # form : view and update:
+    
+    context['doc'] = doc.objects.filter(username=uname)
+	# obj = get_object_or_404(user, username=uname)
+    
+    
+    if type == None:
+        return render(request,'index.html')
+    else:
+        return render(request, 'doc-profile.html',context)
+    
+def editdocProfile(request,id):
+    context_3 = {}
+    obj = get_object_or_404(doc, id=id)
+    form = RegisterDocForm(request.POST or None, instance=obj)
+    if form.is_valid():
+        sign_up = form.save(commit=False)
+        sign_up.password = make_password(form.cleaned_data['password'])
+        request.session['username'] = form.cleaned_data['username']
+        sign_up.save()
+        return redirect("/docProfile/")
+    
+    context_3['form'] = form
+    return render(request, "edit-doc-profile.html",context_3)
+
+#====================================================================================
+def pharmaProfile(request):
+    context={}
+    type= request.session.get('type')
+    username = request.session.get('username')
+    context['username'] = username
+    
+    # form : view and update:
+    
+    context['pharma'] = pharma.objects.filter(username=username)
+	# obj = get_object_or_404(user, username=uname)
+    
+    
+    if type == None:
+        return render(request,'index.html')
+    else:
+        return render(request, 'pharma-profile.html',context)
+    
+def editpharmaProfile(request,id):
+    # return render(request,"edit-pharma-profile.html")
+    context_3 = {}
+    obj = get_object_or_404(pharma, id=id)
+    form = RegisterPharmaForm(request.POST or None, instance=obj)
+    if form.is_valid():
+        sign_up = form.save(commit=False)
+        sign_up.password = make_password(form.cleaned_data['password'])
+        request.session['username'] = form.cleaned_data['username']
+        sign_up.save()
+        return redirect("/pharmaProfile/")
+    
+    context_3['form'] = form
+    return render(request, "edit-pharma-profile.html",context_3)

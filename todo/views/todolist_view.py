@@ -49,7 +49,7 @@ def viewToDoItem(request,id):
     context = {}
     # obj = get_object_or_404(ToDoItem, id=id)
     context["todoitem"] = ToDoItem.objects.filter(todo_list=id)
-    return render(request, "ToDoItem-view.html", context)
+    return render(request, "user-todoItem-view.html", context)
 
 def addToDoItem(request):
 	context = {}

@@ -60,6 +60,7 @@ def login_doc_request(request):
             
             if res == True:
                 request.session['type']=1
+                request.session['username'] = form.cleaned_data.get('username')
                 #request.session['type']=1
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
@@ -91,6 +92,7 @@ def login_pharma_request(request):
             
             if res == True:
                 request.session['type']=2
+                request.session['username'] = form.cleaned_data.get('username')
                 messages.info(request, f"You are now logged in as {username_got}")
                 return HttpResponseRedirect('/index/')
             else:

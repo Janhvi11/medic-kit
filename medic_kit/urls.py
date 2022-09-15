@@ -51,7 +51,11 @@ urlpatterns = [
     path('index/', addAppointmentUser, name="index"),
     path('index/', views.index, name="index"),
     path('userProfile/', views.userProfile, name="user-profile"),
+    path('docProfile/', views.docProfile, name="doc-profile"),
+    path('pharmaProfile/', views.pharmaProfile, name="pharma-profile"),
     path('edituserProfile<int:id>/', views.edituserProfile, name="edit-user-profile"),
+    path('editdocProfile<int:id>/', views.editdocProfile, name="edit-doc-profile"),
+    path('editpharmaProfile/<int:id>', views.editpharmaProfile, name="edit-pharma-profile"),
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]

@@ -11,14 +11,14 @@ time_url = [
 
     # ============ DOCTOR =========================================
     path('viewTimeline-doc/', viewdocTime, name="view-doc-time"),
-    path('editTimeline-doc<id>/', editdocTime, name="edit-doc-time"),
+    path('editTimelineDoc/<int:id>', editdocTime, name="edit-doc-time"),
     path('addTimeline-doc/', adddocTime, name="add-doc-time"),
-    path('deleteTimeline-doc<id>/', deletedocTime, name="delete-doc-time"),
+    path('deleteTimelineDoc/<int:id>', deletedocTime, name="delete-doc-time"),
     
     # ============ PHARMACIST =========================================
     path('viewTimeline-pharma/', viewpharmaTime, name="view-pharma-time"),
-    path('editTimeline-pharma<id>/', editpharmaTime, name="edit-pharma-time"),
+    path('editTimeline-pharma/<int:id>', editpharmaTime, name="edit-pharma-time"),
     path('addTimeline-pharma/', addpharmaTime, name="add-pharma-time"),
-    path('deleteTimeline-pharma<id>/', deletepharmaTime, name="delete-pharma-time"),
+    path('deleteTimeline-pharma/<int:id>', deletepharmaTime, name="delete-pharma-time"),
     
 ]

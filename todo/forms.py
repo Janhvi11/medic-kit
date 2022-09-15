@@ -10,4 +10,4 @@ class TodoListForm(forms.ModelForm):
 class ToDoItemForm(forms.ModelForm):
     class Meta:
         model = ToDoItem
-        fields="__all__"
+        fields=['title','description','todo_list']

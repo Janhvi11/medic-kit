@@ -80,7 +80,13 @@
               <div class="circle-shape bg-secondary text-white">
                 <span class="mai-chatbubbles-outline"></span>
               </div>
-              <p><a href="#"><span>Add</span> To-do List</a></p>
+              {% if request.session.type == 0 %}
+                <p><span><a href="{% url 'user-todoList-view' %}">To-do List</a></p>
+              {% elif request.session.type == 1 %}
+                <p><span><a href="#">To-do List</a></p>
+              {% elif request.session.type == 2 %}
+                <p><span><a href="#">To-do List</a></p>
+              {% endif %}
             </div>
           </div>
           <div class="col-md-4 py-3 py-md-0">
@@ -89,11 +95,11 @@
                 <span class="mai-shield-checkmark"></span>
               </div>
               {% if request.session.type == 0 %}
-                <p><span><a href="{% url 'view-time' %}">Update user timeline</a></p>
+                <p><span><a href="{% url 'view-time' %}">Update timeline</a></p>
               {% elif request.session.type == 1 %}
-                <p><span><a href="{% url 'view-doc-time' %}">Updat doctor timeline</a></p>
+                <p><span><a href="{% url 'view-doc-time' %}">Update timeline</a></p>
               {% elif request.session.type == 2 %}
-                <p><span><a href="{% url 'view-pharma-time' %}">Update pharmacist timeline</a></p>
+                <p><span><a href="{% url 'view-pharma-time' %}">Update timeline</a></p>
               {% endif %}
             </div>
           </div>
