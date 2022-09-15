@@ -28,25 +28,15 @@ def addTime(request):
     context = {}
     
     username = request.session.get('username')
-    # user_filter = user.objects.filter(username = username)
-    # uid = user_filter[0]
+    context['username'] = username
     context['user'] = user.objects.filter(username=username)
     
     form = timelineForm(request.POST)
-    # uid = form.cleaned_data['userId']
-    # uname = request.session.get('username')
-    # fil = get_object_or_404(user,username=uname)
-    # form.cleaned_data.set['userId'] = fil.id
-    
-    # return HttpResponse(form)
-	# form.cleaned_data['datetime'] = timezone.now()
     if form.is_valid():
-        return HttpResponse(form)
         form.save()
         return redirect("/timeline/viewTimeline")
     context['form'] = form
     return render(request, "timelineAdd.html",context)
-
 
 def deleteTime(request,id):
 	context={}

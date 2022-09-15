@@ -8,7 +8,7 @@ from ..forms import *
 def viewAppointment(request):
     context = {}
     context["appointment"] = Appointment.objects.all()
-    return render(request, "appointment-view.html", context)
+    return render(request, "index.html", context)
 
 def deleteAppointment(request,id):
 	context={}
@@ -29,6 +29,18 @@ def addAppointment(request):
 
     context['form'] = form
     return render(request, "appointment-add.html",context)
+
+def addAppointmentUser(request):
+    context = {}
+    form = UserAppointmentForm(request.POST)
+    
+    if form.is_valid():
+        #return HttpResponse(form)
+        form.save()
+        return redirect("/index/")
+
+    context['form_user'] = form
+    return render(request, "index.html", context)
 
 #def acceptappointment(request):
 #    context = {}

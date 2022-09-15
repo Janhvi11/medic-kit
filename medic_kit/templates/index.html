@@ -352,6 +352,7 @@
           <div class="card-doctor">
             <div class="header">
               <img src="{% static 'img/doctors/doctor_2.jpg' %}" alt="">
+
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -501,18 +502,36 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
 
-      <form class="main-form">
+      <form method="POST" >
+        {% csrf_token %}
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="Full name">
+            {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %} 
+            <label class="small mb-1">First name</label>
+            {{ form_user.fname }}
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+            {% comment %} <input type="text" class="form-control" placeholder="Last name"> {% endcomment %}
+            <label class="small mb-1">Last name</label>
+            {{ form_user.lname }}
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control" placeholder="Email address..">
+            {% comment %} <input type="text" class="form-control" placeholder="Email  "> {% endcomment %}
+            <label class="small mb-1">Email</label>
+            {{ form_user.email }}
           </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+            <label class="small mb-1">Enter the Day you </label>
+            {{ form_user.day }}
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+            <label class="small mb-1">Day</label>
+            {{ form_user.time }}
+          </div>
+          {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
             <input type="date" class="form-control">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+          </div> {% endcomment %}
+          {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
             <select name="departement" id="departement" class="custom-select">
               <option value="general">General Health</option>
               <option value="cardiology">Cardiology</option>
@@ -520,16 +539,16 @@
               <option value="neurology">Neurology</option>
               <option value="orthopaedics">Orthopaedics</option>
             </select>
-          </div>
+          </div> {% endcomment %}
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <input type="text" class="form-control" placeholder="Number..">
-          </div>
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
+            <h3>Request</h3>
+            {% comment %} <label class="small mb-1">Request</label> {% endcomment %}
+            {{ form_user.request }}            
+            
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
+        <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button>
       </form>
     </div>
   </div> <!-- .page-section -->
