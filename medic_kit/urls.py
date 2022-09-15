@@ -19,6 +19,8 @@ from django.urls import path,include
 from . import views
 from feedback.views import *
 from contact.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 #from ..appointment.views.appointment_view import viewAppointment 
 from appointment.views.appointment_view import addAppointmentUser, viewAppointment
 
@@ -60,3 +62,6 @@ urlpatterns = [
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
