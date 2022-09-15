@@ -8,7 +8,7 @@ from ..forms import *
 def viewAppointment(request):
     context = {}
     context["appointment"] = Appointment.objects.all()
-    return render(request, "index.html", context)
+    return render(request, "appointment-view.html", context)
 
 def deleteAppointment(request,id):
 	context={}

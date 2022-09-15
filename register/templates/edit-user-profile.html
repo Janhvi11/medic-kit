@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>AdminLTE 3 | User Profile</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -73,28 +73,35 @@
                        alt="User profile picture">
                 </div>
 
-                <h3 class="profile-username text-center">{{ username }}</h3>
-                {% comment %} <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a> {% endcomment %}
-
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-                <div class="card-body box-profile">
+                {% comment %} <h3 class="profile-username text-center">{{ username }}</h3> {% endcomment %}
                 <form method="POST">
-                    {% csrf_token %}
-                    <ul class="list-group list-group-unbordered mb-3">
-                        {% for data in user %}
-                        <li class="list-group-item">
-                            <b>user ID</b> <a class="float-right">{% with form.userId = data.id %} {{ form.userId }} {% endwith %}</a>
-                        </li>
-                        {% endfor %}
-                        <li class="list-group-item">
-                            <b>Update</b> <a class="float-right">{{ form.update }}</a>
-                        </li>
-                        <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
-                    </ul>
+                {% csrf_token %}
+                <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>UserName</b> <a class="float-right">{{ form.username }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>First Name</b> <a class="float-right">{{ form.first_name }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Last Name</b> <a class="float-right">{{ form.last_name }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Email</b> <a class="float-right">{{ form.email }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Address</b> <a class="float-right">{{ form.address }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Password</b> <a class="float-right">{{ form.password1 }}</a>
+                  </li> 
+                </ul>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                {% comment %} <a class="btn btn-primary btn-block"><b>Submit </b></a> {% endcomment %}
                 </form>
+
+                {% comment %} <a href="{% url 'edit-user-profile' data.id %}" class="btn btn-primary btn-block"><b>Edit Profile</b></a> {% endcomment %}
+                
               </div>
               <!-- /.card-body -->
             </div>

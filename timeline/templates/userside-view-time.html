@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>AdminLTE 3 | User Profile</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -74,27 +74,34 @@
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
-                {% comment %} <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a> {% endcomment %}
+                <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a>
 
               </div>
             </div>
 
-            <div class="card card-primary card-outline">
-                <div class="card-body box-profile">
-                <form method="POST">
-                    {% csrf_token %}
-                    <ul class="list-group list-group-unbordered mb-3">
-                        {% for data in user %}
-                        <li class="list-group-item">
-                            <b>user ID</b> <a class="float-right">{% with form.userId = data.id %} {{ form.userId }} {% endwith %}</a>
-                        </li>
-                        {% endfor %}
-                        <li class="list-group-item">
-                            <b>Update</b> <a class="float-right">{{ form.update }}</a>
-                        </li>
-                        <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
-                    </ul>
-                </form>
+                <div class="card card-primary card-outline">
+                  <div class="card-body box-profile">
+                {% for data in timeline %}
+                <ul class="list-group list-group-unbordered mb-3">
+                  {% comment %} <li class="list-group-item">
+                    <b>User Id</b> <a class="float-right">{{ data.userId }}</a>
+                  </li> {% endcomment %}
+                  <li class="list-group-item">
+                    <b>Date and Time</b> <a class="float-right">{{ data.datetime }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Update</b> <a class="float-right">{{ data.update }}</a>
+                  </li>
+                  
+                  {% comment %} <li class="list-group-item">
+                    <b>Password</b> <a class="float-right">{{ data.password1 }}</a>
+                  </li> {% endcomment %}
+                </ul>
+                
+
+                <a href="{% url 'edit-time' data.id %}" class="btn btn-primary btn-block"><b>Edit</b></a>
+                <a href="{% url 'delete-time' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a>
+                {% endfor %}
               </div>
               <!-- /.card-body -->
             </div>

@@ -19,8 +19,7 @@ from django.urls import path,include
 from . import views
 from feedback.views import *
 from contact.views import *
-#from ..appointment.views.appointment_view import viewAppointment 
-from appointment.views.appointment_view import viewAppointment
+
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -38,6 +37,7 @@ urlpatterns = [
     path('hospital/', include('hospital.urls'), name="hospital"),
     path('timeline/', include('timeline.urls'), name="hospital"),
     path('appointment/', include('appointment.urls')),
+    path('bmi/', include('bmi.urls')),
     
     path('about/', views.about, name="about"),
     path('news/', views.news, name="news"),
@@ -47,7 +47,9 @@ urlpatterns = [
     path('addContact/', addContact, name="contact"),
     path('addFeedback/', addFeedback, name="feedback"),
     path('doctors/', views.doctors, name="doctors"),
-    path('index/', viewAppointment, name="index"),
+    path('index/', views.index, name="index"),
+    path('userProfile/', views.userProfile, name="user-profile"),
+    path('edituserProfile<int:id>/', views.edituserProfile, name="edit-user-profile"),
     # path('login/', include('register.urls')),#
     # path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),#
 ]

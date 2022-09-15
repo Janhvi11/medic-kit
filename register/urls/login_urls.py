@@ -7,6 +7,9 @@ login_url = [
     path('logindoctor/', login_doc_request, name='doc-login'),
     path('loginpharma/', login_pharma_request, name='pharma-login'),
     path('logout/', logout, name='logout'),
+    
+    # profile
+    path('userProfile/',userprofile, name="user-profile")
 ]
 
 # redirect_authenticated_user=True, 
