@@ -28,6 +28,7 @@ urlpatterns = [
     path('reg/', include('register.urls')),
     path('ad/', include('admin_side.urls')),
     path('treatment/', include('treatment.urls')),
+    path('prescription/', include('prescription.urls')),
     path('newss/', include('news.urls')),
     path('blogss/', include('blogs.urls')),
     path('medhistory/', include('medhistory.urls')),
