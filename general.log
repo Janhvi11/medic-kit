@@ -391,3 +391,109 @@ django.request WARNING 2022-09-16 00:31:46,969 log 8208 17084 Not Found: /blogss
 django.request WARNING 2022-09-16 00:31:46,971 log 8208 16760 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
 django.request WARNING 2022-09-16 00:31:46,972 log 8208 16036 Not Found: /blogss/viewBlog/dist/img/AdminLTELogo.png
 appointment.middlewares INFO 2022-09-16 00:31:47,061 middlewares 8208 1008 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:31,427 middlewares 8208 16760 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:31,493 middlewares 8208 3580 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:31,496 middlewares 8208 19984 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:31,500 middlewares 8208 13056 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:31,504 middlewares 8208 7660 after opening url
+django.request WARNING 2022-09-16 00:34:31,500 log 8208 3580 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-16 00:34:31,508 middlewares 8208 16760 after opening url
+django.request WARNING 2022-09-16 00:34:31,508 log 8208 19984 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-16 00:34:31,510 log 8208 13056 Not Found: /ad/viewDoc/dist/img/AdminLTELogo.png
+django.request WARNING 2022-09-16 00:34:31,511 log 8208 16760 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-16 00:34:31,514 log 8208 7660 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-16 00:34:32,290 middlewares 8208 7660 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:32,344 middlewares 8208 13056 after opening url
+django.request WARNING 2022-09-16 00:34:32,354 log 8208 13056 Not Found: /ad/addDoc/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-16 00:34:32,363 middlewares 8208 16760 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:32,376 middlewares 8208 19984 after opening url
+django.request WARNING 2022-09-16 00:34:32,364 log 8208 16760 Not Found: /ad/addDoc/dist/img/AdminLTELogo.png
+appointment.middlewares INFO 2022-09-16 00:34:32,380 middlewares 8208 3580 after opening url
+django.request WARNING 2022-09-16 00:34:32,381 log 8208 19984 Not Found: /ad/addDoc/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-16 00:34:32,389 middlewares 8208 12056 after opening url
+django.request WARNING 2022-09-16 00:34:32,389 log 8208 3580 Not Found: /ad/addDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-16 00:34:32,391 log 8208 12056 Not Found: /ad/addDoc/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-16 00:34:37,249 middlewares 8208 18600 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:37,294 middlewares 8208 13576 after opening url
+django.request WARNING 2022-09-16 00:34:37,295 log 8208 13576 Not Found: /todo/addToDoList/dist/img/AdminLTELogo.png
+appointment.middlewares INFO 2022-09-16 00:34:37,332 middlewares 8208 13576 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:37,343 middlewares 8208 20596 after opening url
+django.request WARNING 2022-09-16 00:34:37,338 log 8208 13576 Not Found: /todo/addToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-16 00:34:37,348 middlewares 8208 18600 after opening url
+django.request WARNING 2022-09-16 00:34:37,351 log 8208 20596 Not Found: /todo/addToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-16 00:34:37,360 middlewares 8208 19308 after opening url
+django.request WARNING 2022-09-16 00:34:37,399 log 8208 18600 Not Found: /todo/addToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-16 00:34:37,400 log 8208 19308 Not Found: /todo/addToDoList/dist/img/user3-128x128.jpg
+django.request ERROR 2022-09-16 00:34:39,896 log 8208 18600 Internal Server Error: /todo/viewToDoList/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'todo_todolist.username' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\todo\views\todolist_view.py", line 11, in viewToDoList
+    return render(request, "ToDoList-view.html", context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'todo_todolist.username' in 'field list'")
+appointment.middlewares INFO 2022-09-16 00:34:39,916 middlewares 8208 18600 after opening url
+appointment.middlewares INFO 2022-09-16 00:34:43,643 middlewares 8208 18600 after opening url
+django.request WARNING 2022-09-16 00:34:43,644 log 8208 18600 Not Found: /todo/addToDoList/dist/img/user8-128x128.jpg
