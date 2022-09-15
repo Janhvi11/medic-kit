@@ -25,3 +25,28 @@ django.request WARNING 2022-09-15 22:52:24,625 log 9432 3372 Not Found: /appoint
 django.request WARNING 2022-09-15 22:52:24,630 log 9432 20656 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
 django.request WARNING 2022-09-15 22:52:24,634 log 9432 5856 Not Found: /appointment/viewappointment/dist/img/AdminLTELogo.png
 django.request WARNING 2022-09-15 22:52:24,647 log 9432 18420 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-15 23:17:09,747 log 9432 1068 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-15 23:17:09,751 log 9432 18828 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-15 23:17:09,760 log 9432 10140 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-15 23:17:09,764 log 9432 3576 Not Found: /appointment/viewappointment/dist/img/AdminLTELogo.png
+django.request WARNING 2022-09-15 23:17:09,767 log 9432 17272 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.utils.autoreload INFO 2022-09-15 23:32:24,694 autoreload 9432 14100 D:\GitHub\medic-kit\medic_kit\settings.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 23:32:25,688 autoreload 9460 19504 Watching for file changes with StatReloader
+django.request WARNING 2022-09-15 23:33:22,103 log 9460 19124 Not Found: /
+django.utils.autoreload INFO 2022-09-15 23:34:43,566 autoreload 9460 19504 D:\GitHub\medic-kit\appointment\middlewares.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 23:34:44,437 autoreload 18324 1828 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-15 23:34:44,828 middlewares 18324 20776 Appointment has been viewed
+django.request WARNING 2022-09-15 23:34:52,686 log 18324 20840 Not Found: /
+appointment.views.appointment_view INFO 2022-09-15 23:35:40,138 appointment_view 18324 20656 Appointment has been viewed
+django.request WARNING 2022-09-15 23:35:40,278 log 18324 20656 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-15 23:35:40,286 log 18324 19648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-15 23:35:40,290 log 18324 21012 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-15 23:35:40,294 log 18324 21236 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-15 23:35:40,295 log 18324 17604 Not Found: /appointment/viewappointment/dist/img/AdminLTELogo.png
+django.utils.autoreload INFO 2022-09-15 23:36:11,607 autoreload 18324 1828 D:\GitHub\medic-kit\appointment\middlewares.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 23:36:12,350 autoreload 3988 6896 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-15 23:36:12,624 middlewares 3988 13848 None
+django.utils.autoreload INFO 2022-09-15 23:36:39,683 autoreload 12032 10840 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-15 23:36:39,955 middlewares 12032 13768 None
+django.utils.autoreload INFO 2022-09-15 23:39:10,618 autoreload 18632 20788 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-15 23:39:11,063 middlewares 18632 17688 Before opening URL
