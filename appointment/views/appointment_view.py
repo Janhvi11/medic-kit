@@ -5,10 +5,15 @@ from django.views import View
 from ..models import *
 from ..forms import *
 
+import logging
+logger = logging.getLogger(__name__)
+#logger = logging.getLogger('django')
+
 def viewAppointment(request):
     context = {}
     context["appointment"] = Appointment.objects.all()
-    return render(request, "index.html", context)
+    logger.info("Appointment has been viewed")
+    return render(request, "appointment-view.html", context)
 
 def deleteAppointment(request,id):
 	context={}
@@ -25,6 +30,7 @@ def addAppointment(request):
     if form.is_valid():
         #return HttpResponse(form)
         form.save()
+        logger.info("Admin Appointment Logger added")
         return redirect("/appointment/viewappointment")
 
     context['form'] = form
@@ -37,6 +43,7 @@ def addAppointmentUser(request):
     if form.is_valid():
         #return HttpResponse(form)
         form.save()
+        logger.info("User appointment has been added")
         return redirect("/index/")
 
     context['form_user'] = form

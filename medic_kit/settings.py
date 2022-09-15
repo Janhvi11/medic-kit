@@ -11,7 +11,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import logging
 import os
+
+
+#logger = logging.getlogging(__name__)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -57,6 +62,8 @@ INSTALLED_APPS = [
     'bmi',
 
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -158,3 +165,32 @@ STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers':False,
+    'handlers': {
+		'file': {
+			'class': 'logging.FileHandler',
+			'filename': 'general.log',
+			'formatter': 'verbose',
+#			'formatter': 'simple',				This both are the types of formatter you can use anyone
+        },
+    },
+    'loggers': {
+	    '': {
+		'level': 'DEBUG',
+		'handlers': ['file'],
+		},
+	},
+    'formatters':{
+        'verbose':{
+			'format': '{name} {levelname} {asctime} {module} {process:d} {thread:d} {message}',
+			'style' : '{',
+        },
+        #'simple':{
+		#	'format': '{levelname} {message}',
+		#	'style' : '{',
+        #},
+    },
+}

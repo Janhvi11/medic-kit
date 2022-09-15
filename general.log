@@ -1,0 +1,27 @@
+django.utils.autoreload INFO 2022-09-15 22:43:09,248 autoreload 19524 20032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-15 22:44:01,773 autoreload 19524 20032 D:\GitHub\medic-kit\medic_kit\settings.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 22:44:02,363 autoreload 18452 13544 Watching for file changes with StatReloader
+django INFO 2022-09-15 22:44:37,378 appointment_view 18452 13964 This is first logger
+django.utils.autoreload INFO 2022-09-15 22:49:19,616 autoreload 18452 13544 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 22:49:20,392 autoreload 16876 13536 Watching for file changes with StatReloader
+django.request WARNING 2022-09-15 22:49:33,118 log 16876 8248 Not Found: /ad/home/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-15 22:49:33,130 log 16876 4808 Not Found: /ad/home/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-15 22:49:33,135 log 16876 12692 Not Found: /ad/home/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-15 22:49:33,140 log 16876 9888 Not Found: /ad/home/dist/img/AdminLTELogo.png
+django.request WARNING 2022-09-15 22:49:33,154 log 16876 8248 Not Found: /ad/home/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-15 22:49:38,872 appointment_view 16876 12692 Appointment has been viewed
+django.request WARNING 2022-09-15 22:49:52,957 log 16876 4808 Not Found: /appointment/addappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-15 22:49:52,960 log 16876 9888 Not Found: /appointment/addappointment/dist/img/AdminLTELogo.png
+django.request WARNING 2022-09-15 22:49:52,963 log 16876 4184 Not Found: /appointment/addappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-15 22:49:53,011 log 16876 4184 Not Found: /appointment/addappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-15 22:49:53,015 log 16876 12692 Not Found: /appointment/addappointment/dist/img/user3-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-15 22:49:58,010 appointment_view 16876 12692 Appointment has been viewed
+appointment.views.appointment_view INFO 2022-09-15 22:51:51,003 appointment_view 16876 12692 Appointment has been viewed
+django.utils.autoreload INFO 2022-09-15 22:52:23,301 autoreload 16876 13536 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-15 22:52:23,982 autoreload 9432 14100 Watching for file changes with StatReloader
+appointment.views.appointment_view INFO 2022-09-15 22:52:24,503 appointment_view 9432 18420 Appointment has been viewed
+django.request WARNING 2022-09-15 22:52:24,619 log 9432 18420 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-15 22:52:24,625 log 9432 3372 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-15 22:52:24,630 log 9432 20656 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-15 22:52:24,634 log 9432 5856 Not Found: /appointment/viewappointment/dist/img/AdminLTELogo.png
+django.request WARNING 2022-09-15 22:52:24,647 log 9432 18420 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
