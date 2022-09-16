@@ -211,3 +211,9 @@ Traceback (most recent call last):
     _mysql.connection.query(self, query)
 django.db.utils.OperationalError: (1054, "Unknown column 'timeline_timeline.type' in 'field list'")
 appointment.middlewares INFO 2022-09-16 22:36:42,661 middlewares 20436 22852 after opening url
+django.utils.autoreload INFO 2022-09-16 22:38:35,110 autoreload 20436 10072 C:\Users\thakk\Documents\GitHub\medic-kit\medic_kit\urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-16 22:38:37,382 autoreload 17356 9560 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-16 22:38:37,912 middlewares 17356 21380 Before opening URL
+django.utils.autoreload INFO 2022-09-16 22:39:18,172 autoreload 17356 9560 C:\Users\thakk\Documents\GitHub\medic-kit\medic_kit\urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-16 22:39:19,852 autoreload 14876 6244 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-16 22:39:20,435 middlewares 14876 16816 Before opening URL
