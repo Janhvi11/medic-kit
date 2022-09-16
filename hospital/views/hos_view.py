@@ -5,6 +5,11 @@ from django.views import View
 from ..forms import *
 from ..models import *
 
+
+import logging
+logger = logging.getLogger(__name__)
+
+
 def viewhos(request):
 	context = {}
 	context["hos"] = hos.objects.all()
@@ -17,6 +22,7 @@ def addhos(request):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("Hospital Information was added")
         return redirect("/hospital/viewHos")
 
     context['form'] = form
@@ -37,6 +43,7 @@ def edithos(request,id):
     form = hospitalForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
+        logger.info("Hospital Information was Edited")
         return redirect("/hospital/viewHos/")
     
     context['form'] = form

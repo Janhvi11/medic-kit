@@ -6,6 +6,11 @@ from ..forms import *
 from ..models import *
 
 
+import logging
+logger = logging.getLogger(__name__)
+
+
+
 def viewNews(request):
 	context = {}
 	context["news"] = news.objects.all()
@@ -16,6 +21,7 @@ def deleteNews(request,id):
 	obj = get_object_or_404(news, id=id)
 	if request.method == "GET":
 		obj.delete()
+		logger.info("News Was Deleted")
 		return redirect("/newss/viewNews/")
 	return render(request, "news-view.html", context)
 
@@ -43,6 +49,7 @@ def addNews(request):
     if form.is_valid():
 
         form.save()
+		
         messages.success(request, "News Added Successfully")
         return redirect("/newss/viewNews/")
     

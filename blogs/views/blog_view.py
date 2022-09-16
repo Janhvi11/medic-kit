@@ -5,6 +5,10 @@ from django.http import HttpResponse
 from ..forms import *
 from ..models import *
 
+
+import logging
+logger = logging.getLogger(__name__)
+
 def viewBlog(request):
 	context = {}
 	context["blogs"] = blog.objects.all()
@@ -44,6 +48,8 @@ def addBlog(request):
     if form.is_valid():
 
         form.save()
+        logger.info("Blog was added")
+
         messages.success(request, "Blog Added Successfully")
         return redirect("/blogss/viewBlog/")
     

@@ -3,6 +3,11 @@ from ..models import *
 
 from django.shortcuts import render, redirect, get_object_or_404
 
+
+import logging
+logger = logging.getLogger(__name__)
+
+
 def viewPrescription(request):
     context = {}
     context["prescription"] = prescription.objects.all()
@@ -15,6 +20,7 @@ def addPrescription(request):
 	if form.is_valid():
 			
 			form.save()
+			logger.info("Prescription was added")
 			return redirect("/prescription/prescriptionView/")
 
 	context['form'] = form
@@ -25,6 +31,7 @@ def deletePrescription(request,id):
 	obj = get_object_or_404(prescription, id=id)#
 	if request.method == "GET":
 		obj.delete()
+		logger.info("Prescription was Deleted")
 		return redirect("/prescription/prescriptionView/")
 	return render(request, "prescriptionview.html", context)
 

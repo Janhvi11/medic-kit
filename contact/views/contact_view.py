@@ -5,6 +5,9 @@ from django.views import View
 from ..models import *
 from ..forms import *
 
+import logging
+logger = logging.getLogger(__name__)
+
 def viewContact(request):
     context = {}
     context["contact"] = contact.objects.all()
@@ -25,6 +28,7 @@ def addContact(request):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("Contact Added")
         return redirect("/index")
 
     context['form'] = form
@@ -37,6 +41,8 @@ def user_addContact(request):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("User Contact Added")
+
         return redirect("/index")
 
     context['form'] = form
@@ -50,6 +56,8 @@ def editContact(request,id):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("Contact Edited")
+
         return redirect("/contact/viewContact")
 
     context['form'] = form

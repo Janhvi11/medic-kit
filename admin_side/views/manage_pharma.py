@@ -5,6 +5,13 @@ from register.forms import *
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib.auth.hashers import make_password
 
+
+
+import logging
+logger = logging.getLogger(__name__)
+
+
+
 def viewPharma(request):
 	context = {}
 	context["pharmacists"] = pharma.objects.all()

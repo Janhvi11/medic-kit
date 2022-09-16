@@ -3,6 +3,10 @@ from ..models import bmi, ideal_bmi
 from ..forms import bmiForm, bmiIdealForm
 from register.models import user
 
+import logging
+logger = logging.getLogger(__name__)
+
+
 #===================================USER===========================================
 
 def viewbmi(request):
@@ -16,6 +20,7 @@ def addbmi(request):
 	# form.cleaned_data['datetime'] = timezone.now()
 	if form.is_valid():
 		form.save()
+		logger.info("BMI was added")
 		return redirect("/bmi/viewbmi/")
 
 	context['form'] = form
@@ -36,6 +41,7 @@ def editbmi(request,id):
     form = bmiForm(request.POST or None, instance=obj)
     if form.is_valid():
         form.save()
+		
         return redirect("/bmi/viewbmi/")
     
     context['form'] = form

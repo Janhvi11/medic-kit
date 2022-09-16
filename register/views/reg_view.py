@@ -6,6 +6,11 @@ from django.contrib.auth.hashers import make_password,check_password
 # from django.contrib.auth.views import LoginView #
 # from ..forms import RegisterForm, LoginForm #
 
+
+import logging
+logger = logging.getLogger(__name__)
+
+
 from ..forms import *
 
 def reg_home(request):
@@ -50,6 +55,7 @@ class RegisterView(View):
             sign_up.password1 = make_password(form.cleaned_data['password1'])
             sign_up.status = 1
             sign_up.save()
+            logger.info("User Was Registered")
 
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
@@ -75,6 +81,7 @@ class RegisterDocView(View):
             sign_up.password = make_password(form.cleaned_data['password'])
             sign_up.status = 1
             sign_up.save()
+            logger.info("Doctor was Registered")
             # form.save()
 
             username = form.cleaned_data.get('username')
@@ -101,6 +108,7 @@ class RegisterPharmaView(View):
             sign_up.password = make_password(form.cleaned_data['password'])
             sign_up.status = 1
             sign_up.save()
+            logger.info("Pharmacist Was Registered")
             # form.save()
 
             username = form.cleaned_data.get('username')

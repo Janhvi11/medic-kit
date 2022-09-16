@@ -5,6 +5,11 @@ from django.views import View
 from ..forms import *
 from ..models import *
 
+import logging
+logger = logging.getLogger(__name__)
+
+
+
 def viewFeedback(request):
 	context = {}
 	context["feedback"] = feedback.objects.all()
@@ -15,6 +20,7 @@ def deleteFeedback(request,id):
 	obj = get_object_or_404(feedback, id=id)
 	if request.method == "GET":
 		obj.delete()
+        
 		return redirect("/feedback/viewFeedback/")
 	return render(request, "feedback-view.html", context)
 
@@ -25,6 +31,7 @@ def addFeedback(request):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("Feedback was added")
         return redirect("/index")
 
     context['form'] = form
@@ -37,6 +44,7 @@ def user_addFeedback(request):
     if form.is_valid():
         # return HttpResponse(form)
         form.save()
+        logger.info("User Feedback was added")
         return redirect("/index")
 
     context['form'] = form

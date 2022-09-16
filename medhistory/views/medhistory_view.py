@@ -3,6 +3,11 @@ from ..models import *
 
 from django.shortcuts import render, redirect, get_object_or_404
 
+
+import logging
+logger = logging.getLogger(__name__)
+
+
 def viewMedhistory(request):
     context = {}
     context["medhistory"] = medhistory.objects.all()
@@ -15,6 +20,7 @@ def addMedhistory(request):
 	if form.is_valid():
 			
 			form.save()
+			logger.info("Medical History was added")
 			return redirect("/medhistory/medhistoryView/")
 
 	context['form'] = form
@@ -25,6 +31,7 @@ def deleteMedhistory(request,id):
 	obj = get_object_or_404(medhistory, id=id)#
 	if request.method == "GET":
 		obj.delete()
+		logger.info("Medical History was Deleted")
 		return redirect("/medhistory/medhistoryView/")
 	return render(request, "medhistoryview.html", context)
 
