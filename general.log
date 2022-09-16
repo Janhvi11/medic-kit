@@ -217,3 +217,6 @@ appointment.middlewares INFO 2022-09-16 22:38:37,912 middlewares 17356 21380 Bef
 django.utils.autoreload INFO 2022-09-16 22:39:18,172 autoreload 17356 9560 C:\Users\thakk\Documents\GitHub\medic-kit\medic_kit\urls.py changed, reloading.
 django.utils.autoreload INFO 2022-09-16 22:39:19,852 autoreload 14876 6244 Watching for file changes with StatReloader
 appointment.middlewares INFO 2022-09-16 22:39:20,435 middlewares 14876 16816 Before opening URL
+django.utils.autoreload INFO 2022-09-16 22:39:55,294 autoreload 14876 6244 C:\Users\thakk\Documents\GitHub\medic-kit\medic_kit\urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-16 22:39:56,962 autoreload 4112 22320 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-16 22:39:57,572 middlewares 4112 11292 Before opening URL
