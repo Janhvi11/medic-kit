@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3</title>
+  <title>To-do List</title>
  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -62,8 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               {% elif data.type == 3 %}
                                 Admin
                               {% endif %}
-                            </td>
-                            <td> <a href="{% url 'todoItem-view' data.id %}"> View content </a> </td>
+                            </td> 
                             <td> <a href="{% url 'todolist-delete' data.id %}"> delete </a> </td>
                             <td> <a href="{% url 'todolist-edit' data.id %}"> edit </a> </td>
                         </tr>

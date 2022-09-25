@@ -1,0 +1,586 @@
+django.utils.autoreload INFO 2022-09-25 22:54:01,860 autoreload 88624 84696 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 22:54:02,072 middlewares 88624 83160 Before opening URL
+appointment.views.appointment_view INFO 2022-09-25 22:54:05,997 appointment_view 88624 87236 Appointment has been viewed
+appointment.middlewares INFO 2022-09-25 22:54:06,023 middlewares 88624 87236 after opening url
+appointment.middlewares INFO 2022-09-25 22:54:06,050 middlewares 88624 87236 after opening url
+django.request WARNING 2022-09-25 22:54:06,051 log 88624 87236 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:54:06,070 middlewares 88624 87236 after opening url
+django.request WARNING 2022-09-25 22:54:06,071 log 88624 87236 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:54:06,081 middlewares 88624 87236 after opening url
+django.request WARNING 2022-09-25 22:54:06,082 log 88624 87236 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:54:06,094 middlewares 88624 87236 after opening url
+django.request WARNING 2022-09-25 22:54:06,095 log 88624 87236 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:54:18,246 middlewares 88624 83076 after opening url
+appointment.middlewares INFO 2022-09-25 22:54:19,668 middlewares 88624 83076 after opening url
+appointment.middlewares INFO 2022-09-25 22:54:19,703 middlewares 88624 72828 after opening url
+django.request WARNING 2022-09-25 22:54:19,704 log 88624 72828 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-25 22:54:23,084 appointment_view 88624 72828 Appointment has been viewed
+appointment.middlewares INFO 2022-09-25 22:54:23,089 middlewares 88624 72828 after opening url
+appointment.middlewares INFO 2022-09-25 22:54:23,130 middlewares 88624 83076 after opening url
+django.request WARNING 2022-09-25 22:54:23,131 log 88624 83076 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:55:59,023 middlewares 88624 84612 after opening url
+appointment.middlewares INFO 2022-09-25 22:55:59,063 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:55:59,064 log 88624 84612 Not Found: /ad/home/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:55:59,075 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:55:59,076 log 88624 84612 Not Found: /ad/home/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:55:59,088 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:55:59,089 log 88624 84612 Not Found: /ad/home/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:55:59,100 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:55:59,101 log 88624 84612 Not Found: /ad/home/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:56:10,055 middlewares 88624 84612 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:10,108 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:10,110 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:10,114 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:56:10,112 log 88624 79916 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:56:10,117 middlewares 88624 88544 after opening url
+django.request WARNING 2022-09-25 22:56:10,112 log 88624 92720 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 22:56:10,119 log 88624 67008 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 22:56:10,121 log 88624 88544 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:56:39,785 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:39,850 middlewares 88624 67008 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:39,854 middlewares 88624 92720 after opening url
+django.request WARNING 2022-09-25 22:56:39,850 log 88624 67008 Not Found: /todo/addToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:56:39,858 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:39,862 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:56:39,860 log 88624 92720 Not Found: /todo/addToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 22:56:39,864 log 88624 84612 Not Found: /todo/addToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 22:56:39,864 log 88624 79916 Not Found: /todo/addToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:56:42,315 middlewares 88624 84612 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:42,334 middlewares 88624 84612 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:42,433 middlewares 88624 67008 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:42,434 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:42,439 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:42,441 middlewares 88624 79916 after opening url
+django.request WARNING 2022-09-25 22:56:42,436 log 88624 67008 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 22:56:42,441 log 88624 92720 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 22:56:42,442 log 88624 79916 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 22:56:42,443 log 88624 88544 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:56:51,721 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:53,907 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:53,985 middlewares 88624 79916 after opening url
+django.request WARNING 2022-09-25 22:56:53,986 log 88624 79916 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:56:55,187 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:55,233 middlewares 88624 88544 after opening url
+django.request WARNING 2022-09-25 22:56:55,234 log 88624 88544 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:56:58,758 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:58,772 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:56:58,856 middlewares 88624 79916 after opening url
+django.request WARNING 2022-09-25 22:56:58,858 log 88624 79916 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-25 22:57:04,756 appointment_view 88624 79916 Appointment has been viewed
+appointment.middlewares INFO 2022-09-25 22:57:04,762 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:04,813 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:04,820 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:04,826 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:57:04,822 log 88624 79916 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 22:57:04,828 log 88624 88544 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 22:57:04,828 log 88624 67008 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:57:04,830 middlewares 88624 92720 after opening url
+django.request WARNING 2022-09-25 22:57:04,833 log 88624 92720 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 22:57:06,254 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:06,295 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:57:06,297 log 88624 67008 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:57:06,327 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:06,330 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 22:57:06,340 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:57:06,343 log 88624 88544 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-25 22:57:06,343 log 88624 67008 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 22:57:06,343 log 88624 92720 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:58:27,257 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:00,270 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:00,316 middlewares 88624 92720 after opening url
+django.request WARNING 2022-09-25 22:59:00,318 log 88624 92720 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:59:02,307 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:02,340 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:59:02,343 log 88624 67008 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:59:03,106 middlewares 88624 67008 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:03,139 middlewares 88624 92720 after opening url
+django.request WARNING 2022-09-25 22:59:03,141 log 88624 92720 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:59:06,594 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:06,630 middlewares 88624 67008 after opening url
+django.request WARNING 2022-09-25 22:59:06,631 log 88624 67008 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:59:15,475 middlewares 88624 92720 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:15,514 middlewares 88624 67008 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:15,529 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 22:59:15,534 middlewares 88624 84612 after opening url
+django.request WARNING 2022-09-25 22:59:15,522 log 88624 67008 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 22:59:15,535 log 88624 79916 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 22:59:15,539 middlewares 88624 88544 after opening url
+django.request WARNING 2022-09-25 22:59:15,536 log 88624 84612 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-25 22:59:15,542 log 88624 88544 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request ERROR 2022-09-25 22:59:17,272 log 88624 88544 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-todoItem-add' with arguments '('',)' not found. 1 pattern(s) tried: ['todo/user_addToDoItem/(?P<id>[0-9]+)\\Z']
+appointment.middlewares INFO 2022-09-25 22:59:17,279 middlewares 88624 88544 after opening url
+django.request ERROR 2022-09-25 23:00:56,231 log 88624 88544 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-todoItem-add' with arguments '('',)' not found. 1 pattern(s) tried: ['todo/user_addToDoItem/(?P<id>[0-9]+)\\Z']
+appointment.middlewares INFO 2022-09-25 23:00:56,235 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 23:01:53,552 middlewares 88624 88544 after opening url
+appointment.middlewares INFO 2022-09-25 23:01:53,638 middlewares 88624 79916 after opening url
+appointment.middlewares INFO 2022-09-25 23:01:53,643 middlewares 88624 84612 after opening url
+appointment.middlewares INFO 2022-09-25 23:01:53,646 middlewares 88624 67008 after opening url
+appointment.middlewares INFO 2022-09-25 23:01:53,649 middlewares 88624 92720 after opening url
+django.request WARNING 2022-09-25 23:01:53,650 log 88624 79916 Not Found: /todo/addToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 23:01:53,651 log 88624 67008 Not Found: /todo/addToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:01:53,652 log 88624 92720 Not Found: /todo/addToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:01:53,653 log 88624 84612 Not Found: /todo/addToDoList/dist/img/user2-160x160.jpg
+django.request ERROR 2022-09-25 23:02:44,453 log 88624 84612 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-todoItem-add' with arguments '('',)' not found. 1 pattern(s) tried: ['todo/user_addToDoItem/(?P<id>[0-9]+)\\Z']
+appointment.middlewares INFO 2022-09-25 23:02:44,459 middlewares 88624 84612 after opening url
+django.request ERROR 2022-09-25 23:07:30,861 log 88624 84612 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 1390, in url
+    args.append(parser.compile_filter(value))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{todoList}}' from '{{todoList}}'
+appointment.middlewares INFO 2022-09-25 23:07:30,867 middlewares 88624 84612 after opening url
+django.request ERROR 2022-09-25 23:11:48,087 log 88624 92832 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-todoItem-add' with no arguments not found. 1 pattern(s) tried: ['todo/user_addToDoItem/(?P<id>[0-9]+)\\Z']
+appointment.middlewares INFO 2022-09-25 23:11:48,092 middlewares 88624 92832 after opening url
+django.request ERROR 2022-09-25 23:13:57,398 log 88624 92832 Internal Server Error: /todo/viewToDoItem/5 
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\views\todolist_view.py", line 52, in viewToDoItem
+    return render(request, "user-todoItem-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-todoItem-add' with no arguments not found. 1 pattern(s) tried: ['todo/user_addToDoItem/(?P<id>[0-9]+)\\Z']
+appointment.middlewares INFO 2022-09-25 23:13:57,403 middlewares 88624 92832 after opening url
+appointment.middlewares INFO 2022-09-25 23:16:34,264 middlewares 88624 92832 after opening url
+appointment.middlewares INFO 2022-09-25 23:16:34,322 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:16:34,324 log 88624 92832 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:16:34,335 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:16:34,336 log 88624 92832 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:16:34,351 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:16:34,355 log 88624 92832 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:16:34,367 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:16:34,369 log 88624 92832 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:16:41,128 middlewares 88624 92832 after opening url
+appointment.middlewares INFO 2022-09-25 23:16:41,172 middlewares 88624 89980 after opening url
+django.request WARNING 2022-09-25 23:16:41,173 log 88624 89980 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:17:10,039 middlewares 88624 89980 after opening url
+appointment.middlewares INFO 2022-09-25 23:17:10,086 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:17:10,087 log 88624 92832 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:17:13,840 middlewares 88624 92832 after opening url
+appointment.middlewares INFO 2022-09-25 23:17:13,891 middlewares 88624 89980 after opening url
+django.request WARNING 2022-09-25 23:17:13,910 log 88624 89980 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:18:48,281 middlewares 88624 89980 after opening url
+appointment.middlewares INFO 2022-09-25 23:18:48,315 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:18:48,318 log 88624 92832 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:18:58,975 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:18:58,976 log 88624 92832 Not Found: /todo/user_deleteToDoList/3
+appointment.middlewares INFO 2022-09-25 23:20:43,280 middlewares 88624 92832 after opening url
+django.request WARNING 2022-09-25 23:20:43,281 log 88624 92832 Not Found: /todo/user_deleteToDoList/3
+django.utils.autoreload INFO 2022-09-25 23:21:02,077 autoreload 88624 84696 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\urls\todo_url.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:21:02,811 autoreload 93524 58864 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:21:03,106 middlewares 93524 91764 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:21:04,402 autoreload 93524 58864 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\todo\urls\todo_url.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:21:05,114 autoreload 69916 94976 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:21:05,381 middlewares 69916 94436 Before opening URL
+appointment.middlewares INFO 2022-09-25 23:26:24,738 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:24,784 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:26:24,784 log 69916 94884 Not Found: /ad/home/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:24,798 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:26:24,798 log 69916 94884 Not Found: /ad/home/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:24,812 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:26:24,814 log 69916 94884 Not Found: /ad/home/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:24,825 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:26:24,838 log 69916 94884 Not Found: /ad/home/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:26:29,765 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:29,802 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:29,828 middlewares 69916 87676 after opening url
+django.request WARNING 2022-09-25 23:26:29,819 log 69916 87784 Not Found: /hospital/viewHos/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:29,830 middlewares 69916 82468 after opening url
+django.request WARNING 2022-09-25 23:26:29,832 log 69916 87676 Not Found: /hospital/viewHos/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:26:29,835 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:26:29,833 log 69916 82468 Not Found: /hospital/viewHos/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:26:29,837 log 69916 91820 Not Found: /hospital/viewHos/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:34,331 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:34,381 middlewares 69916 82468 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:34,385 middlewares 69916 87676 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:34,389 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:34,395 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:26:34,395 log 69916 82468 Not Found: /hospital/addHos/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-25 23:26:34,397 log 69916 87784 Not Found: /hospital/addHos/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:26:34,397 log 69916 87676 Not Found: /hospital/addHos/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 23:26:34,398 log 69916 94884 Not Found: /hospital/addHos/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:55,126 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:55,154 middlewares 69916 87676 after opening url
+django.request WARNING 2022-09-25 23:26:55,165 log 69916 87676 Not Found: /hospital/viewHos/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:55,177 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:26:55,179 middlewares 69916 82468 after opening url
+django.request WARNING 2022-09-25 23:26:55,180 log 69916 87784 Not Found: /hospital/viewHos/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:26:55,183 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:26:55,185 log 69916 82468 Not Found: /hospital/viewHos/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:26:55,188 log 69916 91820 Not Found: /hospital/viewHos/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:27:13,150 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:27:13,206 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:27:13,209 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:27:13,212 middlewares 69916 87676 after opening url
+django.request WARNING 2022-09-25 23:27:13,213 log 69916 87784 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:27:13,216 middlewares 69916 82468 after opening url
+django.request WARNING 2022-09-25 23:27:13,216 log 69916 87676 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:27:13,218 log 69916 94884 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-25 23:27:13,218 log 69916 82468 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:27:15,127 middlewares 69916 82468 after opening url
+appointment.middlewares INFO 2022-09-25 23:27:15,196 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:27:15,217 log 69916 94884 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:29:59,080 middlewares 69916 82468 after opening url
+appointment.middlewares INFO 2022-09-25 23:29:59,113 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:29:59,115 middlewares 69916 87676 after opening url
+appointment.middlewares INFO 2022-09-25 23:29:59,128 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:29:59,135 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:29:59,141 log 69916 94884 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 23:29:59,152 log 69916 87676 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:29:59,154 log 69916 87784 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:29:59,155 log 69916 91820 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:30:01,272 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:01,278 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:01,327 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:01,331 middlewares 69916 87676 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:01,336 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:01,339 middlewares 69916 82468 after opening url
+django.request WARNING 2022-09-25 23:30:01,340 log 69916 87784 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 23:30:01,341 log 69916 87676 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:30:01,345 log 69916 82468 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-25 23:30:01,345 log 69916 94884 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:03,394 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:03,404 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:03,430 middlewares 69916 82468 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:03,436 middlewares 69916 87676 after opening url
+django.request WARNING 2022-09-25 23:30:03,442 log 69916 87676 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-25 23:30:03,443 log 69916 82468 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:03,447 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:03,450 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:03,450 log 69916 87784 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:30:03,451 log 69916 91820 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:30:04,742 middlewares 69916 87784 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:04,793 middlewares 69916 87676 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:04,795 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:04,797 middlewares 69916 82468 after opening url
+django.request WARNING 2022-09-25 23:30:04,798 log 69916 87676 Not Found: /todo/addToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:04,800 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:04,801 log 69916 82468 Not Found: /todo/addToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-25 23:30:04,803 log 69916 94884 Not Found: /todo/addToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-25 23:30:04,805 log 69916 91820 Not Found: /todo/addToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-25 23:30:25,072 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:25,112 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:30:25,113 log 69916 94884 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:26,459 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:26,492 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:26,494 log 69916 91820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:29,386 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:29,397 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:29,433 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:29,434 log 69916 91820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:35,102 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:35,137 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:30:35,141 log 69916 94884 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:41,161 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:41,170 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:41,205 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:30:41,207 log 69916 94884 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:44,958 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:44,977 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:45,004 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:45,008 log 69916 91820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:50,138 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:50,176 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:50,177 log 69916 91820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:52,796 middlewares 69916 91820 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:52,842 middlewares 69916 94884 after opening url
+django.request WARNING 2022-09-25 23:30:52,879 log 69916 94884 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:30:58,156 middlewares 69916 94884 after opening url
+appointment.middlewares INFO 2022-09-25 23:30:58,195 middlewares 69916 91820 after opening url
+django.request WARNING 2022-09-25 23:30:58,196 log 69916 91820 Not Found: /dist/img/user4-128x128.jpg
+django.utils.autoreload INFO 2022-09-25 23:36:51,483 autoreload 69916 94976 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:36:52,227 autoreload 15996 92956 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:36:53,562 autoreload 15996 92956 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:36:54,351 autoreload 5852 89780 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:36:54,616 middlewares 5852 83380 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:39:24,726 autoreload 5852 89780 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:25,447 autoreload 95208 93432 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:39:25,713 middlewares 95208 64740 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:39:33,380 autoreload 95208 93432 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:34,023 autoreload 89932 75088 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:39:40,508 autoreload 89932 75088 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:41,134 autoreload 94264 96176 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:39:41,348 middlewares 94264 81372 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:39:47,941 autoreload 94264 96176 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:48,598 autoreload 89132 78344 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:39:48,843 middlewares 89132 94508 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:39:54,384 autoreload 89132 78344 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:55,092 autoreload 90216 72460 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:39:58,444 autoreload 90216 72460 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:39:59,034 autoreload 93752 75576 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:39:59,275 middlewares 93752 93552 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:40:04,808 autoreload 93752 75576 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:05,432 autoreload 92688 89916 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:40:05,638 middlewares 92688 80620 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:40:12,206 autoreload 92688 89916 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:12,891 autoreload 81444 92908 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:40:13,195 middlewares 81444 93128 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:40:24,021 autoreload 81444 92908 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:24,614 autoreload 74516 94392 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:40:24,819 middlewares 74516 61292 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:40:39,818 autoreload 74516 94392 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:40,491 autoreload 86196 93776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:40:42,808 autoreload 86196 93776 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:43,440 autoreload 83524 96020 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:40:44,767 autoreload 83524 96020 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:45,510 autoreload 95728 95468 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-25 23:40:46,799 autoreload 95728 95468 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:47,489 autoreload 93344 87336 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:40:47,730 middlewares 93344 88200 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:40:50,122 autoreload 93344 87336 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:40:50,751 autoreload 80064 78144 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:40:51,004 middlewares 80064 76212 Before opening URL
+django.utils.autoreload INFO 2022-09-25 23:41:00,693 autoreload 80064 78144 C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\register\urls\reg_urls.py changed, reloading.
+django.utils.autoreload INFO 2022-09-25 23:41:01,362 autoreload 79516 73664 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-25 23:41:01,593 middlewares 79516 74764 Before opening URL
+appointment.middlewares INFO 2022-09-25 23:58:07,540 middlewares 79516 90948 after opening url
+appointment.middlewares INFO 2022-09-25 23:58:07,570 middlewares 79516 90948 after opening url
+django.request WARNING 2022-09-25 23:58:07,571 log 79516 90948 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:58:15,214 middlewares 79516 90948 after opening url
+appointment.middlewares INFO 2022-09-25 23:58:15,241 middlewares 79516 85756 after opening url
+django.request WARNING 2022-09-25 23:58:15,245 log 79516 85756 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:58:16,459 middlewares 79516 85756 after opening url
+appointment.middlewares INFO 2022-09-25 23:58:16,492 middlewares 79516 90948 after opening url
+django.request WARNING 2022-09-25 23:58:16,494 log 79516 90948 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:59:17,618 middlewares 79516 85756 after opening url
+appointment.middlewares INFO 2022-09-25 23:59:17,640 middlewares 79516 90948 after opening url
+django.request WARNING 2022-09-25 23:59:17,641 log 79516 90948 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-25 23:59:38,003 middlewares 79516 90948 after opening url
+appointment.middlewares INFO 2022-09-25 23:59:38,030 middlewares 79516 85756 after opening url
+django.request WARNING 2022-09-25 23:59:38,031 log 79516 85756 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:00:47,059 middlewares 79516 61488 after opening url
+appointment.middlewares INFO 2022-09-26 00:00:47,084 middlewares 79516 61488 after opening url
+django.request WARNING 2022-09-26 00:00:47,086 log 79516 61488 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:00:53,121 middlewares 79516 61488 after opening url
+appointment.middlewares INFO 2022-09-26 00:00:53,161 middlewares 79516 88876 after opening url
+django.request WARNING 2022-09-26 00:00:53,163 log 79516 88876 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-26 00:00:54,119 appointment_view 79516 88876 Appointment has been viewed
+appointment.middlewares INFO 2022-09-26 00:00:54,123 middlewares 79516 88876 after opening url
+appointment.middlewares INFO 2022-09-26 00:00:54,188 middlewares 79516 61488 after opening url
+django.request WARNING 2022-09-26 00:00:54,211 log 79516 61488 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:00:55,196 middlewares 79516 88876 after opening url
+appointment.middlewares INFO 2022-09-26 00:00:55,232 middlewares 79516 61488 after opening url
+django.request WARNING 2022-09-26 00:00:55,234 log 79516 61488 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:00:55,877 middlewares 79516 61488 after opening url
+appointment.middlewares INFO 2022-09-26 00:00:55,914 middlewares 79516 88876 after opening url
+django.request WARNING 2022-09-26 00:00:55,917 log 79516 88876 Not Found: /dist/img/user4-128x128.jpg
+django.utils.autoreload INFO 2022-09-26 00:03:08,479 autoreload 95764 79684 Watching for file changes with StatReloader
+appointment.middlewares INFO 2022-09-26 00:03:08,753 middlewares 95764 94312 Before opening URL
+appointment.middlewares INFO 2022-09-26 00:03:09,683 middlewares 95764 97132 after opening url
+appointment.middlewares INFO 2022-09-26 00:03:09,717 middlewares 95764 97132 after opening url
+django.request WARNING 2022-09-26 00:03:09,724 log 95764 97132 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:03:34,542 middlewares 95764 96756 after opening url
+appointment.middlewares INFO 2022-09-26 00:03:34,575 middlewares 95764 96756 after opening url
+django.request WARNING 2022-09-26 00:03:34,576 log 95764 96756 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:04:06,237 middlewares 95764 88952 after opening url
+appointment.middlewares INFO 2022-09-26 00:04:06,269 middlewares 95764 88952 after opening url
+django.request WARNING 2022-09-26 00:04:06,271 log 95764 88952 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:04:07,682 middlewares 95764 88952 after opening url
+appointment.middlewares INFO 2022-09-26 00:04:07,733 middlewares 95764 94548 after opening url
+django.request WARNING 2022-09-26 00:04:07,744 log 95764 94548 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:04:14,863 middlewares 95764 78344 after opening url
+appointment.middlewares INFO 2022-09-26 00:04:14,878 middlewares 95764 78344 after opening url
+appointment.middlewares INFO 2022-09-26 00:04:14,933 middlewares 95764 78344 after opening url
+django.request WARNING 2022-09-26 00:04:14,934 log 95764 78344 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:04:27,431 middlewares 95764 92332 after opening url
+appointment.middlewares INFO 2022-09-26 00:04:27,470 middlewares 95764 92332 after opening url
+django.request WARNING 2022-09-26 00:04:27,471 log 95764 92332 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:03,239 middlewares 95764 55132 after opening url
+appointment.middlewares INFO 2022-09-26 00:05:03,264 middlewares 95764 55132 after opening url
+django.request WARNING 2022-09-26 00:05:03,266 log 95764 55132 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:03,284 middlewares 95764 55132 after opening url
+django.request WARNING 2022-09-26 00:05:03,285 log 95764 55132 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:03,292 middlewares 95764 55132 after opening url
+django.request WARNING 2022-09-26 00:05:03,293 log 95764 55132 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:03,303 middlewares 95764 55132 after opening url
+django.request WARNING 2022-09-26 00:05:03,303 log 95764 55132 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares INFO 2022-09-26 00:05:24,537 middlewares 95764 83864 after opening url
+appointment.middlewares INFO 2022-09-26 00:05:24,563 middlewares 95764 83864 after opening url
+django.request WARNING 2022-09-26 00:05:24,563 log 95764 83864 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:25,166 middlewares 95764 83864 after opening url
+appointment.middlewares INFO 2022-09-26 00:05:25,201 middlewares 95764 51624 after opening url
+django.request WARNING 2022-09-26 00:05:25,203 log 95764 51624 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:48,555 middlewares 95764 84560 after opening url
+appointment.middlewares INFO 2022-09-26 00:05:48,584 middlewares 95764 84560 after opening url
+django.request WARNING 2022-09-26 00:05:48,585 log 95764 84560 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:48,594 middlewares 95764 84560 after opening url
+django.request WARNING 2022-09-26 00:05:48,595 log 95764 84560 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:48,603 middlewares 95764 84560 after opening url
+django.request WARNING 2022-09-26 00:05:48,604 log 95764 84560 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares INFO 2022-09-26 00:05:48,612 middlewares 95764 84560 after opening url
+django.request WARNING 2022-09-26 00:05:48,613 log 95764 84560 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
