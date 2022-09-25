@@ -26,12 +26,12 @@ def addUser(request):
 	return render(request, "userAdd.html",context_1)
 
 def deleteUser(request,username):
-	context_2={}
+	# context_2={}
 	obj = get_object_or_404(user, username=username)
 	if request.method == "GET":
 		obj.delete()
 		return redirect("/ad/viewUser/")
-	return render(request, "user-view.html", context_2)
+	return render(request, "user-view.html")
 
 def editUser(request,id):
     context_3 = {}

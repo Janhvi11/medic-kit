@@ -34,10 +34,10 @@ status = (
 
 
 class Appointment(models.Model):
+    username = models.CharField(max_length=20)
     fname = models.CharField(max_length=100)
     lname = models.CharField(max_length=100)
     email = models.EmailField()
-    address = models.CharField(max_length=200)
     time = models.CharField(max_length=500,choices=time)
     day = models.CharField(max_length=500,choices=day)
     request = models.TextField(max_length=500)

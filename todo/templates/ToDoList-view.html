@@ -36,6 +36,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <div class="col-lg-12">
             <div class="card">
+            <a href="{% url 'todolist-add' %}" class="btn btn-primary"><b>Add To-Do-List</b></a>
               <div class="card-body">
                 <h5 class="card-title">View To-do Lists</h5>
                 <br>
@@ -44,13 +45,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <tbody>
                         <tr>
                             <td>Title</td>
-                            <td>Name of owner(admin)</td>
-                            
+                            <td>Name of owner</td>
+                            <td>Type of user </td>
                         </tr>
                         {% for data in todolist %}
                         <tr>
                             <td>{{ data.title }}</td>
-                            <td>{{ data.name_of_admin }}</td>
+                            <td>{{ data.username }}</td>
+                            <td>
+                              {% if data.type == 0 %}
+                                User
+                              {% elif data.type == 1 %}
+                                Doctor
+                              {% elif data.type == 2 %}
+                                Pharmacist
+                              {% elif data.type == 3 %}
+                                Admin
+                              {% endif %}
+                            </td>
                             <td> <a href="{% url 'todoItem-view' data.id %}"> View content </a> </td>
                             <td> <a href="{% url 'todolist-delete' data.id %}"> delete </a> </td>
                             <td> <a href="{% url 'todolist-edit' data.id %}"> edit </a> </td>
