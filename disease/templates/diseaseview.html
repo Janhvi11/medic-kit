@@ -37,7 +37,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">View Diseases</h5>
+                <h5 class="card-title">View Diseases
+                  <button><a href={% url 'bulkUpload' %}>Bulk Upload</a></button>
+                  <button><a href={% url 'download' %}>Download</a></button>
+                </h5>
                 <br>
                 <br>
                 <table border="10" style="width:100%">

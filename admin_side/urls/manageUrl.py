@@ -16,4 +16,6 @@ m_url = [
     path('editUser/<id>', editUser, name="edit-user"),
     path('deleteUser/<username>', deleteUser, name="delete-user"),
     path('addUser/', addUser, name="add-user"),
+
+    path('download',download_csv,name='download'),
 ] 

@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
@@ -62,3 +63,14 @@ def editContact(request,id):
 
     context['form'] = form
     return render(request, "editContact.html",context)
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=contact.csv'
+	writer = csv.writer(response)
+    #name,email,subject,message,solved
+	writer.writerow(['Name','Email','Subject','Message','Solved'])
+	for data in contact.objects.all():
+		writer.writerow([data.name,data.email,data.subject,data.message,data.solved])
+
+	return response

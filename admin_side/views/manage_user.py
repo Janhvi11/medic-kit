@@ -1,3 +1,4 @@
+import csv
 from django.http import HttpResponseRedirect
 from register.models import user
 from register.forms import *
@@ -45,3 +46,16 @@ def editUser(request,id):
     
     context_3['form'] = form
     return render(request, "UserAdd.html",context_3)
+
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=patients.csv'
+	writer = csv.writer(response)
+    # fields = ['first_name', 'last_name', 'username', 'email', 'address', 'password1']
+
+	writer.writerow(['First Name','Last Name','User Name','Email','Address','Password'])
+	for data in user.objects.all():
+		writer.writerow([data.first_name,data.last_name,data.username,data.email,data.address,data.password1,])
+
+	return response

@@ -7,4 +7,7 @@ appointmenturl = [
     path('addappointment/', addAppointment, name="appointment-add"),
     path('addappointmentUser/', addAppointmentUser, name="appointment-add-user"),
     # path('acceptappointment/', acceptappointment, name="appointment-accept"),
+
+    path('download',download_csv,name='download')
+
 ]

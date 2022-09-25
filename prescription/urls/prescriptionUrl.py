@@ -6,4 +6,6 @@ prescription_url = [
     path('prescriptionEdit/<id>', editPrescription, name="prescription-edit"),
     path('prescriptionDelete/<id>', deletePrescription, name="prescription-delete"),
     path('prescriptionAdd/', addPrescription, name="prescription-add"),
+    path('download',download_csv,name='download'),
+
 ]

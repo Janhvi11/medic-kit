@@ -36,35 +36,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <div class="col-lg-12">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">View Remedies
-                  <button><a href={% url 'download' %}>Download</a></button>
-
-                </h5>
-                <br>
-                <br>
-                <table border="10" style="width:100%">
-                    <tbody>
-                        <tr>
-                            <td>Id of Diesease</td>
-                            <td>Remedy 1</td>
-                            <td>Remedy 2</td>
-                            <td>Remedy 3</td>
-                
-                        {% for data in treatment %}
-                        <tr>
-                            <td>{{ data.idd }}</td>
-                            <td> {{ data.remedies_1 }}</td>
-                            <td> {{ data.remedies_2 }}</td>
-                            <td> {{ data.remedies_3 }}</td>
-                            <td> <a href="{% url 'treatment-delete' data.id %}"> delete </a> </td>
-                            <td> <a href="{% url 'treatment-edit' data.id %}"> edit </a> </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-                
-              </div>
+                <form action="{% url 'upload_csv' %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div>
+                        <label> File: </label>
+                        <div>
+                            <input type="file" name	="csv_file" id="csv_file" required="True">
+                        </div>
+                    </div>
+                    <div>
+                        <br><br><br>
+                        <span></span><button type="submit">Upload</button><span></span>
+                    </div>
+                </form>
             </div>
           </div>
           <!-- /.col-md-6 -->
