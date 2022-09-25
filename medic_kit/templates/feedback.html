@@ -79,19 +79,18 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Reviews!</h1>
 
-      <form class="contact-form mt-5" method="POST">
+      <form method="POST" >
         {% csrf_token %}
-        <div class="row mb-3">
-          <div class="col-sm-6 py-2 wow fadeInLeft">
-            <label for="fullName">Rating</label>
-              {{ form.rating }}
-          </div>
-          <div class="col-sm-6 py-2 wow fadeInRight">
-            <label for="emailAddress">Message</label>
-              {{ form.message }}
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary wow zoomIn">Send Feedback</button>
+        <ul class="list-group list-group-unbordered mb-3">
+          <li class="list-group-item">
+              <b>Rating</b> <a class="float-right">{{ form.rating }}</a>
+          </li>
+          <li class="list-group-item">
+              <b>Message</b> <a class="float-right">{{ form.message }}</a>
+          </li>
+          <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
+
+        {% comment %} <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button> {% endcomment %}
       </form>
     </div>
   </div>

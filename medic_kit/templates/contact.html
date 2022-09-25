@@ -79,27 +79,24 @@
     <div class="container">
       <h1 class="text-center wow fadeInUp">Get in Touch</h1>
 
-      <form class="contact-form mt-5" method="POST">
-        {% csrf_token %} 
-        <div class="row mb-3">
-          <div class="col-sm-6 py-2 wow fadeInLeft">
-            <label for="fullName">Name</label>
-            {{ form.name }}
-          </div>
-          <div class="col-sm-6 py-2 wow fadeInRight">
-            <label for="emailAddress">Email</label>
-            {{ form.email }}
-          </div>
-          <div class="col-12 py-2 wow fadeInUp">
-            <label for="subject">Subject</label>
-            {{ form.subject }}
-          </div>
-          <div class="col-12 py-2 wow fadeInUp">
-            <label for="message">Message</label>
-            {{ form.message }}
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary wow zoomIn">Send Message</button>
+      <form method="POST" >
+        {% csrf_token %}
+        <ul class="list-group list-group-unbordered mb-3">
+          <li class="list-group-item">
+              <b>Name</b> <a class="float-right">{{ form.name }}</a>
+          </li>
+          <li class="list-group-item">
+              <b>Email</b> <a class="float-right">{{ form.email }}</a>
+          </li>
+          <li class="list-group-item">
+              <b>Subject</b> <a class="float-right">{{ form.subject }}</a>
+          </li>
+          <li class="list-group-item">
+              <b>Message</b> <a class="float-right">{{ form.message }}</a>
+          </li>
+          <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
+
+        {% comment %} <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button> {% endcomment %}
       </form>
     </div>
   </div>
