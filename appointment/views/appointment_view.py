@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
@@ -86,3 +87,23 @@ def addAppointment_UserSide(request):
 #
 #    context['form'] = form
 #    return render(request, "appointment-accept.html",context)
+
+# fname = models.CharField(max_length=100)
+#     lname = models.CharField(max_length=100)
+#     email = models.EmailField()
+#     address = models.CharField(max_length=200)
+#     time = models.CharField(max_length=500,choices=time)
+#     day = models.CharField(max_length=500,choices=day)
+#     request = models.TextField(max_length=500)
+#     status = models.CharField(max_length=500,choices=status,default='Pending')
+#     doctorId = models.IntegerField(null=True,default=0)
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=disease.csv'
+	writer = csv.writer(response)
+	writer.writerow(['First Name','Last Name','Email','Address','Time','Day','Request','Status','Doctor Id'])
+	for data in Appointment.objects.all():
+		writer.writerow([data.fname,data.lname,data.email,data.address,data.time,data.day,data.request,data.status,data.doctorId])
+
+	return response

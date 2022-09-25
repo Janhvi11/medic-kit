@@ -1,6 +1,7 @@
+import csv
 from ..forms import *
 from ..models import *
-
+from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 
 
@@ -48,3 +49,13 @@ def editTreatment(request,id):
     
     context['form'] = form
     return render(request, "treatmentAdd.html",context)
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=treatment.csv'
+	writer = csv.writer(response)
+	writer.writerow(['Ref Id','Remedy 1','Remedy 2','Remedy 3'])
+	for data in treatment.objects.all():
+		writer.writerow([data.idd,data.remedies_1,data.remedies_2,data.remedies_3])
+
+	return response

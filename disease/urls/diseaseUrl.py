@@ -6,4 +6,8 @@ disease_url = [
     path('diseaseEdit/<id>', editDisease, name="disease-edit"),#id
     path('diseaseDelete/<id>', deleteDisease, name="disease-delete"),#
     path('diseaseAdd/', addDisease, name="disease-add"),
+
+    path('bulkupload',bulk_upload,name="bulkUpload"),
+    path('upload_csv',upload_csv,name='upload_csv'),
+    path('download',download_csv,name='download')
 ]

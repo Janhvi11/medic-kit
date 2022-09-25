@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
@@ -49,3 +50,14 @@ def user_addFeedback(request):
 
     context['form'] = form
     return render(request, "user_feedback.html",context)
+
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=feedback.csv'
+	writer = csv.writer(response)
+	writer.writerow(['Rating','Message',])
+	for data in feedback.objects.all():
+		writer.writerow([data.rating,data.message])
+
+	return response

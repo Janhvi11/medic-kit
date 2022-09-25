@@ -38,7 +38,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="card">
             <a href="{% url 'treatment-add' %}" class="btn btn-primary"><b>Add Treatment</b></a>
               <div class="card-body">
-                <h5 class="card-title">View Remedies</h5>
+                <h5 class="card-title">View Remedies
+                  <button><a href={% url 'download' %}>Download</a></button>
+
+                </h5>
                 <br>
                 <br>
                 <table border="10" style="width:100%">

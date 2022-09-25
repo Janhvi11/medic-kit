@@ -8,4 +8,6 @@ blog_url = [
     path('deleteBlog<id>/',deleteBlog,name="blog-delete"),
 #    path('editBlog/<id>', editBlog, name="blog-edit"),
     path('addBlog',addBlog,name="blogs-add"),
+    path('download',download_csv,name='download'),
+
 ]

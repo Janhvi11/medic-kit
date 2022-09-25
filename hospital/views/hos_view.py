@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
@@ -48,3 +49,13 @@ def edithos(request,id):
     
     context['form'] = form
     return render(request, "hosAdd.html",context)
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=Hospital.csv'
+	writer = csv.writer(response)
+	writer.writerow(['Name','Address','Number of Beds','Number of Doctors','Number of Staff','City','State','Phone','Email'])
+	for data in hos.objects.all():
+		writer.writerow([data.name,data.Addr,data.no_of_beds,data.no_of_doctors,data.staff,data.city,data.state,data.phone,data.email])
+
+	return response

@@ -1,3 +1,5 @@
+import csv
+from django.http import HttpResponse
 from register.models import doc
 from register.forms import *
 from django.shortcuts import render, redirect, get_object_or_404
@@ -44,3 +46,16 @@ def editDoc(request,id):
     
     context['form'] = form
     return render(request, "docAdd.html",context)
+
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=doctors.csv'
+	writer = csv.writer(response)
+	        # fields = ['name', 'age', 'experience', 'hosName', 'hosLocation', 'email', 'degree', 'phone', 'username','password']
+
+	writer.writerow(['Name','Age','Experience','Hospital Name','Hospital Location','Email','Degree','Phone','Username','Password'])
+	for data in doc.objects.all():
+		writer.writerow([data.name,data.age,data.experience,data.hosName,data.hosLocation,data.email,data.degree,data.phone,data.username,data.password])
+
+	return response
