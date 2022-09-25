@@ -102,8 +102,8 @@ def download_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=disease.csv'
 	writer = csv.writer(response)
-	writer.writerow(['First Name','Last Name','Email','Address','Time','Day','Request','Status','Doctor Id'])
+	writer.writerow(['First Name','Last Name','Email','Time','Day','Request','Status','Doctor Id'])
 	for data in Appointment.objects.all():
-		writer.writerow([data.fname,data.lname,data.email,data.address,data.time,data.day,data.request,data.status,data.doctorId])
+		writer.writerow([data.fname,data.lname,data.email,data.time,data.day,data.request,data.status,data.doctorId])
 
 	return response
