@@ -25,10 +25,9 @@
                     <label class="small mb-1">To do List title</label>
                     {{ form.title }}
                 </td>
-                <td style="padding:15px">
-                    <label class="small mb-1">To-do List's owner (admin) name</label>
-                    {{ form.name_of_admin }}
-                </td>
+                <input type="hidden" value="admin" name="username">
+                <input type="hidden" value="3" name="type">
+
             </tr>
             
             <tr>

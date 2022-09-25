@@ -121,3 +121,11 @@ def docprofile(request):
 
 def pharmaprofile(request):
     return render(request, "pharma-profile.html")
+
+# ======================================================================================================
+
+def view_doctors(request):
+    context = {}
+    context['data'] = doc.objects.all()
+    
+    return render(request,'user-side-doctor-view.html', context)

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Appointment</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -74,28 +74,52 @@
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
-                {% comment %} <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a> {% endcomment %}
+                <a href="{% url 'user-profile-appointment-add' %}" class="btn btn-primary btn-block"><b>Add Appointment</b></a>
 
               </div>
             </div>
 
-            <div class="card card-primary card-outline">
-                <div class="card-body box-profile">
-                <form method="POST">
-                    {% csrf_token %}
-                    <ul class="list-group list-group-unbordered mb-3">
-                        {% for data in user %}
-                        <li class="list-group-item">
-                            <input type="hidden" name="userId" value={{data.id}}>
-                        </li>
-                        
-                        {% endfor %}
-                        <li class="list-group-item">
-                            <b>Update</b> <a class="float-right">{{ form.update }}</a>
-                        </li>
-                        <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
-                    </ul>
-                </form>
+                <div class="card card-primary card-outline">
+                  <div class="card-body box-profile">
+                {% for data in data %}
+                <ul class="list-group list-group-unbordered mb-3">
+                  {% comment %} <li class="list-group-item">
+                    <b>User Id</b> <a class="float-right">{{ data.userId }}</a>
+                  </li> {% endcomment %}
+                  <li class="list-group-item">
+                    <b>First Name</b> <a class="float-right">{{ data.fname }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Last Name</b> <a class="float-right">{{ data.lname }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Email</b> <a class="float-right">{{ data.email }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Time</b> <a class="float-right">{{ data.time }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Day</b> <a class="float-right">{{ data.day }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Request</b> <a class="float-right">{{ data.request }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Status</b> <a class="float-right">{{ data.status }}</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Doctor ID</b> <a class="float-right">{{ data.doctorId }}</a>
+                  </li>
+                  
+                  {% comment %} <li class="list-group-item">
+                    <b>Password</b> <a class="float-right">{{ data.password1 }}</a>
+                  </li> {% endcomment %}
+                </ul>
+                
+
+                {% comment %} <a href="{% url 'edit-time' data.id %}" class="btn btn-primary btn-block"><b>Edit</b></a> {% endcomment %}
+                <a href="{% url 'delete-appointment' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a>
+                {% endfor %}
               </div>
               <!-- /.card-body -->
             </div>

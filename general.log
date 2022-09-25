@@ -1532,3 +1532,7 @@ appointment.middlewares ERROR 2022-09-26 00:10:11,476 middlewares 22888 8316 aft
 appointment.middlewares ERROR 2022-09-26 00:10:12,062 middlewares 22888 8316 after opening url
 appointment.middlewares ERROR 2022-09-26 00:10:24,535 middlewares 22888 23572 after opening url
 appointment.middlewares ERROR 2022-09-26 00:10:37,240 middlewares 22888 24516 after opening url
+django.utils.autoreload INFO 2022-09-26 00:12:11,654 autoreload 22888 21804 D:\GitHub\medic-kit\disease\views\disease_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 00:12:13,370 autoreload 25004 24728 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 00:12:14,584 middlewares 25004 17628 Before opening URL
+appointment.middlewares ERROR 2022-09-26 00:12:25,746 middlewares 25004 23984 after opening url

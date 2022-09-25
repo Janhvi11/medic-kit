@@ -1,10 +1,5 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -18,428 +13,113 @@
         </div>
       </div>
 
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Doctors
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'view-doc' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+                <p>Doctors</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-doc' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Doctor</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'add-doc' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Doctor</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Pharmacists
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'view-pharma' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Pharmacists</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-pharma' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Pharmacists</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'add-pharma' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Pharmacists</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-              Users
-              <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'view-user' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Users</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-user' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Users</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'add-user' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Users</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                To-Do List
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'todolist-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>To-do List</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'todolist-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View To-do List</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'todolist-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add To-do Lis</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Diseases
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'disease-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Diseases List</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'disease-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Diseases List</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'disease-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Disease List</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Remedies
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'treatment-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Remedies</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'treatment-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Remedies</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'treatment-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Remedies</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Medical History
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'medhistory-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Medical History</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'medhistory-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Medical History</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'medhistory-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Medical History</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Prescription List
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'prescription-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Prescription</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'prescription-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Prescription</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'prescription-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Prescription</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-
-          
-        
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Feedback
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'view-feedback' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Feedback</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-feedback' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Feedback</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Contact
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'view-contact' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Contact</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-contact' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Contact</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Hospital
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
+          <li class="nav-item">
                 <a href="{% url 'view-hos' %}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>View Hospital</p>
+                  <p>Hospital</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'add-hos' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Hospital</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                News
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'news-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>News</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'news-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View News</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'news-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add News</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Blog
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'blogs-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Blogs</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'blogs-view' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Blogs</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'blogs-add' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Blog</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link  ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Appointment Booking
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="{% url 'appointment-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Appointment</p>
             </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="{% url 'appointment-view' %}" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>View Appointment</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'appointment-add' %}" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Add Appointment</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Timeline
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'view-admin-time' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Timelines</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'add-time' %}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Timelines</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i><p>Ideal BMI<i class="right fas fa-angle-left"></i></p>
-              </a>
-
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% url 'ideal-bmi-view' %}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>View Ideal BMI</p>
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% url 'ideal-bmi-add' %}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Add Ideal BMIs</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link  ">
-                <i class="nav-icon fas fa-tachometer-alt"></i><p>User BMI<i class="right fas fa-angle-left"></i></p>
-              </a>
-
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% url 'bmi-view' %}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>View User BMI</p>
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% url 'bmi-add' %}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Add User BMIs</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
+          <li class="nav-item">
+            <a href="{% url 'view-admin-time' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Timelines</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'ideal-bmi-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Ideal BMI</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'bmi-view' %}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>User BMI</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -7,7 +7,6 @@ to_do_url = [
     path('addToDoList/', addToDoList, name='todolist-add'),
     path('deleteToDoList/<id>', deleteToDoList, name='todolist-delete'),
     path('editToDoList/<id>', editToDoList, name='todolist-edit'),
-
 ]
 
 to_do_item_url = [
@@ -16,7 +15,6 @@ to_do_item_url = [
     path('addToDoItem/', addToDoItem, name='todoItem-add'),
     path('deleteToDoItem/<id>', deleteToDoItem, name='todoItem-delete'),
     path('editToDoItem/<id>', editToDoItem, name='todoItem-edit'),
-
 ]
 
 userside_todolist_url = [

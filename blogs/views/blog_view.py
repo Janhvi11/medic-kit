@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
@@ -54,3 +55,13 @@ def addBlog(request):
         return redirect("/blogss/viewBlog/")
     
     return render(request, 'blogs-add.html')
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=blog.csv'
+	writer = csv.writer(response)
+	writer.writerow(['Title','Image','Details',])
+	for data in blog.objects.all():
+		writer.writerow([data.title,data.image,data.details])
+
+	return response

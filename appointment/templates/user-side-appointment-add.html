@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Appointment</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -74,28 +74,38 @@
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
-                {% comment %} <a href="{% url 'add-time' %}" class="btn btn-primary btn-block"><b>Add Timeline</b></a> {% endcomment %}
 
               </div>
             </div>
 
-            <div class="card card-primary card-outline">
-                <div class="card-body box-profile">
-                <form method="POST">
-                    {% csrf_token %}
-                    <ul class="list-group list-group-unbordered mb-3">
-                        {% for data in user %}
-                        <li class="list-group-item">
-                            <input type="hidden" name="userId" value={{data.id}}>
-                        </li>
-                        
-                        {% endfor %}
-                        <li class="list-group-item">
-                            <b>Update</b> <a class="float-right">{{ form.update }}</a>
-                        </li>
-                        <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
-                    </ul>
-                </form>
+                <div class="card card-primary card-outline">
+                  <div class="card-body box-profile">
+                    <form method="POST" >
+                        {% csrf_token %}
+                        <ul class="list-group list-group-unbordered mb-3">
+                          <li class="list-group-item">
+                            <input type="hidden" name="username" value={{user_username}}>
+                              <b>First Name</b> <a class="float-right">{{ form_user.fname }}</a>
+                          </li>
+                          <li class="list-group-item">
+                              <b>Last Name</b> <a class="float-right">{{ form_user.lname }}</a>
+                          </li>
+                          <li class="list-group-item">
+                              <b>Email</b> <a class="float-right">{{ form_user.email }}</a>
+                          </li>
+                          <li class="list-group-item">
+                              <b>Day</b> <a class="float-right">{{ form_user.day }}</a>
+                          </li>
+                          <li class="list-group-item">
+                              <b>Time</b> <a class="float-right">{{ form_user.time }}</a>
+                          </li>
+                          <li class="list-group-item">
+                              <b>Request</b> <a class="float-right">{{ form_user.request }}</a>
+                          </li>
+                          <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
+                
+                        {% comment %} <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button> {% endcomment %}
+                      </form>
               </div>
               <!-- /.card-body -->
             </div>

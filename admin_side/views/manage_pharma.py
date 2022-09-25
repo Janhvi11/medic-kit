@@ -1,4 +1,5 @@
 # from http.client import HTTPResponse
+import csv
 from django.http import HttpResponseRedirect
 from register.models import doc
 from register.forms import *
@@ -53,3 +54,17 @@ def editPharma(request,id):
     
     context_3['form'] = form
     return render(request, "PharmaAdd.html",context_3)
+
+
+
+def download_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=disease.csv'
+	writer = csv.writer(response)
+    # fields = ('name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email')
+
+	writer.writerow(['Name','Shop Name','Shop Address','License Number','City','NationalWideDelivery','username','Password','email'])
+	for data in pharma.objects.all():
+		writer.writerow([data.name,data.shopName,data.shopAddr,data.licenseNumber,data.city,data.nationwideDel,data.username,data.password,data.email])
+
+	return response
