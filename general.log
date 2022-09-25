@@ -1527,3 +1527,8 @@ appointment.middlewares ERROR 2022-09-26 00:09:46,829 middlewares 22888 24992 af
 appointment.middlewares ERROR 2022-09-26 00:09:54,924 middlewares 22888 24976 after opening url
 appointment.middlewares ERROR 2022-09-26 00:09:54,985 middlewares 22888 17868 after opening url
 django.request WARNING 2022-09-26 00:09:54,987 log 22888 17868 Not Found: /assets/img/banner-pattern.svg
+appointment.middlewares ERROR 2022-09-26 00:09:56,771 middlewares 22888 17868 after opening url
+appointment.middlewares ERROR 2022-09-26 00:10:11,476 middlewares 22888 8316 after opening url
+appointment.middlewares ERROR 2022-09-26 00:10:12,062 middlewares 22888 8316 after opening url
+appointment.middlewares ERROR 2022-09-26 00:10:24,535 middlewares 22888 23572 after opening url
+appointment.middlewares ERROR 2022-09-26 00:10:37,240 middlewares 22888 24516 after opening url
