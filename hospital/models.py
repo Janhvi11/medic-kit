@@ -3,7 +3,7 @@ from register.models import doc
 # Create your models here
 class hos(models.Model):
    
-    Name = models.ForeignKey(doc, on_delete=models.CASCADE)
+    Name = models.CharField(max_length=200)
     Addr = models.CharField(max_length=200)
         
     no_of_beds = models.IntegerField()

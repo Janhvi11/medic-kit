@@ -44,7 +44,7 @@ urlpatterns = [
     path('bmi/', include('bmi.urls')),
     
     path('about/', views.about, name="about"),
-    path('news/', views.news, name="news"),
+    path('news/', views.viewNewss, name="news"),
     path('blog/', views.blog, name="blog"),
     path('buy/', views.buy, name="buy"),
     path('client/', views.client, name="client"),

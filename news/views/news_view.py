@@ -9,8 +9,6 @@ from ..models import *
 import logging
 logger = logging.getLogger(__name__)
 
-
-
 def viewNews(request):
 	context = {}
 	context["news"] = news.objects.all()

@@ -12,5 +12,5 @@ import os
 
 class blog(models.Model):
     title = models.CharField(max_length=100, null=True)
-    image = models.ImageField(upload_to='blog_img', null=True, blank=True)
+    image = models.ImageField(upload_to='blogs/blog_img', null=True, blank=True)
     details = models.TextField(max_length=500, null=True)

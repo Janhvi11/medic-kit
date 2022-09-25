@@ -507,53 +507,58 @@
   <div class="page-section">
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
-
+      <table>
       <form method="POST" >
         {% csrf_token %}
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
             {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %} 
-            <label class="small mb-1">First name</label>
-            {{ form_user.fname }}
+            <td>
+            <label class="small mb-1"><h3>First name</h3></label></td>
+            <td>{{ form_user.fname }}</td>
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+          
             {% comment %} <input type="text" class="form-control" placeholder="Last name"> {% endcomment %}
-            <label class="small mb-1">Last name</label>
-            {{ form_user.lname }}
+            <td>
+            <label class="small mb-1"><h3>Last name</h3></label>
+            </td>
+            <td>{{ form_user.lname }}</td>
           </div>
+          
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
             {% comment %} <input type="text" class="form-control" placeholder="Email  "> {% endcomment %}
-            <label class="small mb-1">Email</label>
-            {{ form_user.email }}
+            <tr>  
+            <tr >
+              <td>
+            <label class="small mb-1"><h3>Email</h3></label>
+            </td>
+            <td>{{ form_user.email }}</td>
+          </div>
+          <tr>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+            <td>
+            <label class="small mb-1"><h3>Enter the Day you </h3></label>
+            </td>
+            <td>{{ form_user.day }}</td>
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <label class="small mb-1">Enter the Day you </label>
-            {{ form_user.day }}
+            <td>
+            <label class="small mb-1"><h3>Day</h3></label>
+            </td>
+            <td>{{ form_user.time }}</td>
           </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <label class="small mb-1">Day</label>
-            {{ form_user.time }}
-          </div>
-          {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-            <input type="date" class="form-control">
-          </div> {% endcomment %}
-          {% comment %} <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
-            <select name="departement" id="departement" class="custom-select">
-              <option value="general">General Health</option>
-              <option value="cardiology">Cardiology</option>
-              <option value="dental">Dental</option>
-              <option value="neurology">Neurology</option>
-              <option value="orthopaedics">Orthopaedics</option>
-            </select>
-          </div> {% endcomment %}
+        <tr>
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+            <td>
             <h3>Request</h3>
+            </td>
             {% comment %} <label class="small mb-1">Request</label> {% endcomment %}
-            {{ form_user.request }}            
+            <td>{{ form_user.request }}</td>            
             
           </div>
         </div>
-
+      </table>
         <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button>
       </form>
     </div>

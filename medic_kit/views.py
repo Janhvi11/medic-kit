@@ -5,6 +5,8 @@ from django.contrib.auth.hashers import make_password
 from register.forms import RegisterForm,RegisterDocForm,RegisterPharmaForm
 # from django.shortcuts import render, redirect, ,HttpResponse
 
+from news.forms import *
+from news.models import *
 
 def about(request):
     type= request.session.get('type')
@@ -13,12 +15,12 @@ def about(request):
     else:
         return render(request,'about.html')
 
-def news(request):
-    type= request.session.get('type')
-    if type == None:
-        return render(request,'index.html')
-    else:    
-        return render(request, 'news.html')
+# def news(request):
+#     type= request.session.get('type')
+#     if type == None:
+#         return render(request,'index.html')
+#     else:    
+#         return render(request, 'news.html')
 
 def blog(request):
     type= request.session.get('type')
@@ -163,3 +165,9 @@ def editpharmaProfile(request,id):
     
     context_3['form'] = form
     return render(request, "edit-pharma-profile.html",context_3)
+
+
+def viewNewss(request):
+	context = {}
+	context["news"] = news.objects.all()
+	return render(request, "news.html", context)

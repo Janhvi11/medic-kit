@@ -17,7 +17,7 @@ def viewBlog(request):
 def deleteBlog(request,id):
 	context={}
 	obj = get_object_or_404(blog, id=id)
-	if request.method == "POST":
+	if request.method == "GET":
 		obj.delete()
 		return redirect("/newss/viewBlog/")
 	return render(request, "blogs-view.html", context)
