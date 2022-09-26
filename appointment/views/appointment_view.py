@@ -2,7 +2,8 @@ import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
-
+from django.conf import settings
+from django.core.mail import send_mail
 from ..models import *
 from ..forms import *
 
@@ -47,6 +48,15 @@ def addAppointmentUser(request):
     if form.is_valid():
         #return HttpResponse(form)
         form.save()
+        #Email
+        recipient_email = request.POST.get("email")
+        subject = "subject"
+        message = "message through email"
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = [recipient_email]
+        # return HttpResponse(subject)
+        send_mail( subject, message, email_from, recipient_list, fail_silently=False )
+        #########
         logger.info("User appointment has been added")
         return redirect("/index/")
 
@@ -68,8 +78,9 @@ def addAppointment_UserSide(request):
     form = UserAppointmentForm(request.POST)
     
     if form.is_valid():
-        #return HttpResponse(form)
         form.save()
+        
+        
         logger.info("User appointment has been added")
         return redirect("/doctors/")
 
@@ -107,3 +118,6 @@ def download_csv(request):
 		writer.writerow([data.fname,data.lname,data.email,data.time,data.day,data.request,data.status,data.doctorId])
 
 	return response
+
+
+

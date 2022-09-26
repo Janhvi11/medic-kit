@@ -2628,3 +2628,143 @@ django.request WARNING 2022-09-26 11:59:17,834 log 20916 19824 Not Found: /reg/l
 appointment.middlewares ERROR 2022-09-26 11:59:20,957 middlewares 20916 19824 after opening url
 appointment.middlewares ERROR 2022-09-26 11:59:23,936 middlewares 20916 19824 after opening url
 appointment.middlewares ERROR 2022-09-26 11:59:42,947 middlewares 20916 19824 after opening url
+django.utils.autoreload INFO 2022-09-26 21:15:35,114 autoreload 24764 21688 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 21:15:35,716 middlewares 24764 13656 Before opening URL
+appointment.middlewares ERROR 2022-09-26 21:15:36,771 middlewares 24764 12532 after opening url
+django.request WARNING 2022-09-26 21:15:36,772 log 24764 12532 Not Found: /
+appointment.middlewares ERROR 2022-09-26 21:15:37,031 middlewares 24764 12532 after opening url
+django.request WARNING 2022-09-26 21:15:37,032 log 24764 12532 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-26 21:15:42,248 middlewares 24764 12532 after opening url
+appointment.middlewares ERROR 2022-09-26 21:15:50,856 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:15:52,042 middlewares 24764 20736 after opening url
+django.request WARNING 2022-09-26 21:15:52,043 log 24764 20736 Not Found: /reg/loginuser
+appointment.middlewares ERROR 2022-09-26 21:15:54,556 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:01,831 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:03,242 middlewares 24764 20736 after opening url
+django.request WARNING 2022-09-26 21:16:03,243 log 24764 20736 Not Found: /reg/loginuser
+appointment.middlewares ERROR 2022-09-26 21:16:06,464 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:31,295 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:31,538 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:33,962 middlewares 24764 20736 after opening url
+appointment.middlewares ERROR 2022-09-26 21:16:34,034 middlewares 24764 16104 after opening url
+django.request WARNING 2022-09-26 21:16:34,036 log 24764 16104 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-26 21:16:35,668 middlewares 24764 16104 after opening url
+appointment.views.appointment_view INFO 2022-09-26 21:17:09,679 appointment_view 24764 16104 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 21:17:09,679 middlewares 24764 16104 after opening url
+appointment.middlewares ERROR 2022-09-26 21:17:09,765 middlewares 24764 16104 after opening url
+appointment.views.appointment_view INFO 2022-09-26 21:21:49,851 appointment_view 24764 11960 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 21:21:49,851 middlewares 24764 11960 after opening url
+appointment.middlewares ERROR 2022-09-26 21:21:49,935 middlewares 24764 11960 after opening url
+django.utils.autoreload INFO 2022-09-26 21:23:32,004 autoreload 24764 21688 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 21:23:32,757 autoreload 14840 24664 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 21:23:33,249 middlewares 14840 13800 Before opening URL
+appointment.middlewares ERROR 2022-09-26 21:23:48,203 middlewares 14840 13836 after opening url
+appointment.middlewares ERROR 2022-09-26 21:23:48,975 middlewares 14840 13836 after opening url
+appointment.middlewares ERROR 2022-09-26 21:23:51,654 middlewares 14840 13836 after opening url
+appointment.middlewares ERROR 2022-09-26 21:23:51,742 middlewares 14840 9508 after opening url
+django.request WARNING 2022-09-26 21:23:51,743 log 14840 9508 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-26 21:23:53,006 middlewares 14840 9508 after opening url
+appointment.views.appointment_view INFO 2022-09-26 21:24:11,100 appointment_view 14840 13588 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 21:24:11,100 middlewares 14840 13588 after opening url
+appointment.middlewares ERROR 2022-09-26 21:24:11,181 middlewares 14840 13588 after opening url
+django.utils.autoreload INFO 2022-09-26 21:31:48,439 autoreload 14840 24664 D:\GitHub\medic-kit\medic_kit\settings.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 21:32:41,002 autoreload 25456 15756 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 21:32:41,584 middlewares 25456 2036 Before opening URL
+appointment.views.appointment_view INFO 2022-09-26 21:32:44,913 appointment_view 25456 12940 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 21:32:44,921 middlewares 25456 12940 after opening url
+appointment.middlewares ERROR 2022-09-26 21:32:45,120 middlewares 25456 12940 after opening url
+appointment.views.appointment_view INFO 2022-09-26 21:33:18,683 appointment_view 25456 12800 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 21:33:18,684 middlewares 25456 12800 after opening url
+appointment.middlewares ERROR 2022-09-26 21:33:18,757 middlewares 25456 12800 after opening url
+django.utils.autoreload INFO 2022-09-26 22:26:20,967 autoreload 1696 1576 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:26:29,156 middlewares 1696 8804 Before opening URL
+appointment.middlewares ERROR 2022-09-26 22:26:31,134 middlewares 1696 5088 after opening url
+django.request WARNING 2022-09-26 22:26:31,134 log 1696 5088 Not Found: /
+appointment.middlewares ERROR 2022-09-26 22:26:31,427 middlewares 1696 5088 after opening url
+django.request WARNING 2022-09-26 22:26:31,428 log 1696 5088 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-26 22:26:36,631 middlewares 1696 5088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:26:40,099 middlewares 1696 5088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:26:40,183 middlewares 1696 5088 after opening url
+django.request WARNING 2022-09-26 22:26:40,185 log 1696 5088 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-26 22:26:41,213 middlewares 1696 5088 after opening url
+appointment.views.appointment_view INFO 2022-09-26 22:26:56,995 appointment_view 1696 5088 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 22:26:56,995 middlewares 1696 5088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:26:57,097 middlewares 1696 5088 after opening url
+django.utils.autoreload INFO 2022-09-26 22:29:14,075 autoreload 1696 1576 D:\GitHub\medic-kit\medic_kit\settings.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:29:15,049 autoreload 5896 1872 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:29:17,381 middlewares 5896 18692 Before opening URL
+django.utils.autoreload INFO 2022-09-26 22:32:08,758 autoreload 5896 1872 D:\GitHub\medic-kit\medic_kit\views.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:32:09,961 autoreload 1696 20120 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:32:10,472 middlewares 1696 7072 Before opening URL
+django.utils.autoreload INFO 2022-09-26 22:34:42,665 autoreload 1696 20120 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:34:43,603 autoreload 8332 5156 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:34:44,038 middlewares 8332 18616 Before opening URL
+appointment.middlewares ERROR 2022-09-26 22:34:48,975 middlewares 8332 5780 after opening url
+appointment.views.appointment_view INFO 2022-09-26 22:35:06,062 appointment_view 8332 5780 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 22:35:06,062 middlewares 8332 5780 after opening url
+appointment.middlewares ERROR 2022-09-26 22:35:06,162 middlewares 8332 5780 after opening url
+django.utils.autoreload INFO 2022-09-26 22:50:18,223 autoreload 8332 5156 D:\GitHub\medic-kit\medic_kit\settings.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:50:30,122 autoreload 6080 2700 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:50:36,847 middlewares 6080 18764 Before opening URL
+appointment.middlewares ERROR 2022-09-26 22:50:43,283 middlewares 6080 12088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:50:45,644 middlewares 6080 12088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:50:46,028 middlewares 6080 12088 after opening url
+appointment.views.appointment_view INFO 2022-09-26 22:51:04,633 appointment_view 6080 12088 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 22:51:04,634 middlewares 6080 12088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:51:04,902 middlewares 6080 12088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:52:49,814 middlewares 6080 12088 after opening url
+appointment.views.appointment_view INFO 2022-09-26 22:53:32,408 appointment_view 6080 12088 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 22:53:32,409 middlewares 6080 12088 after opening url
+appointment.middlewares ERROR 2022-09-26 22:53:32,522 middlewares 6080 12088 after opening url
+django.utils.autoreload INFO 2022-09-26 22:57:00,788 autoreload 6080 2700 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:57:01,920 autoreload 3764 12408 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:57:02,859 middlewares 3764 14008 Before opening URL
+django.utils.autoreload INFO 2022-09-26 22:57:16,448 autoreload 3764 12408 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:57:17,423 autoreload 21368 21372 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:57:18,001 middlewares 21368 21392 Before opening URL
+django.utils.autoreload INFO 2022-09-26 22:57:43,295 autoreload 21368 21372 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 22:57:44,174 autoreload 20680 4680 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 22:57:44,620 middlewares 20680 18132 Before opening URL
+appointment.middlewares ERROR 2022-09-26 22:57:56,036 middlewares 20680 8856 after opening url
+appointment.views.appointment_view INFO 2022-09-26 22:58:29,774 appointment_view 20680 8856 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 22:58:29,775 middlewares 20680 8856 after opening url
+appointment.middlewares ERROR 2022-09-26 22:58:29,879 middlewares 20680 8856 after opening url
+appointment.middlewares ERROR 2022-09-26 22:59:29,291 middlewares 20680 10844 after opening url
+appointment.middlewares ERROR 2022-09-26 22:59:30,240 middlewares 20680 4720 after opening url
+django.request WARNING 2022-09-26 22:59:30,241 log 20680 4720 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-26 22:59:44,269 middlewares 20680 4720 after opening url
+appointment.middlewares ERROR 2022-09-26 22:59:47,807 middlewares 20680 4720 after opening url
+django.request WARNING 2022-09-26 22:59:47,809 log 20680 4720 Not Found: /reg/loginuser
+appointment.middlewares ERROR 2022-09-26 22:59:52,831 middlewares 20680 4720 after opening url
+appointment.middlewares ERROR 2022-09-26 23:00:03,871 middlewares 20680 4720 after opening url
+appointment.middlewares ERROR 2022-09-26 23:00:03,891 middlewares 20680 4720 after opening url
+appointment.middlewares ERROR 2022-09-26 23:00:11,496 middlewares 20680 4720 after opening url
+appointment.middlewares ERROR 2022-09-26 23:00:11,693 middlewares 20680 4720 after opening url
+django.request WARNING 2022-09-26 23:00:11,769 log 20680 4720 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-26 23:00:53,641 appointment_view 20680 6356 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 23:00:53,641 middlewares 20680 6356 after opening url
+appointment.middlewares ERROR 2022-09-26 23:00:53,660 middlewares 20680 6356 after opening url
+django.utils.autoreload INFO 2022-09-26 23:02:04,027 autoreload 20680 4680 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 23:02:06,278 autoreload 6348 10700 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 23:02:06,979 middlewares 6348 21392 Before opening URL
+appointment.middlewares ERROR 2022-09-26 23:02:12,885 middlewares 6348 20708 after opening url
+appointment.middlewares ERROR 2022-09-26 23:02:35,950 middlewares 6348 20708 after opening url
+django.utils.autoreload INFO 2022-09-26 23:02:58,558 autoreload 6348 10700 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-26 23:02:59,716 autoreload 21304 20020 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-26 23:03:00,184 middlewares 21304 20716 Before opening URL
+appointment.views.appointment_view INFO 2022-09-26 23:03:11,964 appointment_view 21304 22408 User appointment has been added
+appointment.middlewares ERROR 2022-09-26 23:03:11,974 middlewares 21304 22408 after opening url
+appointment.middlewares ERROR 2022-09-26 23:03:12,047 middlewares 21304 22408 after opening url
+appointment.middlewares ERROR 2022-09-26 23:04:10,494 middlewares 21304 22408 after opening url
+appointment.middlewares ERROR 2022-09-26 23:04:10,628 middlewares 21304 18624 after opening url
+django.request WARNING 2022-09-26 23:04:10,629 log 21304 18624 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-26 23:04:12,383 appointment_view 21304 18624 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-26 23:04:12,547 middlewares 21304 18624 after opening url
+appointment.middlewares ERROR 2022-09-26 23:04:12,601 middlewares 21304 22408 after opening url
+django.request WARNING 2022-09-26 23:04:12,603 log 21304 22408 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-26 23:04:32,945 middlewares 21304 22408 after opening url
+appointment.middlewares ERROR 2022-09-26 23:04:33,010 middlewares 21304 18624 after opening url
+django.request WARNING 2022-09-26 23:04:33,012 log 21304 18624 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-26 23:04:47,092 middlewares 21304 18624 after opening url
+appointment.middlewares ERROR 2022-09-26 23:04:47,148 middlewares 21304 22408 after opening url
+django.request WARNING 2022-09-26 23:04:47,152 log 21304 22408 Not Found: /dist/img/user4-128x128.jpg

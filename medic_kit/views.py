@@ -167,6 +167,8 @@ def editpharmaProfile(request,id):
     return render(request, "edit-pharma-profile.html",context_3)
 
 
+
+#View news
 def viewNewss(request):
 	context = {}
 	context["news"] = news.objects.all()
