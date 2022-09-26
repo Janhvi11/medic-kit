@@ -308,79 +308,8 @@
   <div class="page-section">
     <div class="container">
       <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
-      <table>
       <form method="POST" >
         {% csrf_token %}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div class="row mt-5 ">
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            {% comment %} <input type="text" class="form-control" placeholder="First name"> {% endcomment %} 
-            <td>
-            <label class="small mb-1"><h3>First name</h3></label></td>
-            <td>{{ form_user.fname }}</td>
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-          
-            {% comment %} <input type="text" class="form-control" placeholder="Last name"> {% endcomment %}
-            <td>
-            <label class="small mb-1"><h3>Last name</h3></label>
-            </td>
-            <td>{{ form_user.lname }}</td>
-          </div>
-          
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            {% comment %} <input type="text" class="form-control" placeholder="Email  "> {% endcomment %}
-            <tr>  
-            <tr >
-              <td>
-            <label class="small mb-1"><h3>Email</h3></label>
-            </td>
-            <td>{{ form_user.email }}</td>
-          </div>
-          <tr>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <td>
-            <label class="small mb-1"><h3>Enter the Day you </h3></label>
-            </td>
-            <td>{{ form_user.day }}</td>
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <td>
-            <label class="small mb-1"><h3>Day</h3></label>
-            </td>
-            <td>{{ form_user.time }}</td>
-          </div>
-        <tr>
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <td>
-            <h3>Request</h3>
-            </td>
-            {% comment %} <label class="small mb-1">Request</label> {% endcomment %}
-            <td>{{ form_user.request }}</td>            
-            
-          </div>
-        </div>
-      </table>
-        <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button>
-=======
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
         <ul class="list-group list-group-unbordered mb-3">
           <li class="list-group-item">
             <input type="hidden" name="username" value={{user_username}}>
@@ -404,25 +333,7 @@
           <button type="submit" class="btn btn-primary btn-block"><b>Submit</b></button>
 
         {% comment %} <button type="submit" class="btn btn-primary mt-3 wow zoomIn" >Submit Request</button> {% endcomment %}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
-=======
->>>>>>> 69987a4e3eff940a893dea4909cd69cc68105b61
+
       </form>
     </div>
   </div> <!-- .page-section -->
