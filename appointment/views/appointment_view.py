@@ -44,20 +44,30 @@ def addAppointmentUser(request):
     context = {}
     form = UserAppointmentForm(request.POST)
     username = request.session.get('username')
+    
+
     context['user_username'] = username
     if form.is_valid():
         #return HttpResponse(form)
-        form.save()
+        app = form.save(commit=False)
+        time = app.time
+        day = app.day
+        request1 = app.request
+        email = app.email
+        fname = app.fname
+        lname = app.lname
+
         #Email
         recipient_email = request.POST.get("email")
-        subject = "subject"
-        message = "message through email"
+        subject = "Appointment Has been Recorded"
+        message = "Hello, \n"+username+" we have recorded your Appointment \n\nTime: "+time+"\nDay "+day+"\nFor Request: "+request1+" \n\n We will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname +" "+ lname
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [recipient_email]
         # return HttpResponse(subject)
         send_mail( subject, message, email_from, recipient_list, fail_silently=False )
         #########
         logger.info("User appointment has been added")
+        app.save()
         return redirect("/index/")
 
     context['form_user'] = form

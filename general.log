@@ -2768,3 +2768,325 @@ django.request WARNING 2022-09-26 23:04:33,012 log 21304 18624 Not Found: /dist/
 appointment.middlewares ERROR 2022-09-26 23:04:47,092 middlewares 21304 18624 after opening url
 appointment.middlewares ERROR 2022-09-26 23:04:47,148 middlewares 21304 22408 after opening url
 django.request WARNING 2022-09-26 23:04:47,152 log 21304 22408 Not Found: /dist/img/user4-128x128.jpg
+django.utils.autoreload INFO 2022-09-27 17:47:48,349 autoreload 24968 29832 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 17:47:49,116 middlewares 24968 10716 Before opening URL
+appointment.middlewares ERROR 2022-09-27 17:47:51,897 middlewares 24968 22968 after opening url
+django.request WARNING 2022-09-27 17:47:51,898 log 24968 22968 Not Found: /
+appointment.middlewares ERROR 2022-09-27 17:47:52,158 middlewares 24968 22968 after opening url
+django.request WARNING 2022-09-27 17:47:52,159 log 24968 22968 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-27 17:47:58,510 middlewares 24968 22968 after opening url
+django.request WARNING 2022-09-27 17:47:58,511 log 24968 22968 Not Found: /indx
+appointment.middlewares ERROR 2022-09-27 17:48:01,712 middlewares 24968 22968 after opening url
+appointment.views.appointment_view INFO 2022-09-27 17:48:45,556 appointment_view 24968 14044 User appointment has been added
+appointment.middlewares ERROR 2022-09-27 17:48:45,556 middlewares 24968 14044 after opening url
+appointment.middlewares ERROR 2022-09-27 17:48:45,645 middlewares 24968 14044 after opening url
+django.utils.autoreload INFO 2022-09-27 17:51:44,274 autoreload 24968 29832 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 17:51:45,174 autoreload 17992 20152 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 17:51:45,595 middlewares 17992 21060 Before opening URL
+django.utils.autoreload INFO 2022-09-27 17:56:20,444 autoreload 17992 20152 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 17:56:21,208 autoreload 3860 24228 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 17:56:21,611 middlewares 3860 5320 Before opening URL
+django.utils.autoreload INFO 2022-09-27 18:01:04,893 autoreload 3860 24228 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:01:05,625 autoreload 30428 14320 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:01:05,997 middlewares 30428 20160 Before opening URL
+django.utils.autoreload INFO 2022-09-27 18:07:38,402 autoreload 30428 14320 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:07:39,040 autoreload 22908 20964 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:07:39,385 middlewares 22908 10996 Before opening URL
+appointment.middlewares ERROR 2022-09-27 18:08:44,787 middlewares 22908 30148 after opening url
+django.request WARNING 2022-09-27 18:08:44,787 log 22908 30148 Not Found: /
+appointment.middlewares ERROR 2022-09-27 18:08:52,200 middlewares 22908 30148 after opening url
+django.request ERROR 2022-09-27 18:09:34,122 log 22908 30148 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: '"+request1+"' \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:09:34,125 middlewares 22908 30148 after opening url
+django.utils.autoreload INFO 2022-09-27 18:10:30,840 autoreload 22908 20964 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:10:31,581 autoreload 17800 10040 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:10:31,881 middlewares 17800 2964 Before opening URL
+django.request ERROR 2022-09-27 18:10:33,718 log 17800 13000 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: '"+request1+"' \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:10:33,721 middlewares 17800 13000 after opening url
+django.utils.autoreload INFO 2022-09-27 18:10:53,846 autoreload 17800 10040 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:10:54,431 autoreload 17264 23064 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:10:54,744 middlewares 17264 3824 Before opening URL
+django.request ERROR 2022-09-27 18:10:55,028 log 17264 15988 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:10:55,031 middlewares 17264 15988 after opening url
+django.utils.autoreload INFO 2022-09-27 18:11:38,072 autoreload 17264 23064 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:11:38,659 autoreload 30532 29940 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:11:38,965 middlewares 30532 2096 Before opening URL
+appointment.views.appointment_view INFO 2022-09-27 18:11:44,261 appointment_view 30532 3780 User appointment has been added
+appointment.middlewares ERROR 2022-09-27 18:11:44,273 middlewares 30532 3780 after opening url
+appointment.middlewares ERROR 2022-09-27 18:11:44,387 middlewares 30532 3780 after opening url
+django.utils.autoreload INFO 2022-09-27 18:12:17,273 autoreload 30532 29940 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:12:17,861 autoreload 14612 25528 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:12:18,161 middlewares 14612 23292 Before opening URL
+django.request ERROR 2022-09-27 18:12:31,251 log 14612 12228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "#+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:12:31,255 middlewares 14612 12228 after opening url
+django.utils.autoreload INFO 2022-09-27 18:12:48,759 autoreload 14612 25528 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:12:49,439 autoreload 25012 28668 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:12:49,776 middlewares 25012 12208 Before opening URL
+django.request ERROR 2022-09-27 18:12:51,594 log 25012 6848 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day#+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:12:51,597 middlewares 25012 6848 after opening url
+django.request ERROR 2022-09-27 18:12:54,588 log 25012 6848 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day#+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:12:54,591 middlewares 25012 6848 after opening url
+django.request ERROR 2022-09-27 18:12:59,504 log 25012 6848 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day#+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:12:59,508 middlewares 25012 6848 after opening url
+django.utils.autoreload INFO 2022-09-27 18:13:13,891 autoreload 25012 28668 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:13:14,549 autoreload 28052 5844 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:13:14,854 middlewares 28052 5456 Before opening URL
+django.request ERROR 2022-09-27 18:13:15,593 log 28052 7648 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time#+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:13:15,595 middlewares 28052 7648 after opening url
+django.utils.autoreload INFO 2022-09-27 18:13:20,578 autoreload 28052 5844 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:13:21,223 autoreload 18112 3836 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:13:21,542 middlewares 18112 27712 Before opening URL
+appointment.views.appointment_view INFO 2022-09-27 18:13:25,182 appointment_view 18112 29484 User appointment has been added
+appointment.middlewares ERROR 2022-09-27 18:13:25,192 middlewares 18112 29484 after opening url
+appointment.middlewares ERROR 2022-09-27 18:13:25,301 middlewares 18112 29484 after opening url
+django.utils.autoreload INFO 2022-09-27 18:13:49,941 autoreload 18112 3836 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:13:50,514 autoreload 8968 9580 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:13:50,832 middlewares 8968 17268 Before opening URL
+django.request ERROR 2022-09-27 18:14:03,848 log 8968 17560 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time#+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:14:03,852 middlewares 8968 17560 after opening url
+django.utils.autoreload INFO 2022-09-27 18:14:33,415 autoreload 8968 9580 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:14:34,019 autoreload 10408 11848 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:14:34,318 middlewares 10408 12324 Before opening URL
+django.request ERROR 2022-09-27 18:14:42,272 log 10408 22880 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 62, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:14:42,275 middlewares 10408 22880 after opening url
+django.request ERROR 2022-09-27 18:14:54,806 log 10408 22880 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 62, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:14:54,809 middlewares 10408 22880 after opening url
+django.request ERROR 2022-09-27 18:14:59,682 log 10408 22880 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 62, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:14:59,685 middlewares 10408 22880 after opening url
+django.request ERROR 2022-09-27 18:15:50,396 log 10408 22880 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 62, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:15:50,398 middlewares 10408 22880 after opening url
+django.utils.autoreload INFO 2022-09-27 18:20:00,764 autoreload 10408 11848 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:20:01,890 autoreload 4320 25908 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:20:02,276 middlewares 4320 30204 Before opening URL
+django.request ERROR 2022-09-27 18:20:06,338 log 4320 30180 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 49, in addAppointmentUser
+    time = chr(time1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+appointment.middlewares ERROR 2022-09-27 18:20:06,341 middlewares 4320 30180 after opening url
+django.utils.autoreload INFO 2022-09-27 18:23:03,919 autoreload 4320 25908 D:\GitHub\medic-kit\appointment\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:23:04,780 autoreload 14580 29776 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:23:05,128 middlewares 14580 29840 Before opening URL
+django.utils.autoreload INFO 2022-09-27 18:23:11,011 autoreload 14580 29776 D:\GitHub\medic-kit\appointment\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:23:11,940 autoreload 28056 15984 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:23:12,322 middlewares 28056 10140 Before opening URL
+django.request ERROR 2022-09-27 18:23:15,510 log 28056 1784 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 49, in addAppointmentUser
+    time = chr(time1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+appointment.middlewares ERROR 2022-09-27 18:23:15,513 middlewares 28056 1784 after opening url
+django.request ERROR 2022-09-27 18:23:18,827 log 28056 1784 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 49, in addAppointmentUser
+    time = chr(time1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+appointment.middlewares ERROR 2022-09-27 18:23:18,830 middlewares 28056 1784 after opening url
+appointment.middlewares ERROR 2022-09-27 18:23:30,253 middlewares 28056 1784 after opening url
+django.request WARNING 2022-09-27 18:23:30,254 log 28056 1784 Not Found: /
+django.request ERROR 2022-09-27 18:23:34,013 log 28056 1784 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 49, in addAppointmentUser
+    time = chr(time1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+appointment.middlewares ERROR 2022-09-27 18:23:34,016 middlewares 28056 1784 after opening url
+django.utils.autoreload INFO 2022-09-27 18:23:47,620 autoreload 28056 15984 D:\GitHub\medic-kit\appointment\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:23:48,535 autoreload 30004 12216 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:23:48,981 middlewares 30004 15868 Before opening URL
+django.request ERROR 2022-09-27 18:23:49,817 log 30004 20320 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 49, in addAppointmentUser
+    time = chr(time1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+appointment.middlewares ERROR 2022-09-27 18:23:49,821 middlewares 30004 20320 after opening url
+django.utils.autoreload INFO 2022-09-27 18:24:04,457 autoreload 30004 12216 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:24:05,234 autoreload 6848 11848 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:24:05,609 middlewares 6848 9284 Before opening URL
+django.utils.autoreload INFO 2022-09-27 18:24:11,470 autoreload 6848 11848 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:24:12,257 autoreload 11424 13236 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:24:12,627 middlewares 11424 17832 Before opening URL
+appointment.middlewares ERROR 2022-09-27 18:24:14,327 middlewares 11424 17296 after opening url
+django.request ERROR 2022-09-27 18:24:29,045 log 11424 17296 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 61, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:24:29,048 middlewares 11424 17296 after opening url
+django.utils.autoreload INFO 2022-09-27 18:25:05,572 autoreload 11424 13236 D:\GitHub\medic-kit\appointment\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:25:06,381 autoreload 8944 27172 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:25:06,776 middlewares 8944 11856 Before opening URL
+appointment.middlewares ERROR 2022-09-27 18:25:11,040 middlewares 8944 20040 after opening url
+django.utils.autoreload INFO 2022-09-27 18:25:51,736 autoreload 8944 27172 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:25:52,533 autoreload 20508 15424 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:25:52,893 middlewares 20508 14264 Before opening URL
+appointment.middlewares ERROR 2022-09-27 18:25:56,704 middlewares 20508 11848 after opening url
+django.request ERROR 2022-09-27 18:26:04,602 log 20508 11848 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 63, in addAppointmentUser
+    message = "Hello, \n"+username+" we have recorded your Appointment for Time: "+time+" on "+day+" \n\n For Request: "+request1+" \n\n and we will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname + lname
+TypeError: can only concatenate str (not "NoneType") to str
+appointment.middlewares ERROR 2022-09-27 18:26:04,606 middlewares 20508 11848 after opening url
+django.utils.autoreload INFO 2022-09-27 18:39:20,262 autoreload 20508 15424 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:39:21,096 autoreload 14316 27636 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:39:21,389 middlewares 14316 2844 Before opening URL
+appointment.middlewares ERROR 2022-09-27 18:39:25,807 middlewares 14316 29672 after opening url
+django.request ERROR 2022-09-27 18:39:33,532 log 14316 29672 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\appointment\views\appointment_view.py", line 55, in addAppointmentUser
+    request1 = app.request1
+AttributeError: 'Appointment' object has no attribute 'request1'
+appointment.middlewares ERROR 2022-09-27 18:39:33,534 middlewares 14316 29672 after opening url
+django.utils.autoreload INFO 2022-09-27 18:39:41,427 autoreload 14316 27636 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:39:42,067 autoreload 24704 16128 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:39:42,409 middlewares 24704 26452 Before opening URL
+appointment.views.appointment_view INFO 2022-09-27 18:39:48,445 appointment_view 24704 5324 User appointment has been added
+appointment.middlewares ERROR 2022-09-27 18:39:48,458 middlewares 24704 5324 after opening url
+appointment.middlewares ERROR 2022-09-27 18:39:48,666 middlewares 24704 5324 after opening url
+django.utils.autoreload INFO 2022-09-27 18:42:19,597 autoreload 24704 16128 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 18:42:20,405 autoreload 2012 4412 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 18:42:20,711 middlewares 2012 8300 Before opening URL
+django.utils.autoreload INFO 2022-09-27 19:04:33,846 autoreload 2012 4412 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 19:04:35,430 autoreload 25188 30268 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 19:04:36,054 middlewares 25188 27664 Before opening URL
+appointment.middlewares ERROR 2022-09-27 19:04:41,976 middlewares 25188 22592 after opening url
+appointment.views.appointment_view INFO 2022-09-27 19:05:10,119 appointment_view 25188 22592 User appointment has been added
+appointment.middlewares ERROR 2022-09-27 19:05:10,131 middlewares 25188 22592 after opening url
+appointment.middlewares ERROR 2022-09-27 19:05:10,211 middlewares 25188 22592 after opening url
+django.utils.autoreload INFO 2022-09-27 19:09:58,046 autoreload 25188 30268 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-27 19:09:58,762 autoreload 26084 30104 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-27 19:09:59,060 middlewares 26084 16280 Before opening URL
