@@ -60,7 +60,7 @@ def addAppointmentUser(request):
         #Email
         recipient_email = request.POST.get("email")
         subject = "Appointment Has been Recorded"
-        message = "Hello, \n"+username+" we have recorded your Appointment \n\nTime: "+time+"\nDay "+day+"\nFor Request: "+request1+" \n\n We will let you know on("+email+") this mail once it has been approved \n\n Thank you\n"+fname +" "+ lname
+        message = "Hello, \n"+username+" we have recorded your Appointment \n\nTime: "+time+"\nDay "+day+"\nFor Request: "+request1+" \n\n We will let you know on("+email+") once it has been approved \n\n Thank you\n"+fname +" "+ lname
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [recipient_email]
         # return HttpResponse(subject)

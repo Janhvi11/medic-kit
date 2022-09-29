@@ -3090,3 +3090,16 @@ appointment.middlewares ERROR 2022-09-27 19:05:10,211 middlewares 25188 22592 af
 django.utils.autoreload INFO 2022-09-27 19:09:58,046 autoreload 25188 30268 D:\GitHub\medic-kit\appointment\views\appointment_view.py changed, reloading.
 django.utils.autoreload INFO 2022-09-27 19:09:58,762 autoreload 26084 30104 Watching for file changes with StatReloader
 appointment.middlewares ERROR 2022-09-27 19:09:59,060 middlewares 26084 16280 Before opening URL
+django.utils.autoreload INFO 2022-09-29 12:59:28,049 autoreload 9392 21436 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-29 12:59:28,700 middlewares 9392 22712 Before opening URL
+appointment.middlewares ERROR 2022-09-29 12:59:30,985 middlewares 9392 23220 after opening url
+django.request WARNING 2022-09-29 12:59:30,986 log 9392 23220 Not Found: /
+appointment.middlewares ERROR 2022-09-29 12:59:31,290 middlewares 9392 23220 after opening url
+django.request WARNING 2022-09-29 12:59:31,291 log 9392 23220 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-29 12:59:37,496 middlewares 9392 23220 after opening url
+appointment.views.appointment_view INFO 2022-09-29 13:00:07,728 appointment_view 9392 20260 User appointment has been added
+appointment.middlewares ERROR 2022-09-29 13:00:07,739 middlewares 9392 20260 after opening url
+appointment.middlewares ERROR 2022-09-29 13:00:07,907 middlewares 9392 20260 after opening url
+django.utils.autoreload INFO 2022-09-29 13:02:03,697 autoreload 9392 21436 D:\GitHub\medic-kit (28.09.2022)\appointment\views\appointment_view.py changed, reloading.
+django.utils.autoreload INFO 2022-09-29 13:02:04,314 autoreload 20664 22680 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-29 13:02:04,563 middlewares 20664 22972 Before opening URL
