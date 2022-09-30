@@ -29,29 +29,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
   {% include 'header.html' %}
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-            <a href="{% url 'news-add' %}" class="btn btn-primary"><b>Add News</b></a>
-              <div class="card-body">
-                <h5 class="card-title">View News
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">View News</h3>
+                </div>
+                <div class="card-header">
+                  <button><a href={% url 'news-add' %}>Add News</a></button>
+                </div>
+                <div class="card-header" align="right">
                   <button><a href={% url 'download' %}>Download</a></button>
-
-                </h5>
-                <br>
-                <br>
-                <table border="10" style="width:100%">
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                      </tr>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td>ID</td>
-                            <td>image</td>
-                            <td>title</td>                            
-                        </tr>
-                        {% for data in news %}
+                      {% for data in news %}
                         <tr>
                             <td>{{ data.id }}</td>
                             <td>{{ data.image }}</td>
@@ -61,37 +64,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>
-                
+                  </table>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-
-  {% include 'footer.html' %}
-</div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
+    
 
 <!-- jQuery -->
 <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>

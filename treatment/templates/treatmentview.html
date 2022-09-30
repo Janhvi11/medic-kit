@@ -29,30 +29,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
   {% include 'header.html' %}
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-            <a href="{% url 'treatment-add' %}" class="btn btn-primary"><b>Add Treatment</b></a>
-              <div class="card-body">
-                <h5 class="card-title">View Remedies
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">View Remedies</h3>
+                </div>
+                <div class="card-header">
+                  <a href="{% url 'todolist-add' %}" class="btn btn-primary"><b>Add Remedies</b></a>
+                </div>
+                <div class="card-header">
                   <button><a href={% url 'download' %}>Download</a></button>
-
-                </h5>
-                <br>
-                <br>
-                <table border="10" style="width:100%">
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Id of Diesease</th>
+                        <th>Remedy 1</th>
+                        <th>Remedy 2</th>
+                        <th>Remedy 3</th>
+                      </tr>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td>Id of Diesease</td>
-                            <td>Remedy 1</td>
-                            <td>Remedy 2</td>
-                            <td>Remedy 3</td>
-                
-                        {% for data in treatment %}
+                      {% for data in treatment %}
                         <tr>
                             <td>{{ data.idd }}</td>
                             <td> {{ data.remedies_1 }}</td>
@@ -63,35 +66,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>
-                
+                  </table>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-
-  {% include 'footer.html' %}
-</div>
-<!-- ./wrapper -->
+    
 
 <!-- REQUIRED SCRIPTS -->
 

@@ -30,29 +30,35 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   {% include 'header.html' %}
 
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-              <a href="{% url 'bmi-add' %}" class="btn btn-primary"><b>Add BMI</b></a>
-              <div class="card-body">
-                <h5 class="card-title">User BMI</h5>
-                <br>
-                <br>
-                <table border="10" style="width:100%">
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">View User BMI</h3>
+                </div>
+                <div class="card-header">
+                  <button><a href={% url 'bmi-add' %}>Add BMI</a></button>
+                </div>
+                <div class="card-header" align="right">
+                  <button><a href={% url 'download' %}>Download</a></button>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>user id</th>
+                        <th>user gender</th>
+                        <th>user age</th>
+                        <th>user height</th>
+                        <th>user weight</th>
+                        <th>user bmi</th>
+                      </tr>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td>user id</td>
-                            <td>user gender</td>
-                            <td>user age</td>
-                            <td>user height</td>
-                            <td>user weight</td>
-                            <td>user bmi</td>
-                            
-                        </tr>
-                        {% for data in bmi %}
+                      {% for data in bmi %}
                         <tr>
                             <td>{{ data.userId }}</td>
                             <td>{{ data.gender }}</td>
@@ -65,35 +71,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>
-                
+                  </table>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-
-  {% include 'footer.html' %}
-</div>
-<!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 

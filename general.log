@@ -3103,3 +3103,1397 @@ appointment.middlewares ERROR 2022-09-29 13:00:07,907 middlewares 9392 20260 aft
 django.utils.autoreload INFO 2022-09-29 13:02:03,697 autoreload 9392 21436 D:\GitHub\medic-kit (28.09.2022)\appointment\views\appointment_view.py changed, reloading.
 django.utils.autoreload INFO 2022-09-29 13:02:04,314 autoreload 20664 22680 Watching for file changes with StatReloader
 appointment.middlewares ERROR 2022-09-29 13:02:04,563 middlewares 20664 22972 Before opening URL
+django.utils.autoreload INFO 2022-09-30 11:33:02,843 autoreload 26008 26516 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 11:33:03,296 middlewares 26008 23824 Before opening URL
+appointment.middlewares ERROR 2022-09-30 11:33:11,561 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:12,566 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:13,743 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:13,759 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:14,948 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:15,915 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:20,000 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:20,016 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:23,440 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:23,472 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:23,472 log 26008 16684 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:24,904 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:24,920 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:33:24,920 log 26008 28380 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:25,552 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:25,584 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:33:25,584 log 26008 28380 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:26,095 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:26,159 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:26,159 log 26008 16684 Not Found: /dist/img/user4-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:33:26,697 appointment_view 26008 16684 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:33:26,697 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:26,729 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:33:26,729 log 26008 28380 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:31,462 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:31,485 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:33:31,485 log 26008 28380 Not Found: /ad/viewPharma/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:31,517 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:31,517 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:31,517 log 26008 28380 Not Found: /ad/viewPharma/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:33:31,517 log 26008 16684 Not Found: /ad/viewPharma/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:31,525 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:33:31,525 log 26008 28380 Not Found: /ad/viewPharma/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:32,048 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,080 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:32,080 log 26008 16684 Not Found: /ad/viewUser/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:32,104 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:33:32,104 log 26008 28328 Not Found: /ad/viewUser/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:32,104 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,104 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:32,104 log 26008 28380 Not Found: /ad/viewUser/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:33:32,112 log 26008 16684 Not Found: /ad/viewUser/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:32,464 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,512 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,512 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,520 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:32,520 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:33:32,512 log 26008 28380 Not Found: /medhistory/medhistoryView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:33:32,520 log 26008 28328 Not Found: /medhistory/medhistoryView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:33:32,520 log 26008 4632 Not Found: /medhistory/medhistoryView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:33:32,520 log 26008 6648 Not Found: /medhistory/medhistoryView/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:33:34,453 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:33:34,461 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:34,501 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:34,509 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:33:34,509 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:33:34,509 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:33:34,517 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:33:34,517 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:33:34,517 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:33:34,517 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:34:10,846 appointment_view 26008 16684 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:34:10,870 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:10,894 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:34:10,902 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:34:10,910 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:10,910 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:10,918 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:34:10,918 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:34:10,918 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:34:10,918 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:34:35,770 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:34:35,778 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:35,818 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:35,826 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:34:35,834 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:34:35,834 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:34:35,850 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:35,850 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:34:35,850 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:34:35,850 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:34:43,887 appointment_view 26008 28328 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:34:43,903 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:43,927 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:34:43,935 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:34:43,943 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:43,943 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:34:43,951 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:34:43,951 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:34:43,951 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:34:43,951 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:35:05,194 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:35:05,207 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:05,231 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:35:05,263 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:35:05,279 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:05,287 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:05,287 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:35:05,287 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:35:05,287 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:35:05,287 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:35:17,086 appointment_view 26008 6648 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:35:17,102 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:17,134 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:35:17,134 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:35:17,141 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:17,141 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:17,141 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:35:17,150 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:35:17,150 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:35:17,150 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:35:49,352 appointment_view 26008 28328 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:35:49,360 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:49,392 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:35:49,392 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:35:49,400 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:49,400 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:35:49,400 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:35:49,400 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:35:49,408 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:35:49,408 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:37:37,291 appointment_view 26008 16684 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:37:37,299 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:37:37,323 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:37:37,331 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:37:37,339 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:37:37,339 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:37:37,339 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:37:37,339 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:37:37,339 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:37:37,347 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:38:41,630 appointment_view 26008 4632 Appointment has been viewed
+django.request ERROR 2022-09-30 11:38:41,670 log 26008 4632 Internal Server Error: /appointment/viewappointment/
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\appointment\views\appointment_view.py", line 18, in viewAppointment
+    return render(request, "appointment-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 62: 'for'. Looking for one of: empty, endfor.
+appointment.middlewares ERROR 2022-09-30 11:38:41,678 middlewares 26008 4632 after opening url
+appointment.views.appointment_view INFO 2022-09-30 11:38:58,927 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:38:58,935 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:38:58,975 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:38:58,975 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:38:58,983 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:38:58,983 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:38:58,975 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:38:58,983 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:38:58,983 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:38:58,999 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:39:34,929 appointment_view 26008 28328 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:39:34,937 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:39:34,977 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:39:34,985 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:39:34,985 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:39:34,985 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:39:34,985 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:39:34,985 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:39:34,985 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:39:34,985 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:40:24,303 appointment_view 26008 28380 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:40:24,319 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:24,351 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:24,359 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:40:24,351 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:40:24,359 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:40:24,359 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:24,367 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:40:24,367 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:40:24,367 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:40:41,206 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:40:41,214 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:41,254 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:41,262 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:41,262 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:40:41,254 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:40:41,262 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:40:41,270 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:40:41,270 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:40:41,270 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:40:56,482 appointment_view 26008 28380 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:40:56,490 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:56,530 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:56,530 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:56,530 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:40:56,538 middlewares 26008 4632 after opening url
+django.request WARNING 2022-09-30 11:40:56,530 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:40:56,538 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:40:56,538 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:40:56,538 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:41:29,644 appointment_view 26008 4632 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:41:29,652 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:41:29,692 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:41:29,700 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:41:29,700 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:41:29,700 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:41:29,700 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:41:29,716 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:41:29,716 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:41:29,716 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:42:03,458 appointment_view 26008 28380 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:42:03,466 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:03,506 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:03,506 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:03,514 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:03,514 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:42:03,514 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:42:03,514 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:42:03,514 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:42:03,522 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:42:26,052 appointment_view 26008 6648 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:42:26,068 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:26,108 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:26,108 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:26,108 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:42:26,108 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:42:26,116 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:42:26,116 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:42:26,116 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:42:26,116 log 26008 28380 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:42:37,733 appointment_view 26008 28380 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:42:37,749 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:37,813 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:37,813 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:42:37,813 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:42:37,821 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:37,821 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:42:37,821 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:42:37,821 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:42:37,821 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:42:43,427 appointment_view 26008 6648 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:42:43,435 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:43,459 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:42:43,459 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:42:43,475 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:42:43,475 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:42:43,483 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:42:43,491 middlewares 26008 6648 after opening url
+django.request WARNING 2022-09-30 11:42:43,491 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:42:43,491 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:45:47,908 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:47,964 middlewares 26008 28328 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:47,964 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:47,964 middlewares 26008 16684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:47,972 middlewares 26008 28380 after opening url
+django.request WARNING 2022-09-30 11:45:47,972 log 26008 28328 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 11:45:47,972 log 26008 4632 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:45:47,972 log 26008 16684 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:45:47,972 log 26008 28380 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:45:52,424 appointment_view 26008 28380 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:45:52,432 middlewares 26008 28380 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:52,472 middlewares 26008 16684 after opening url
+django.request WARNING 2022-09-30 11:45:52,472 log 26008 16684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:45:52,480 middlewares 26008 6648 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:52,496 middlewares 26008 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 11:45:52,496 middlewares 26008 28328 after opening url
+django.request WARNING 2022-09-30 11:45:52,496 log 26008 6648 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:45:52,496 log 26008 4632 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:45:52,504 log 26008 28328 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 11:58:24,002 appointment_view 26008 13684 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 11:58:24,017 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:58:24,041 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:58:24,041 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:24,065 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:58:24,065 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:24,073 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:58:24,081 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:24,089 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:58:24,089 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:25,785 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:58:25,817 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 11:58:25,817 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:25,841 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 11:58:25,841 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 11:58:25,841 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 11:58:25,841 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:58:25,849 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 11:58:25,849 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:58:25,889 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 11:58:25,889 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 11:59:37,307 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 11:59:37,339 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:59:37,347 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:59:37,355 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 11:59:37,355 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:59:37,355 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 11:59:37,363 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 11:59:37,363 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 11:59:37,363 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:59:54,271 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 11:59:54,295 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 11:59:54,311 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 11:59:54,311 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 11:59:54,311 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 11:59:54,319 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 11:59:54,319 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 11:59:54,319 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 11:59:54,319 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:00:12,688 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:00:12,720 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:00:12,720 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:00:12,728 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:00:12,736 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:00:12,736 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:00:12,736 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:00:12,736 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:00:12,736 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:00:31,341 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:00:31,365 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:00:31,373 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:00:31,381 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:00:31,381 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:00:31,381 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:00:31,389 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:00:31,381 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:00:31,421 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:17,728 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:17,751 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:01:17,759 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:17,783 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:17,791 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:17,791 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:01:17,791 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:01:17,799 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:01:17,799 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:28,010 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:28,050 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:28,050 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:28,058 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:28,058 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:01:28,058 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:01:28,058 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:01:28,058 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:01:28,058 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:38,045 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:38,085 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:38,085 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:01:38,085 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:38,093 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:38,093 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:01:38,093 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:01:38,093 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:01:38,093 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:46,415 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:46,455 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:46,455 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:01:46,455 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:46,455 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:46,455 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:01:46,455 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:01:46,455 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:01:46,463 log 26008 14964 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:01:52,145 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:52,185 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:52,185 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:52,185 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:01:52,185 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:01:52,185 log 26008 21316 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:01:52,185 log 26008 26392 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:01:52,185 log 26008 13684 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:01:52,185 log 26008 7844 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:02:29,963 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:02:30,011 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:02:30,019 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:02:30,019 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:02:30,019 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:02:30,019 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:02:30,019 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:02:30,019 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:02:30,027 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:22,155 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:22,195 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:22,195 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:22,203 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:22,203 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:04:22,203 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:04:22,203 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:04:22,203 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:04:22,203 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:37,249 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:37,289 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:04:37,289 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:37,289 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:37,289 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:37,297 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:04:37,289 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:04:37,297 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:04:37,297 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:38,679 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:38,711 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:04:38,727 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:38,751 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:38,751 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:38,751 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:04:38,751 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:04:38,751 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:04:38,751 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:55,689 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:55,714 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:04:55,722 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:55,746 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:55,746 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:04:55,746 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:55,754 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:04:55,754 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:04:55,754 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:58,043 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:58,075 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:04:58,083 log 26008 21316 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:58,099 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:04:58,099 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:04:58,115 log 26008 13684 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:04:58,131 log 26008 26392 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:04:58,131 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:04:58,131 log 26008 7844 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:21,738 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:21,762 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:05:21,762 log 26008 26392 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:21,794 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:21,794 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:05:21,794 log 26008 13684 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:21,794 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:05:21,802 log 26008 7844 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:05:21,802 log 26008 26392 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:45,265 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:45,305 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:45,305 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:45,305 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:45,305 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:05:45,313 log 26008 14964 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:05:45,313 log 26008 21316 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:05:45,313 log 26008 13684 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:05:45,313 log 26008 7844 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:52,729 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:52,753 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:05:52,753 log 26008 21316 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:05:52,777 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:52,777 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:05:52,777 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:05:52,777 log 26008 21316 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:05:52,785 log 26008 7844 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:05:52,785 log 26008 13684 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:37,350 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:37,374 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:06:37,382 log 26008 7844 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:37,390 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:37,398 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:06:37,398 log 26008 26392 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:06:37,398 log 26008 21316 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:37,398 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:06:37,398 log 26008 14964 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 12:06:40,582 appointment_view 26008 14964 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 12:06:40,591 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:40,632 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:06:40,640 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:40,648 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:40,648 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:06:40,648 log 26008 26392 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:06:40,672 log 26008 7844 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:40,672 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:06:40,680 log 26008 21316 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.views.appointment_view INFO 2022-09-30 12:06:50,723 appointment_view 26008 21316 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 12:06:50,733 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:50,757 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:06:50,757 log 26008 13684 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:06:50,765 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:50,773 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:06:50,773 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:06:50,773 log 26008 7844 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:06:50,773 log 26008 26392 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:06:50,773 log 26008 14964 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.views.appointment_view INFO 2022-09-30 12:08:23,011 appointment_view 26008 14964 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 12:08:23,019 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:23,043 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:08:23,043 log 26008 26392 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:23,075 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:23,083 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:23,083 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:08:23,083 log 26008 26392 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:08:23,083 log 26008 14964 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:08:23,083 log 26008 7844 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:25,006 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:25,078 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:25,078 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:25,087 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:08:25,078 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:25,087 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:08:25,087 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:08:25,087 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:08:25,087 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:45,457 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:45,489 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:08:45,497 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:45,497 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:45,497 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:45,505 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:08:45,505 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:08:45,513 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:08:45,513 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:55,176 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:55,200 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:08:55,216 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:08:55,216 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:55,216 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:08:55,224 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:08:55,224 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:08:55,224 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:08:55,224 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:09:07,358 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:09:07,382 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:09:07,382 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:09:07,390 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:09:07,398 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:09:07,398 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:09:07,398 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:09:07,398 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:09:07,398 log 26008 13684 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:34,760 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:34,784 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:10:34,792 log 26008 7844 Not Found: /bmi/viewidealbmi/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:34,801 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:34,808 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:10:34,808 log 26008 14964 Not Found: /bmi/viewidealbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:34,808 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:10:34,808 log 26008 21316 Not Found: /bmi/viewidealbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:10:34,808 log 26008 26392 Not Found: /bmi/viewidealbmi/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:36,918 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:36,958 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:36,958 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:10:36,958 log 26008 21316 Not Found: /contact/viewContact/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:10:36,966 log 26008 14964 Not Found: /contact/viewContact/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:36,966 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:36,966 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:10:36,974 log 26008 7844 Not Found: /contact/viewContact/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:10:36,974 log 26008 13684 Not Found: /contact/viewContact/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:55,160 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:55,184 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:55,200 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:10:55,192 log 26008 7844 Not Found: /contact/viewContact/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:55,208 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:10:55,200 log 26008 14964 Not Found: /contact/viewContact/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:10:55,208 log 26008 21316 Not Found: /contact/viewContact/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:55,208 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:10:55,208 log 26008 26392 Not Found: /contact/viewContact/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:56,992 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:57,015 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:57,023 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:10:57,023 log 26008 21316 Not Found: /contact/viewContact/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:10:57,031 log 26008 14964 Not Found: /contact/viewContact/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:10:57,031 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:10:57,031 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:10:57,031 log 26008 7844 Not Found: /contact/viewContact/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:10:57,031 log 26008 13684 Not Found: /contact/viewContact/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:11:09,950 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:11:09,974 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:11:09,982 log 26008 7844 Not Found: /contact/viewContact/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:11:09,990 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:11:09,990 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:11:09,998 log 26008 21316 Not Found: /contact/viewContact/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:11:09,998 log 26008 26392 Not Found: /contact/viewContact/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:11:09,998 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:11:09,998 log 26008 14964 Not Found: /contact/viewContact/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:11:13,411 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:11:13,435 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:11:13,435 log 26008 26392 Not Found: /contact/viewContact/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:11:13,443 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:11:13,451 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:11:13,451 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:11:13,451 log 26008 13684 Not Found: /contact/viewContact/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:11:13,451 log 26008 7844 Not Found: /contact/viewContact/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:11:13,459 log 26008 21316 Not Found: /contact/viewContact/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:28,704 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:28,752 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:28,752 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:28,760 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:12:28,752 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:28,760 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:12:28,760 log 26008 13684 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:12:28,760 log 26008 14964 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:12:28,760 log 26008 26392 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:31,337 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:31,375 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:12:31,375 log 26008 26392 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:31,383 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:12:31,383 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:31,415 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:31,415 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:12:31,415 log 26008 21316 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:12:31,415 log 26008 13684 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:52,255 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:52,295 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:12:52,295 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:12:52,295 log 26008 13684 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:52,303 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:12:52,303 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:12:52,303 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:12:52,303 log 26008 14964 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:12:52,303 log 26008 26392 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:32,278 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:32,302 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:13:32,310 log 26008 14964 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:32,318 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:32,326 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:32,326 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:13:32,318 log 26008 21316 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:13:32,326 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:13:32,326 log 26008 13684 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:44,740 middlewares 26008 13684 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:44,772 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:13:44,772 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:44,780 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:44,788 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:44,788 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:13:44,788 log 26008 21316 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:13:44,788 log 26008 26392 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:13:44,788 log 26008 14964 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:58,617 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:58,641 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:13:58,649 log 26008 26392 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:58,657 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:13:58,657 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:13:58,657 log 26008 7844 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:13:58,665 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:13:58,665 log 26008 13684 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:13:58,665 log 26008 21316 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:18,505 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:18,545 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:15:18,545 log 26008 13684 Not Found: /feedback/viewFeedback/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:18,553 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:15:18,553 log 26008 26392 Not Found: /feedback/viewFeedback/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:18,561 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:18,561 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:15:18,561 log 26008 7844 Not Found: /feedback/viewFeedback/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:15:18,561 log 26008 14964 Not Found: /feedback/viewFeedback/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:20,510 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:20,542 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:15:20,574 log 26008 7844 Not Found: /feedback/viewFeedback/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:20,590 middlewares 26008 26392 after opening url
+django.request WARNING 2022-09-30 12:15:20,590 log 26008 26392 Not Found: /feedback/viewFeedback/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:20,590 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:15:20,598 log 26008 13684 Not Found: /feedback/viewFeedback/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:20,598 middlewares 26008 21316 after opening url
+django.request WARNING 2022-09-30 12:15:20,598 log 26008 21316 Not Found: /feedback/viewFeedback/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:34,823 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:34,855 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:15:34,855 log 26008 13684 Not Found: /feedback/viewFeedback/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:15:34,863 middlewares 26008 14964 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:34,863 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:15:34,863 middlewares 26008 7844 after opening url
+django.request WARNING 2022-09-30 12:15:34,863 log 26008 14964 Not Found: /feedback/viewFeedback/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:15:34,871 log 26008 26392 Not Found: /feedback/viewFeedback/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:15:34,871 log 26008 7844 Not Found: /feedback/viewFeedback/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:17:59,244 middlewares 26008 7844 after opening url
+appointment.middlewares ERROR 2022-09-30 12:17:59,276 middlewares 26008 26392 after opening url
+appointment.middlewares ERROR 2022-09-30 12:17:59,284 middlewares 26008 14964 after opening url
+django.request WARNING 2022-09-30 12:17:59,284 log 26008 26392 Not Found: /feedback/viewFeedback/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:17:59,284 log 26008 14964 Not Found: /feedback/viewFeedback/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:17:59,292 middlewares 26008 21316 after opening url
+appointment.middlewares ERROR 2022-09-30 12:17:59,292 middlewares 26008 13684 after opening url
+django.request WARNING 2022-09-30 12:17:59,292 log 26008 21316 Not Found: /feedback/viewFeedback/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:17:59,292 log 26008 13684 Not Found: /feedback/viewFeedback/dist/img/user3-128x128.jpg
+django.request ERROR 2022-09-30 12:18:02,058 log 26008 13684 Internal Server Error: /hospital/viewHos/
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'hospital_hos.Name' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\hospital\views\hos_view.py", line 17, in viewhos
+    return render(request, "hos-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'hospital_hos.Name' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 12:18:02,063 middlewares 26008 13684 after opening url
+django.request ERROR 2022-09-30 12:23:59,741 log 26008 17720 Internal Server Error: /hospital/viewHos/
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'hospital_hos.Name' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\janhv\OneDrive\Documents\GitHub\medic_kit\medic-kit\hospital\views\hos_view.py", line 17, in viewhos
+    return render(request, "hos-view.html", context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\janhv\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'hospital_hos.Name' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 12:23:59,749 middlewares 26008 17720 after opening url
+django.utils.autoreload INFO 2022-09-30 12:27:31,676 autoreload 18788 26760 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 12:27:31,910 middlewares 18788 5696 Before opening URL
+appointment.middlewares ERROR 2022-09-30 12:27:35,913 middlewares 18788 24592 after opening url
+appointment.middlewares ERROR 2022-09-30 12:27:35,953 middlewares 18788 24592 after opening url
+django.request WARNING 2022-09-30 12:27:35,953 log 18788 24592 Not Found: /hospital/viewHos/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:27:35,961 middlewares 18788 24592 after opening url
+django.request WARNING 2022-09-30 12:27:35,961 log 18788 24592 Not Found: /hospital/viewHos/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:27:35,969 middlewares 18788 24592 after opening url
+django.request WARNING 2022-09-30 12:27:35,969 log 18788 24592 Not Found: /hospital/viewHos/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:27:35,977 middlewares 18788 24592 after opening url
+django.request WARNING 2022-09-30 12:27:35,985 log 18788 24592 Not Found: /hospital/viewHos/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:27:48,984 middlewares 18788 24592 after opening url
+appointment.middlewares ERROR 2022-09-30 12:27:49,023 middlewares 18788 3080 after opening url
+appointment.middlewares ERROR 2022-09-30 12:27:49,023 middlewares 18788 25560 after opening url
+appointment.middlewares ERROR 2022-09-30 12:27:49,023 middlewares 18788 29592 after opening url
+appointment.middlewares ERROR 2022-09-30 12:27:49,023 middlewares 18788 26416 after opening url
+django.request WARNING 2022-09-30 12:27:49,031 log 18788 3080 Not Found: /hospital/viewHos/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:27:49,031 log 18788 25560 Not Found: /hospital/viewHos/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:27:49,031 log 18788 26416 Not Found: /hospital/viewHos/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:27:49,031 log 18788 29592 Not Found: /hospital/viewHos/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:01,560 middlewares 18788 7908 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:01,584 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:33:01,584 log 18788 7908 Not Found: /hospital/viewHos/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:01,592 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:33:01,600 log 18788 7908 Not Found: /hospital/viewHos/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:01,600 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:33:01,608 log 18788 7908 Not Found: /hospital/viewHos/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:01,616 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:33:01,616 log 18788 7908 Not Found: /hospital/viewHos/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:02,711 middlewares 18788 7908 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:02,735 middlewares 18788 668 after opening url
+django.request WARNING 2022-09-30 12:33:02,751 log 18788 668 Not Found: /medhistory/medhistoryView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:02,759 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:02,767 middlewares 18788 2492 after opening url
+django.request WARNING 2022-09-30 12:33:02,767 log 18788 24500 Not Found: /medhistory/medhistoryView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:02,767 middlewares 18788 24600 after opening url
+django.request WARNING 2022-09-30 12:33:02,767 log 18788 2492 Not Found: /medhistory/medhistoryView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:33:02,767 log 18788 24600 Not Found: /medhistory/medhistoryView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:18,362 middlewares 18788 2492 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:18,394 middlewares 18788 24600 after opening url
+django.request WARNING 2022-09-30 12:33:18,402 log 18788 24600 Not Found: /medhistory/medhistoryView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:33:18,410 middlewares 18788 668 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:18,410 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:33:18,410 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:33:18,418 log 18788 668 Not Found: /medhistory/medhistoryView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:33:18,418 log 18788 7908 Not Found: /medhistory/medhistoryView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 12:33:18,418 log 18788 24500 Not Found: /medhistory/medhistoryView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:36:53,854 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:36:53,886 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:36:53,886 log 18788 7908 Not Found: /newss/viewNews/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:36:53,926 middlewares 18788 7908 after opening url
+django.request WARNING 2022-09-30 12:36:53,926 log 18788 7908 Not Found: /newss/viewNews/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:36:53,934 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:36:53,934 middlewares 18788 668 after opening url
+django.request WARNING 2022-09-30 12:36:53,934 log 18788 24500 Not Found: /newss/viewNews/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:36:53,934 log 18788 668 Not Found: /newss/viewNews/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:37:18,012 middlewares 18788 668 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:18,052 middlewares 18788 2492 after opening url
+django.request WARNING 2022-09-30 12:37:18,052 log 18788 2492 Not Found: /newss/viewNews/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:37:18,060 middlewares 18788 668 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:18,060 middlewares 18788 7908 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:18,060 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:18,060 middlewares 18788 24600 after opening url
+django.request WARNING 2022-09-30 12:37:18,068 log 18788 7908 Not Found: /newss/viewNews/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:37:18,068 log 18788 24500 Not Found: /newss/viewNews/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 12:37:18,068 log 18788 24600 Not Found: /newss/viewNews/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 12:37:18,068 log 18788 668 Not Found: /newss/viewNews/news_img/itachi_uhchia.jpg
+appointment.middlewares ERROR 2022-09-30 12:37:23,966 middlewares 18788 668 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:23,982 middlewares 18788 24600 after opening url
+django.request WARNING 2022-09-30 12:37:23,982 log 18788 24600 Not Found: /newss/viewNews/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 12:37:24,006 middlewares 18788 24500 after opening url
+appointment.middlewares ERROR 2022-09-30 12:37:24,006 middlewares 18788 24600 after opening url
+django.request WARNING 2022-09-30 12:37:24,006 log 18788 24500 Not Found: /newss/viewNews/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 12:37:24,006 middlewares 18788 668 after opening url
+django.request WARNING 2022-09-30 12:37:24,006 log 18788 24600 Not Found: /newss/viewNews/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 12:37:24,006 log 18788 668 Not Found: /newss/viewNews/dist/img/user3-128x128.jpg
+django.utils.autoreload INFO 2022-09-30 15:04:13,402 autoreload 34452 23684 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 15:04:13,758 middlewares 34452 32668 Before opening URL
+appointment.middlewares ERROR 2022-09-30 15:04:14,075 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:04:14,246 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:04:14,247 log 34452 34256 Not Found: /prescription/prescriptionView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:04:14,257 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:04:14,259 log 34452 34256 Not Found: /prescription/prescriptionView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:04:14,266 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:04:14,267 log 34452 34256 Not Found: /prescription/prescriptionView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:04:14,279 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:04:14,280 log 34452 34256 Not Found: /prescription/prescriptionView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:04:14,334 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:04:14,335 log 34452 34256 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-30 15:04:28,850 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:04:28,897 middlewares 34452 35344 after opening url
+appointment.middlewares ERROR 2022-09-30 15:04:28,898 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:04:28,899 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:04:28,901 middlewares 34452 25896 after opening url
+django.request WARNING 2022-09-30 15:04:28,901 log 34452 35344 Not Found: /prescription/prescriptionView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:04:28,903 log 34452 6360 Not Found: /prescription/prescriptionView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:04:28,903 log 34452 34256 Not Found: /prescription/prescriptionView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:04:28,904 log 34452 25896 Not Found: /prescription/prescriptionView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:05:31,316 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:05:31,415 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:05:31,418 middlewares 34452 35344 after opening url
+appointment.middlewares ERROR 2022-09-30 15:05:31,421 middlewares 34452 6360 after opening url
+django.request WARNING 2022-09-30 15:05:31,422 log 34452 25896 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:05:31,426 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:05:31,427 log 34452 35344 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:05:31,428 log 34452 6360 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:05:31,429 log 34452 34256 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:08:00,035 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:00,098 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:00,100 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:00,104 middlewares 34452 35344 after opening url
+django.request WARNING 2022-09-30 15:08:00,105 log 34452 34256 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:08:00,111 log 34452 25896 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:08:00,114 middlewares 34452 6360 after opening url
+django.request WARNING 2022-09-30 15:08:00,114 log 34452 35344 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:08:00,116 log 34452 6360 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:08:19,018 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:19,057 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:19,061 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:08:19,065 middlewares 34452 35344 after opening url
+django.request WARNING 2022-09-30 15:08:19,067 log 34452 34256 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:08:19,076 middlewares 34452 6360 after opening url
+django.request WARNING 2022-09-30 15:08:19,086 log 34452 35344 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:08:19,087 log 34452 25896 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:08:19,089 log 34452 6360 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:26,014 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:26,056 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:26,059 middlewares 34452 35344 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:26,061 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:26,062 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:09:26,063 log 34452 6360 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:09:26,064 log 34452 35344 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:09:26,064 log 34452 25896 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:09:26,065 log 34452 34256 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:27,680 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:27,710 middlewares 34452 25896 after opening url
+django.request WARNING 2022-09-30 15:09:27,711 log 34452 25896 Not Found: /ad/viewPharma/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:27,735 middlewares 34452 35344 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:27,737 middlewares 34452 34256 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:27,741 middlewares 34452 25896 after opening url
+django.request WARNING 2022-09-30 15:09:27,738 log 34452 35344 Not Found: /ad/viewPharma/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:09:27,742 log 34452 34256 Not Found: /ad/viewPharma/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:09:27,743 log 34452 25896 Not Found: /ad/viewPharma/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:37,487 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:37,532 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:09:37,537 log 34452 34256 Not Found: /ad/viewPharma/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:37,548 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:37,550 middlewares 34452 35344 after opening url
+django.request WARNING 2022-09-30 15:09:37,551 log 34452 6360 Not Found: /ad/viewPharma/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:09:37,552 log 34452 35344 Not Found: /ad/viewPharma/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:37,567 middlewares 34452 25896 after opening url
+django.request WARNING 2022-09-30 15:09:37,567 log 34452 25896 Not Found: /ad/viewPharma/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:46,922 middlewares 34452 25896 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:46,951 middlewares 34452 35344 after opening url
+django.request WARNING 2022-09-30 15:09:46,953 log 34452 35344 Not Found: /ad/viewPharma/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:09:46,967 middlewares 34452 33096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:46,971 middlewares 34452 6360 after opening url
+appointment.middlewares ERROR 2022-09-30 15:09:46,975 middlewares 34452 34256 after opening url
+django.request WARNING 2022-09-30 15:09:46,968 log 34452 33096 Not Found: /ad/viewPharma/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:09:46,975 log 34452 6360 Not Found: /ad/viewPharma/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:09:46,978 log 34452 34256 Not Found: /ad/viewPharma/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:33,741 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:33,772 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:18:33,772 log 34452 30376 Not Found: /ad/viewUser/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:33,795 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:18:33,796 log 34452 30376 Not Found: /ad/viewUser/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:33,806 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:18:33,808 log 34452 30376 Not Found: /ad/viewUser/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:33,819 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:18:33,820 log 34452 30376 Not Found: /ad/viewUser/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:38,222 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:38,246 middlewares 34452 13784 after opening url
+django.request WARNING 2022-09-30 15:18:38,248 log 34452 13784 Not Found: /ad/addDoc/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:38,275 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:38,277 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:38,281 middlewares 34452 20428 after opening url
+django.request WARNING 2022-09-30 15:18:38,278 log 34452 30376 Not Found: /ad/addDoc/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:18:38,281 log 34452 13784 Not Found: /ad/addDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:18:38,282 log 34452 20428 Not Found: /ad/addDoc/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:48,720 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:48,746 middlewares 34452 13784 after opening url
+django.request WARNING 2022-09-30 15:18:48,748 log 34452 13784 Not Found: /ad/viewUser/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:48,763 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:18:48,767 middlewares 34452 9456 after opening url
+django.request WARNING 2022-09-30 15:18:48,764 log 34452 26224 Not Found: /ad/viewUser/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:18:48,773 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:18:48,768 log 34452 9456 Not Found: /ad/viewUser/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:18:48,775 log 34452 30376 Not Found: /ad/viewUser/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:49,100 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,159 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,162 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,165 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,168 middlewares 34452 9456 after opening url
+django.request WARNING 2022-09-30 15:19:49,163 log 34452 26224 Not Found: /ad/viewDoc/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:19:49,184 log 34452 20428 Not Found: /ad/viewDoc/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:49,185 log 34452 13784 Not Found: /ad/viewDoc/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:19:49,186 log 34452 9456 Not Found: /ad/viewDoc/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:49,796 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,843 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,847 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:49,852 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:49,848 log 34452 13784 Not Found: /ad/viewPharma/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:49,857 middlewares 34452 20428 after opening url
+django.request WARNING 2022-09-30 15:19:49,853 log 34452 30376 Not Found: /ad/viewPharma/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:49,857 log 34452 26224 Not Found: /ad/viewPharma/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:19:49,858 log 34452 20428 Not Found: /ad/viewPharma/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:50,337 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:50,388 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:50,393 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:50,395 middlewares 34452 9456 after opening url
+django.request WARNING 2022-09-30 15:19:50,407 log 34452 30376 Not Found: /ad/viewUser/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:50,397 middlewares 34452 13784 after opening url
+django.request WARNING 2022-09-30 15:19:50,427 log 34452 13784 Not Found: /ad/viewUser/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:19:50,428 log 34452 9456 Not Found: /ad/viewUser/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:50,428 log 34452 26224 Not Found: /ad/viewUser/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:51,512 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:51,565 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:51,567 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:51,569 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:51,573 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:51,574 log 34452 26224 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:19:51,578 log 34452 13784 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:19:51,579 log 34452 30376 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:51,580 log 34452 9456 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:54,821 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:54,868 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:54,870 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:54,872 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:54,870 log 34452 30376 Not Found: /ill/diseaseView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:54,875 middlewares 34452 13784 after opening url
+django.request WARNING 2022-09-30 15:19:54,875 log 34452 20428 Not Found: /ill/diseaseView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:54,877 log 34452 13784 Not Found: /ill/diseaseView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:19:54,877 log 34452 26224 Not Found: /ill/diseaseView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:55,839 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:55,881 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:55,886 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:19:55,887 log 34452 30376 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:55,901 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:55,913 middlewares 34452 9456 after opening url
+django.request WARNING 2022-09-30 15:19:55,910 log 34452 13784 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:19:55,910 log 34452 20428 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:19:55,914 log 34452 9456 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:57,111 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:57,147 middlewares 34452 20428 after opening url
+django.request WARNING 2022-09-30 15:19:57,153 log 34452 20428 Not Found: /medhistory/medhistoryView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:57,163 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:57,165 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:57,164 log 34452 13784 Not Found: /medhistory/medhistoryView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:57,168 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:19:57,166 log 34452 26224 Not Found: /medhistory/medhistoryView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:57,169 log 34452 30376 Not Found: /medhistory/medhistoryView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:58,042 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,091 middlewares 34452 20428 after opening url
+django.request WARNING 2022-09-30 15:19:58,096 log 34452 20428 Not Found: /prescription/prescriptionView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:58,100 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:58,101 log 34452 26224 Not Found: /prescription/prescriptionView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:58,106 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,110 middlewares 34452 9456 after opening url
+django.request WARNING 2022-09-30 15:19:58,111 log 34452 13784 Not Found: /prescription/prescriptionView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:19:58,117 log 34452 9456 Not Found: /prescription/prescriptionView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:19:58,811 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,858 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,860 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,862 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:19:58,865 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:19:58,863 log 34452 13784 Not Found: /feedback/viewFeedback/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:19:58,883 log 34452 30376 Not Found: /feedback/viewFeedback/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:19:58,889 log 34452 26224 Not Found: /feedback/viewFeedback/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:19:58,889 log 34452 20428 Not Found: /feedback/viewFeedback/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:20:00,408 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:00,441 middlewares 34452 26224 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:00,455 middlewares 34452 30376 after opening url
+django.request WARNING 2022-09-30 15:20:00,451 log 34452 26224 Not Found: /prescription/prescriptionView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:20:00,461 log 34452 30376 Not Found: /prescription/prescriptionView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:20:00,465 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:00,467 middlewares 34452 13784 after opening url
+django.request WARNING 2022-09-30 15:20:00,468 log 34452 9456 Not Found: /prescription/prescriptionView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:20:00,468 log 34452 13784 Not Found: /prescription/prescriptionView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:20:15,684 middlewares 34452 13784 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:15,730 middlewares 34452 30376 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:15,731 middlewares 34452 20428 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:15,733 middlewares 34452 9456 after opening url
+appointment.middlewares ERROR 2022-09-30 15:20:15,734 middlewares 34452 26224 after opening url
+django.request WARNING 2022-09-30 15:20:15,734 log 34452 30376 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:20:15,736 log 34452 9456 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:20:15,737 log 34452 20428 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:20:15,739 log 34452 26224 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:13,327 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:26:13,359 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:13,359 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:13,407 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:13,407 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:13,423 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:13,423 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:13,431 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:13,431 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:16,006 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:26:16,070 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:26:16,070 log 34452 11632 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:16,078 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:26:16,094 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:16,094 log 34452 34972 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:16,102 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:26:16,102 log 34452 11512 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:26:16,102 log 34452 11772 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:32,821 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:26:32,845 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:26:32,853 log 34452 11512 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:32,869 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:26:32,869 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:26:32,869 log 34452 11632 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:26:32,869 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:26:32,869 log 34452 34972 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:26:32,869 log 34452 20096 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:27:25,709 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:27:25,733 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:27:25,749 log 34452 34972 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:27:25,757 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:27:25,757 log 34452 11772 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:27:25,765 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:27:25,765 log 34452 11512 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:27:25,781 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:27:25,781 log 34452 11632 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:11,892 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:28:11,924 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:28:11,932 log 34452 11512 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:11,940 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:28:11,940 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:28:11,940 log 34452 34972 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:11,940 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:28:11,940 log 34452 11772 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:28:11,940 log 34452 20096 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:20,593 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:28:20,633 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:28:20,636 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:28:20,636 log 34452 11772 Not Found: /timeline/viewTimeAdminline/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:20,636 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:28:20,636 log 34452 11512 Not Found: /timeline/viewTimeAdminline/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:28:20,644 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:28:20,636 log 34452 34972 Not Found: /timeline/viewTimeAdminline/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:28:20,644 log 34452 11632 Not Found: /timeline/viewTimeAdminline/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:29:46,447 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:29:46,479 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:29:46,487 log 34452 34972 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:29:46,511 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:29:46,511 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:29:46,519 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:29:46,511 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:29:46,519 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:29:46,519 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:29:48,428 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:29:48,460 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:29:48,468 log 34452 11632 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:29:48,476 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:29:48,484 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:29:48,476 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:29:48,484 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:29:48,484 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:29:48,484 log 34452 34972 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:31:14,635 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:14,691 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:31:14,699 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:31:14,707 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:14,707 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:14,715 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:31:14,707 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:31:14,731 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:31:14,731 log 34452 11632 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:31:53,225 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:53,257 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:31:53,257 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:31:53,273 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:53,273 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:31:53,273 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:31:53,273 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:31:53,281 log 34452 34972 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:31:53,281 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:32:10,446 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:10,470 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:32:10,478 log 34452 34972 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:32:10,486 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:10,494 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:10,494 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:32:10,494 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:32:10,494 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:32:10,494 log 34452 11632 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:32:12,286 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:12,310 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:12,318 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:32:12,318 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:32:12,318 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:32:12,326 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:32:12,326 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:32:12,334 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:32:12,334 log 34452 34972 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:33:20,598 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:20,622 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:33:20,630 log 34452 20096 Not Found: /todo/viewToDoList/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:33:20,638 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:20,646 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:20,646 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:33:20,638 log 34452 11512 Not Found: /todo/viewToDoList/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:33:20,646 log 34452 11632 Not Found: /todo/viewToDoList/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:33:20,646 log 34452 11772 Not Found: /todo/viewToDoList/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:33:21,951 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:21,991 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:33:21,999 log 34452 11632 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:33:22,007 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:22,007 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:33:22,007 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:33:22,007 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:33:22,007 log 34452 20096 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:33:22,007 log 34452 34972 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:34:14,978 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:15,010 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:15,010 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:34:15,010 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:34:15,010 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:34:15,018 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:15,026 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:34:15,026 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:34:15,026 log 34452 11772 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:34:27,174 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:27,190 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:34:27,198 log 34452 11632 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:34:27,214 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:27,214 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:34:27,222 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:34:27,214 log 34452 34972 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:34:27,222 log 34452 20096 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:34:27,222 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:35:53,299 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:35:53,324 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:35:53,340 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:35:53,340 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:35:53,348 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:35:53,356 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:35:53,364 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:35:53,364 log 34452 11772 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:35:53,372 log 34452 34972 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:36:15,522 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:36:15,546 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:36:15,554 log 34452 11772 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:36:15,562 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:36:15,562 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:36:15,562 log 34452 20096 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:36:15,570 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:36:15,562 log 34452 11512 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:36:15,570 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:36:35,583 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:36:35,623 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:36:35,631 log 34452 11512 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:36:35,647 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:36:35,655 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:36:35,655 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:36:35,647 log 34452 34972 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:36:35,655 log 34452 11772 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:36:35,655 log 34452 20096 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:00,430 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:00,462 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:00,477 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:37:00,469 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:00,477 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:37:00,477 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:00,477 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:37:00,477 log 34452 34972 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:37:00,477 log 34452 11512 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:24,039 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:24,071 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:37:24,079 log 34452 34972 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:24,087 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:37:24,087 log 34452 11632 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:24,087 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:24,095 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:37:24,095 log 34452 20096 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:37:24,095 log 34452 11772 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:46,521 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:46,553 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:37:46,553 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:37:46,561 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:46,569 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:37:46,569 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:37:46,569 log 34452 11632 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 15:37:46,569 log 34452 34972 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:37:46,569 log 34452 11512 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:01,908 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:01,948 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:01,956 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:38:01,956 log 34452 34972 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:38:01,956 log 34452 11632 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:01,956 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:01,956 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:38:01,964 log 34452 11772 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:38:01,964 log 34452 20096 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:19,515 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:19,547 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:19,555 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:38:19,547 log 34452 11772 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:38:19,555 log 34452 11632 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:19,563 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:19,563 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:38:19,563 log 34452 11512 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:38:19,563 log 34452 34972 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:34,375 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:34,407 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:38:34,415 log 34452 11512 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:34,423 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:34,423 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:38:34,423 log 34452 11772 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:34,431 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:38:34,423 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:38:34,431 log 34452 20096 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:51,934 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:51,966 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:51,974 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:38:51,974 log 34452 11632 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:38:51,974 log 34452 11772 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:38:51,982 middlewares 34452 34972 after opening url
+appointment.middlewares ERROR 2022-09-30 15:38:51,982 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:38:51,982 log 34452 34972 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:38:51,982 log 34452 11512 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:39:06,089 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:39:06,129 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:39:06,129 log 34452 34972 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:39:06,137 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:39:06,137 log 34452 11772 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:39:06,137 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:39:06,145 log 34452 20096 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:39:06,145 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:39:06,153 log 34452 11632 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:40:11,194 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:11,240 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:11,247 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:11,248 middlewares 34452 11512 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:11,248 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:40:11,248 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 15:40:11,255 log 34452 11512 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 15:40:11,255 log 34452 11772 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:40:11,255 log 34452 34972 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:40:40,119 middlewares 34452 11772 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:40,143 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:40:40,143 log 34452 34972 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:40:40,151 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:40:40,159 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:40:40,159 middlewares 34452 20096 after opening url
+appointment.middlewares ERROR 2022-09-30 15:40:40,159 middlewares 34452 11632 after opening url
+django.request WARNING 2022-09-30 15:40:40,159 log 34452 20096 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 15:40:40,159 log 34452 11632 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:41:00,055 middlewares 34452 11632 after opening url
+appointment.middlewares ERROR 2022-09-30 15:41:00,087 middlewares 34452 20096 after opening url
+django.request WARNING 2022-09-30 15:41:00,087 log 34452 20096 Not Found: /treatment/treatView/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:41:00,095 middlewares 34452 11772 after opening url
+django.request WARNING 2022-09-30 15:41:00,103 log 34452 11772 Not Found: /treatment/treatView/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 15:41:00,103 middlewares 34452 11512 after opening url
+django.request WARNING 2022-09-30 15:41:00,111 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 15:41:00,119 middlewares 34452 34972 after opening url
+django.request WARNING 2022-09-30 15:41:00,127 log 34452 34972 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg

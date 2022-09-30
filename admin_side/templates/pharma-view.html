@@ -29,34 +29,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
   {% include 'header.html' %}
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-            <a href="{% url 'add-pharma' %}" class="btn btn-primary"><b>Add Pharmacist</b></a>
-              <div class="card-body">
-                <h5 class="card-title">View Pharmacists
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">View Pharmacist</h3>
+                </div>
+                <div class="card-header">
+                  <button><a href={% url 'add-doc' %}>Add Pharmacist</a></button>
+                </div>
+                <div class="card-header" align="right">
                   <button><a href={% url 'download' %}>Download</a></button>
-                </h5>
-                <br>
-                <br>
-                <table border="10" style="width:100%">
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Shop Name</th>
+                        <th>Shop Address</th>
+                        <th>License Number</th>
+                        <th>City</th>
+                        <th>Email</th>
+                        <th>Nation-Wide Delivery</th>
+                      </tr>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>Username</td>
-                            <td>Shop Name</td>
-                            <td>Shop Address</td>
-                            <td>License Number</td>
-                            <td>City</td>
-                            <td>Email</td>
-                            <td>Nation-Wide Delivery</td>
-                            
-                
-                        {% for data in pharmacists %}
+                      {% for data in pharmacists %}
                         <tr>
                             <td>{{ data.name }}</td>
                             <td> {{ data.username }}</td>
@@ -71,35 +74,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>
-                
+                  </table>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
-
-  {% include 'footer.html' %}
-</div>
-<!-- ./wrapper -->
+    
 
 <!-- REQUIRED SCRIPTS -->
 
