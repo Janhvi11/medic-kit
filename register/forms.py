@@ -14,13 +14,13 @@ class RegisterDocForm(forms.ModelForm):
 # not null field define karna
     class Meta:
         model = doc
-        fields = ['name', 'age', 'experience', 'hosName', 'hosLocation', 'email', 'degree', 'phone', 'username','password']
+        fields = ['name', 'age', 'experience', 'hosName', 'hosLocation', 'email', 'degree', 'phone', 'username','password','image']
 
 class RegisterPharmaForm(forms.ModelForm):
 # not null field define karna
     class Meta:
         model = pharma
-        fields = ('name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email','image')
+        fields = ['name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email','image']     
 
 
 ###

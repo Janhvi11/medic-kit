@@ -40,6 +40,9 @@ class doc(models.Model):
 
     password = models.CharField(max_length=500)
 
+    image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
+
+
 class pharma(models.Model):
     city = models.CharField(max_length=500)
     

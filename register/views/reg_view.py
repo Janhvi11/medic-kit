@@ -26,7 +26,7 @@ class MainView(View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
+        form = self.form_class(request.POST,request.FILES)
 
         if form.is_valid():
             form.save()
@@ -48,7 +48,7 @@ class RegisterView(View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
+        form = self.form_class(request.POST,request.FILES)
 
         if form.is_valid():
             sign_up = form.save(commit=False)
@@ -74,7 +74,7 @@ class RegisterDocView(View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
+        form = self.form_class(request.POST,request.FILES)
 
         if form.is_valid():
             sign_up = form.save(commit=False)
@@ -87,7 +87,7 @@ class RegisterDocView(View):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
 
-            return redirect(to='/reg/main')
+            return redirect(to='/index')
 
         return render(request, self.template_name, {'form': form})
     
@@ -101,7 +101,7 @@ class RegisterPharmaView(View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
+        form = self.form_class(request.POST,request.FILES)
 
         if form.is_valid():
             sign_up = form.save(commit=False)
