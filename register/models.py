@@ -15,6 +15,8 @@ class user(models.Model):
     
     password1 = models.CharField(max_length=500)
     
+    image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
+
     # pfp = models.ImageField(upload_to="avatars/")
     # REQUIRED_FIELDS = ('username','password1',)  
     # USERNAME_FIELD = 'username'
@@ -53,5 +55,7 @@ class pharma(models.Model):
     
     password = models.CharField(max_length=500)
     
+    image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
+
 # def __str__(self):
 # 		return self.title

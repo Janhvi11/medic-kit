@@ -91,7 +91,7 @@ def userProfile(request):
 def edituserProfile(request,id):
     context_3 = {}
     obj = get_object_or_404(user, id=id)
-    form = RegisterForm(request.POST or None, instance=obj)
+    form = RegisterForm(request.POST or None,request.FILES, instance=obj)
     if form.is_valid():
         sign_up = form.save(commit=False)
         sign_up.password1 = make_password(form.cleaned_data['password1'])
@@ -122,7 +122,7 @@ def docProfile(request):
 def editdocProfile(request,id):
     context_3 = {}
     obj = get_object_or_404(doc, id=id)
-    form = RegisterDocForm(request.POST or None, instance=obj)
+    form = RegisterDocForm(request.POST or None,request.FILES, instance=obj)
     if form.is_valid():
         sign_up = form.save(commit=False)
         sign_up.password = make_password(form.cleaned_data['password'])
@@ -155,7 +155,7 @@ def editpharmaProfile(request,id):
     # return render(request,"edit-pharma-profile.html")
     context_3 = {}
     obj = get_object_or_404(pharma, id=id)
-    form = RegisterPharmaForm(request.POST or None, instance=obj)
+    form = RegisterPharmaForm(request.POST or None,request.FILES, instance=obj)
     if form.is_valid():
         sign_up = form.save(commit=False)
         sign_up.password = make_password(form.cleaned_data['password'])
@@ -168,7 +168,7 @@ def editpharmaProfile(request,id):
 
 
 
-#View news
+#View news user side
 def viewNewss(request):
 	context = {}
 	context["news"] = news.objects.all()

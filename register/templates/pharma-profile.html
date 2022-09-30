@@ -69,15 +69,16 @@
             <!-- Profile Image -->
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
+                {% for data in pharma %}
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle"
-                       src="../../dist/img/user4-128x128.jpg"
+                       src="{{ data.image.url }}"
                        alt="User profile picture">
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
 
-                {% for data in pharma %}
+                
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
                     <b>UserName</b> <a class="float-right">{{ data.username }}</a>

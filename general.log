@@ -4497,3 +4497,1624 @@ appointment.middlewares ERROR 2022-09-30 15:41:00,103 middlewares 34452 11512 af
 django.request WARNING 2022-09-30 15:41:00,111 log 34452 11512 Not Found: /treatment/treatView/dist/img/user8-128x128.jpg
 appointment.middlewares ERROR 2022-09-30 15:41:00,119 middlewares 34452 34972 after opening url
 django.request WARNING 2022-09-30 15:41:00,127 log 34452 34972 Not Found: /treatment/treatView/dist/img/user3-128x128.jpg
+django.utils.autoreload INFO 2022-09-30 19:21:08,335 autoreload 24248 23880 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 19:21:09,093 middlewares 24248 17764 Before opening URL
+django.utils.autoreload INFO 2022-09-30 19:29:34,270 autoreload 4120 18088 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 19:29:34,582 middlewares 4120 2384 Before opening URL
+appointment.middlewares ERROR 2022-09-30 19:29:39,651 middlewares 4120 24820 after opening url
+appointment.middlewares ERROR 2022-09-30 19:29:39,731 middlewares 4120 24820 after opening url
+django.request WARNING 2022-09-30 19:29:39,731 log 4120 24820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 19:30:32,920 middlewares 4120 24820 after opening url
+appointment.middlewares ERROR 2022-09-30 19:30:32,972 middlewares 4120 24820 after opening url
+django.request WARNING 2022-09-30 19:30:32,972 log 4120 24820 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 19:30:34,232 middlewares 4120 24820 after opening url
+django.utils.autoreload INFO 2022-09-30 19:32:29,948 autoreload 4120 18088 D:\GitHub\medic-kit\register\forms.py changed, reloading.
+django.utils.autoreload INFO 2022-09-30 19:32:30,625 autoreload 19636 23644 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-30 19:33:41,483 autoreload 19636 23644 D:\GitHub\medic-kit\register\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-30 19:33:42,128 autoreload 22908 11544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-09-30 19:34:01,045 autoreload 21248 13308 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 19:34:01,369 middlewares 21248 16072 Before opening URL
+appointment.middlewares ERROR 2022-09-30 19:34:04,517 middlewares 21248 19104 after opening url
+django.request WARNING 2022-09-30 19:34:04,517 log 21248 19104 Not Found: /
+appointment.middlewares ERROR 2022-09-30 19:34:12,374 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:34:15,241 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:34:15,253 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:36:13,513 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:36:13,525 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:36:14,625 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:36:14,637 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:36:59,599 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 60: 'for'. Looking for one of: empty, endfor.
+appointment.middlewares ERROR 2022-09-30 19:36:59,607 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:37:21,061 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 66: 'for'. Looking for one of: empty, endfor.
+appointment.middlewares ERROR 2022-09-30 19:37:21,065 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:37:32,754 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:37:32,770 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:38:12,373 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:38:12,389 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:40:31,297 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:40:31,309 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:40:32,138 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:40:32,150 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:40:32,887 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:40:32,903 middlewares 21248 19104 after opening url
+django.request ERROR 2022-09-30 19:40:33,417 log 21248 19104 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_user.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 19:40:33,433 middlewares 21248 19104 after opening url
+django.utils.autoreload INFO 2022-09-30 19:40:54,932 autoreload 16320 628 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 19:40:55,217 middlewares 16320 15256 Before opening URL
+django.request ERROR 2022-09-30 19:40:57,747 log 16320 22776 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+appointment.middlewares ERROR 2022-09-30 19:40:57,759 middlewares 16320 22776 after opening url
+django.request ERROR 2022-09-30 21:05:14,886 log 16320 22216 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+appointment.middlewares ERROR 2022-09-30 21:05:14,893 middlewares 16320 22216 after opening url
+django.request ERROR 2022-09-30 21:05:17,609 log 16320 22216 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+appointment.middlewares ERROR 2022-09-30 21:05:17,616 middlewares 16320 22216 after opening url
+django.request ERROR 2022-09-30 21:05:42,955 log 16320 22216 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+appointment.middlewares ERROR 2022-09-30 21:05:42,960 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:06:02,520 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:06:02,597 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:06:11,390 middlewares 16320 22216 after opening url
+django.request ERROR 2022-09-30 21:06:14,489 log 16320 22216 Internal Server Error: /userProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 89, in userProfile
+    return render(request, 'user-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Python310\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+appointment.middlewares ERROR 2022-09-30 21:06:14,497 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:06:32,053 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:06:35,490 middlewares 16320 22216 after opening url
+django.security.csrf WARNING 2022-09-30 21:07:23,541 log 16320 22216 Forbidden (CSRF token missing.): /edituserProfile1/
+appointment.middlewares ERROR 2022-09-30 21:07:23,542 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:07:56,065 middlewares 16320 22216 after opening url
+PIL.PngImagePlugin DEBUG 2022-09-30 21:08:16,222 PngImagePlugin 16320 22216 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:08:16,223 PngImagePlugin 16320 22216 STREAM b'IDAT' 41 8192
+PIL.Image DEBUG 2022-09-30 21:08:16,224 Image 16320 22216 Importing BlpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,226 Image 16320 22216 Importing BmpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,226 Image 16320 22216 Importing BufrStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,227 Image 16320 22216 Importing CurImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,228 Image 16320 22216 Importing DcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,230 Image 16320 22216 Importing DdsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,231 Image 16320 22216 Importing EpsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,270 Image 16320 22216 Importing FitsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,271 Image 16320 22216 Importing FitsStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,273 Image 16320 22216 Importing FliImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,275 Image 16320 22216 Importing FpxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,278 Image 16320 22216 Image: failed to import FpxImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:08:16,279 Image 16320 22216 Importing FtexImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,280 Image 16320 22216 Importing GbrImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,281 Image 16320 22216 Importing GifImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,281 Image 16320 22216 Importing GribStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,282 Image 16320 22216 Importing Hdf5StubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,283 Image 16320 22216 Importing IcnsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,289 Image 16320 22216 Importing IcoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,290 Image 16320 22216 Importing ImImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,292 Image 16320 22216 Importing ImtImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,293 Image 16320 22216 Importing IptcImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,294 Image 16320 22216 Importing JpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,294 Image 16320 22216 Importing Jpeg2KImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,295 Image 16320 22216 Importing McIdasImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,296 Image 16320 22216 Importing MicImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,297 Image 16320 22216 Image: failed to import MicImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:08:16,298 Image 16320 22216 Importing MpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,299 Image 16320 22216 Importing MpoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,300 Image 16320 22216 Importing MspImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,301 Image 16320 22216 Importing PalmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,309 Image 16320 22216 Importing PcdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,310 Image 16320 22216 Importing PcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,310 Image 16320 22216 Importing PdfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,320 Image 16320 22216 Importing PixarImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,321 Image 16320 22216 Importing PngImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,321 Image 16320 22216 Importing PpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,321 Image 16320 22216 Importing PsdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,322 Image 16320 22216 Importing SgiImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,323 Image 16320 22216 Importing SpiderImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,324 Image 16320 22216 Importing SunImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,325 Image 16320 22216 Importing TgaImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,326 Image 16320 22216 Importing TiffImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,326 Image 16320 22216 Importing WebPImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,331 Image 16320 22216 Importing WmfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,332 Image 16320 22216 Importing XbmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,334 Image 16320 22216 Importing XpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:08:16,335 Image 16320 22216 Importing XVThumbImagePlugin
+appointment.middlewares ERROR 2022-09-30 21:08:16,619 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:16,693 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:19,079 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:35,355 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:36,286 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:36,699 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:08:37,078 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:09:34,903 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:09:35,040 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:09:55,527 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:09:55,546 middlewares 16320 20780 after opening url
+appointment.middlewares ERROR 2022-09-30 21:10:16,952 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:10:16,990 middlewares 16320 20780 after opening url
+appointment.middlewares ERROR 2022-09-30 21:10:18,669 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:21,947 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:21,976 middlewares 16320 20780 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:23,081 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:23,281 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:23,463 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:23,642 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:14:56,136 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:15:08,075 middlewares 16320 22216 after opening url
+appointment.middlewares ERROR 2022-09-30 21:15:08,093 middlewares 16320 20780 after opening url
+appointment.middlewares ERROR 2022-09-30 21:16:57,426 middlewares 16320 5832 after opening url
+PIL.PngImagePlugin DEBUG 2022-09-30 21:17:29,906 PngImagePlugin 16320 5832 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:17:29,906 PngImagePlugin 16320 5832 STREAM b'IDAT' 41 8192
+appointment.middlewares ERROR 2022-09-30 21:17:30,457 middlewares 16320 5832 after opening url
+appointment.middlewares ERROR 2022-09-30 21:17:30,627 middlewares 16320 5832 after opening url
+appointment.middlewares ERROR 2022-09-30 21:17:30,683 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:17:43,543 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:17:45,636 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:18:43,211 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:18:44,809 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:18:58,869 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:19:09,788 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:19:36,388 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:19:40,450 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:19:40,482 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:19:42,388 middlewares 16320 11732 after opening url
+appointment.middlewares ERROR 2022-09-30 21:24:06,524 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:24:15,165 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:24:54,855 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:18,062 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:22,509 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:22,629 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:22,790 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:22,937 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:23,095 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:28,918 middlewares 16320 25252 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:29,425 middlewares 16320 4276 after opening url
+django.request WARNING 2022-09-30 21:25:29,426 log 16320 4276 Not Found: /favicon.ico
+appointment.middlewares ERROR 2022-09-30 21:25:31,207 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:31,408 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:31,537 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:25:59,191 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:26:10,818 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:26:42,491 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:26:52,922 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:27:56,831 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:28:12,520 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:28:25,457 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:31:36,637 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:31:58,815 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:32:17,603 middlewares 16320 4276 after opening url
+PIL.PngImagePlugin DEBUG 2022-09-30 21:32:45,552 PngImagePlugin 16320 4276 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:32:45,552 PngImagePlugin 16320 4276 STREAM b'IDAT' 41 8192
+appointment.middlewares ERROR 2022-09-30 21:32:45,778 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:32:45,866 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:32:45,940 middlewares 16320 16980 after opening url
+appointment.middlewares ERROR 2022-09-30 21:32:51,340 middlewares 16320 16980 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:18,835 middlewares 16320 16980 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:18,894 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:18,898 middlewares 16320 16980 after opening url
+django.request WARNING 2022-09-30 21:33:18,898 log 16320 4276 Not Found: /ad/home/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:18,901 middlewares 16320 17280 after opening url
+django.request WARNING 2022-09-30 21:33:18,899 log 16320 16980 Not Found: /ad/home/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:18,904 middlewares 16320 4632 after opening url
+django.request WARNING 2022-09-30 21:33:18,904 log 16320 17280 Not Found: /ad/home/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 21:33:18,905 log 16320 4632 Not Found: /ad/home/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:21,440 middlewares 16320 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:21,525 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:21,543 middlewares 16320 16980 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:21,543 middlewares 16320 20024 after opening url
+django.request WARNING 2022-09-30 21:33:21,540 log 16320 17280 Not Found: /blogss/viewBlog/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:21,546 middlewares 16320 4276 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:21,547 middlewares 16320 2224 after opening url
+django.request WARNING 2022-09-30 21:33:21,548 log 16320 16980 Not Found: /blogss/viewBlog/dist/img/user3-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:21,550 middlewares 16320 4632 after opening url
+django.request WARNING 2022-09-30 21:33:21,551 log 16320 4276 Not Found: /blogss/viewBlog/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 21:33:21,555 log 16320 4632 Not Found: /blogss/viewBlog/dist/img/user2-160x160.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:21,559 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:28,182 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:28,274 middlewares 16320 2224 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:28,278 middlewares 16320 20024 after opening url
+django.request WARNING 2022-09-30 21:33:28,276 log 16320 2224 Not Found: /blogss/dist/img/user2-160x160.jpg
+django.request WARNING 2022-09-30 21:33:28,281 log 16320 20024 Not Found: /blogss/dist/img/user1-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:33:28,287 middlewares 16320 4632 after opening url
+appointment.middlewares ERROR 2022-09-30 21:33:28,291 middlewares 16320 17280 after opening url
+django.request WARNING 2022-09-30 21:33:28,292 log 16320 4632 Not Found: /blogss/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 21:33:28,295 log 16320 17280 Not Found: /blogss/dist/img/user8-128x128.jpg
+PIL.PngImagePlugin DEBUG 2022-09-30 21:36:51,890 PngImagePlugin 16320 17280 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:36:51,890 PngImagePlugin 16320 17280 STREAM b'IDAT' 41 8192
+appointment.middlewares ERROR 2022-09-30 21:36:52,225 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:36:52,309 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:36:52,391 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:38,314 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:40,020 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:40,208 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:42,164 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:43,715 middlewares 16320 17280 after opening url
+django.request WARNING 2022-09-30 21:39:43,715 log 16320 17280 Not Found: /reg/loginpharma
+appointment.middlewares ERROR 2022-09-30 21:39:46,654 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:39:52,539 middlewares 16320 17280 after opening url
+django.request WARNING 2022-09-30 21:39:52,539 log 16320 17280 Not Found: /reg/loginpharma/
+appointment.middlewares ERROR 2022-09-30 21:40:25,421 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:40:26,687 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:40:28,417 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:40:28,486 middlewares 16320 17280 after opening url
+appointment.middlewares ERROR 2022-09-30 21:40:28,490 middlewares 16320 6736 after opening url
+django.request WARNING 2022-09-30 21:40:28,488 log 16320 17280 Not Found: /dist/img/user4-128x128.jpg
+django.utils.autoreload INFO 2022-09-30 21:41:40,046 autoreload 16320 628 D:\GitHub\medic-kit\register\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-30 21:41:40,871 autoreload 21948 8956 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 21:41:41,298 middlewares 21948 15416 Before opening URL
+django.utils.autoreload INFO 2022-09-30 21:43:31,202 autoreload 21948 8956 D:\GitHub\medic-kit\register\models.py changed, reloading.
+django.utils.autoreload INFO 2022-09-30 21:43:31,852 autoreload 17652 7976 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 21:43:32,155 middlewares 17652 14956 Before opening URL
+django.utils.autoreload INFO 2022-09-30 21:44:04,332 autoreload 17652 7976 D:\GitHub\medic-kit\register\forms.py changed, reloading.
+django.utils.autoreload INFO 2022-09-30 21:44:04,876 autoreload 17092 19076 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 21:44:05,168 middlewares 17092 10044 Before opening URL
+appointment.middlewares ERROR 2022-09-30 21:47:54,924 middlewares 17092 22404 after opening url
+django.request WARNING 2022-09-30 21:47:54,929 log 17092 22404 Not Found: /dist/img/user4-128x128.jpg
+django.request ERROR 2022-09-30 21:47:55,093 log 17092 13420 Internal Server Error: /pharmaProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_pharma.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 152, in pharmaProfile
+    return render(request, 'pharma-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_pharma.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 21:47:55,105 middlewares 17092 13420 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:02,586 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:04,045 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:04,141 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:05,536 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:06,342 middlewares 17092 22404 after opening url
+django.request WARNING 2022-09-30 21:48:06,343 log 17092 22404 Not Found: /reg/loginuser
+appointment.middlewares ERROR 2022-09-30 21:48:08,755 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:13,888 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:13,975 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:15,317 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:15,365 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:18,269 middlewares 17092 22404 after opening url
+PIL.PngImagePlugin DEBUG 2022-09-30 21:48:38,744 PngImagePlugin 17092 22404 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:48:38,744 PngImagePlugin 17092 22404 STREAM b'IDAT' 41 8192
+PIL.Image DEBUG 2022-09-30 21:48:38,744 Image 17092 22404 Importing BlpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,746 Image 17092 22404 Importing BmpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,746 Image 17092 22404 Importing BufrStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,747 Image 17092 22404 Importing CurImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,747 Image 17092 22404 Importing DcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,749 Image 17092 22404 Importing DdsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,749 Image 17092 22404 Importing EpsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,792 Image 17092 22404 Importing FitsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,793 Image 17092 22404 Importing FitsStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,793 Image 17092 22404 Importing FliImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,794 Image 17092 22404 Importing FpxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,795 Image 17092 22404 Image: failed to import FpxImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:48:38,795 Image 17092 22404 Importing FtexImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,796 Image 17092 22404 Importing GbrImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,797 Image 17092 22404 Importing GifImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,797 Image 17092 22404 Importing GribStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,797 Image 17092 22404 Importing Hdf5StubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,798 Image 17092 22404 Importing IcnsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,802 Image 17092 22404 Importing IcoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,802 Image 17092 22404 Importing ImImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,804 Image 17092 22404 Importing ImtImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,805 Image 17092 22404 Importing IptcImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,806 Image 17092 22404 Importing JpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,807 Image 17092 22404 Importing Jpeg2KImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,807 Image 17092 22404 Importing McIdasImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,808 Image 17092 22404 Importing MicImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,809 Image 17092 22404 Image: failed to import MicImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:48:38,809 Image 17092 22404 Importing MpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,810 Image 17092 22404 Importing MpoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,811 Image 17092 22404 Importing MspImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,811 Image 17092 22404 Importing PalmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,813 Image 17092 22404 Importing PcdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,813 Image 17092 22404 Importing PcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,813 Image 17092 22404 Importing PdfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,819 Image 17092 22404 Importing PixarImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,820 Image 17092 22404 Importing PngImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,820 Image 17092 22404 Importing PpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,820 Image 17092 22404 Importing PsdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,820 Image 17092 22404 Importing SgiImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,821 Image 17092 22404 Importing SpiderImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,822 Image 17092 22404 Importing SunImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,822 Image 17092 22404 Importing TgaImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,823 Image 17092 22404 Importing TiffImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,823 Image 17092 22404 Importing WebPImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,825 Image 17092 22404 Importing WmfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,825 Image 17092 22404 Importing XbmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,827 Image 17092 22404 Importing XpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:48:38,828 Image 17092 22404 Importing XVThumbImagePlugin
+appointment.middlewares ERROR 2022-09-30 21:48:39,155 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:39,248 middlewares 17092 22404 after opening url
+appointment.middlewares ERROR 2022-09-30 21:48:39,407 middlewares 17092 22404 after opening url
+django.request ERROR 2022-09-30 21:50:11,308 log 17092 22404 Internal Server Error: /pharmaProfile/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'register_pharma.image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\medic_kit\views.py", line 152, in pharmaProfile
+    return render(request, 'pharma-profile.html',context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'register_pharma.image' in 'field list'")
+appointment.middlewares ERROR 2022-09-30 21:50:11,317 middlewares 17092 22404 after opening url
+django.utils.autoreload INFO 2022-09-30 21:50:38,836 autoreload 22036 15048 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-09-30 21:50:39,126 middlewares 22036 5900 Before opening URL
+appointment.middlewares ERROR 2022-09-30 21:50:40,847 middlewares 22036 9148 after opening url
+appointment.middlewares ERROR 2022-09-30 21:50:40,900 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:50:40,904 middlewares 22036 9148 after opening url
+django.request WARNING 2022-09-30 21:50:40,905 log 22036 9148 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:55:32,794 middlewares 22036 9148 after opening url
+appointment.middlewares ERROR 2022-09-30 21:55:32,867 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:55:32,874 middlewares 22036 22224 after opening url
+django.request WARNING 2022-09-30 21:55:32,868 log 22036 2964 Not Found: /dist/img/user4-128x128.jpg
+PIL.PngImagePlugin DEBUG 2022-09-30 21:56:02,683 PngImagePlugin 22036 2964 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:56:02,683 PngImagePlugin 22036 2964 STREAM b'IDAT' 41 8192
+PIL.Image DEBUG 2022-09-30 21:56:02,683 Image 22036 2964 Importing BlpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,684 Image 22036 2964 Importing BmpImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,685 Image 22036 2964 Importing BufrStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,685 Image 22036 2964 Importing CurImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,685 Image 22036 2964 Importing DcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,686 Image 22036 2964 Importing DdsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,687 Image 22036 2964 Importing EpsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,727 Image 22036 2964 Importing FitsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,727 Image 22036 2964 Importing FitsStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,728 Image 22036 2964 Importing FliImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,728 Image 22036 2964 Importing FpxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,729 Image 22036 2964 Image: failed to import FpxImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:56:02,729 Image 22036 2964 Importing FtexImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,730 Image 22036 2964 Importing GbrImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,730 Image 22036 2964 Importing GifImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,730 Image 22036 2964 Importing GribStubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,731 Image 22036 2964 Importing Hdf5StubImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,731 Image 22036 2964 Importing IcnsImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,732 Image 22036 2964 Importing IcoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,733 Image 22036 2964 Importing ImImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,734 Image 22036 2964 Importing ImtImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,734 Image 22036 2964 Importing IptcImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,735 Image 22036 2964 Importing JpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,735 Image 22036 2964 Importing Jpeg2KImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,735 Image 22036 2964 Importing McIdasImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,735 Image 22036 2964 Importing MicImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,736 Image 22036 2964 Image: failed to import MicImagePlugin: No module named 'olefile'
+PIL.Image DEBUG 2022-09-30 21:56:02,736 Image 22036 2964 Importing MpegImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,737 Image 22036 2964 Importing MpoImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,737 Image 22036 2964 Importing MspImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,737 Image 22036 2964 Importing PalmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,738 Image 22036 2964 Importing PcdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,739 Image 22036 2964 Importing PcxImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,739 Image 22036 2964 Importing PdfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,744 Image 22036 2964 Importing PixarImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,744 Image 22036 2964 Importing PngImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,745 Image 22036 2964 Importing PpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,745 Image 22036 2964 Importing PsdImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,745 Image 22036 2964 Importing SgiImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,745 Image 22036 2964 Importing SpiderImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,746 Image 22036 2964 Importing SunImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,746 Image 22036 2964 Importing TgaImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,747 Image 22036 2964 Importing TiffImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,747 Image 22036 2964 Importing WebPImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,748 Image 22036 2964 Importing WmfImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,749 Image 22036 2964 Importing XbmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,750 Image 22036 2964 Importing XpmImagePlugin
+PIL.Image DEBUG 2022-09-30 21:56:02,750 Image 22036 2964 Importing XVThumbImagePlugin
+appointment.middlewares ERROR 2022-09-30 21:56:02,991 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:56:03,066 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:56:03,112 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:56:03,113 middlewares 22036 22224 after opening url
+django.request WARNING 2022-09-30 21:56:03,114 log 22036 2964 Not Found: /dist/img/user4-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:58:35,782 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:58:35,836 middlewares 22036 22224 after opening url
+appointment.middlewares ERROR 2022-09-30 21:58:35,909 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:58:39,498 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:58:39,575 middlewares 22036 9148 after opening url
+appointment.middlewares ERROR 2022-09-30 21:58:39,579 middlewares 22036 22224 after opening url
+django.request WARNING 2022-09-30 21:58:39,585 log 22036 22224 Not Found: /dist/img/user4-128x128.jpg
+PIL.PngImagePlugin DEBUG 2022-09-30 21:59:01,215 PngImagePlugin 22036 2964 STREAM b'IHDR' 16 13
+PIL.PngImagePlugin DEBUG 2022-09-30 21:59:01,215 PngImagePlugin 22036 2964 STREAM b'IDAT' 41 8192
+appointment.middlewares ERROR 2022-09-30 21:59:01,443 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:01,513 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:01,579 middlewares 22036 22224 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:01,579 middlewares 22036 2964 after opening url
+appointment.views.appointment_view INFO 2022-09-30 21:59:14,278 appointment_view 22036 2964 Appointment has been viewed
+appointment.middlewares ERROR 2022-09-30 21:59:14,303 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:14,381 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:14,383 middlewares 22036 9148 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:14,385 middlewares 22036 22224 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:14,387 middlewares 22036 22244 after opening url
+django.request WARNING 2022-09-30 21:59:14,384 log 22036 2964 Not Found: /appointment/viewappointment/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 21:59:14,387 log 22036 9148 Not Found: /appointment/viewappointment/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 21:59:14,388 log 22036 22224 Not Found: /appointment/viewappointment/dist/img/user8-128x128.jpg
+django.request WARNING 2022-09-30 21:59:14,389 log 22036 22244 Not Found: /appointment/viewappointment/dist/img/user2-160x160.jpg
+django.request ERROR 2022-09-30 21:59:19,456 log 22036 22244 Internal Server Error: /todo/viewToDoList/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'medic-kit.todo_todolist' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\todo\views\todolist_view.py", line 11, in viewToDoList
+    return render(request, "ToDoList-view.html", context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'medic-kit.todo_todolist' doesn't exist")
+appointment.middlewares ERROR 2022-09-30 21:59:19,468 middlewares 22036 22244 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:27,914 middlewares 22036 22244 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:27,962 middlewares 22036 22224 after opening url
+django.request WARNING 2022-09-30 21:59:27,966 log 22036 22224 Not Found: /bmi/viewbmi/dist/img/user8-128x128.jpg
+appointment.middlewares ERROR 2022-09-30 21:59:27,981 middlewares 22036 9148 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:27,984 middlewares 22036 2964 after opening url
+appointment.middlewares ERROR 2022-09-30 21:59:27,988 middlewares 22036 22500 after opening url
+django.request WARNING 2022-09-30 21:59:27,985 log 22036 9148 Not Found: /bmi/viewbmi/dist/img/user1-128x128.jpg
+django.request WARNING 2022-09-30 21:59:27,988 log 22036 2964 Not Found: /bmi/viewbmi/dist/img/user3-128x128.jpg
+django.request WARNING 2022-09-30 21:59:27,990 log 22036 22500 Not Found: /bmi/viewbmi/dist/img/user2-160x160.jpg
+django.request ERROR 2022-09-30 21:59:30,521 log 22036 22500 Internal Server Error: /todo/viewToDoList/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'medic-kit.todo_todolist' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\todo\views\todolist_view.py", line 11, in viewToDoList
+    return render(request, "ToDoList-view.html", context)
+  File "C:\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'medic-kit.todo_todolist' doesn't exist")
+appointment.middlewares ERROR 2022-09-30 21:59:30,531 middlewares 22036 22500 after opening url

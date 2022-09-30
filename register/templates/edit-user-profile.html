@@ -57,7 +57,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+    
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -67,16 +67,21 @@
             <!-- Profile Image -->
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
-                <div class="text-center">
+                {% comment %} <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle"
                        src="../../dist/img/user4-128x128.jpg"
                        alt="User profile picture">
-                </div>
+                </div> {% endcomment %}
 
                 {% comment %} <h3 class="profile-username text-center">{{ username }}</h3> {% endcomment %}
-                <form method="POST">
-                {% csrf_token %}
+                <form method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
                 <ul class="list-group list-group-unbordered mb-3">
+                  
+                  <li class="list-group-item">
+                    <b>Image</b> <input type="file" name="image"/>
+                    {% comment %} {{ form.image }} {% endcomment %}
+                  </li>
                   <li class="list-group-item">
                     <b>UserName</b> <a class="float-right">{{ form.username }}</a>
                   </li>
