@@ -1,17 +1,30 @@
+
+import os
+import re
+import statistics
 from tabnanny import check
 from urllib import request
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.views import View
 from django.contrib.auth.hashers import make_password,check_password
 from django.contrib.auth.views import LoginView #
 from django.contrib.auth import authenticate, login
+from django.conf import settings
+from medic_kit.settings import PROJECT_ROOT
 from ..models import user,doc,pharma
+import io
+import numpy as np
+from PIL import Image
+import face_recognition
 # from django.shortcuts import 
 # from ..forms import LoginUserForm 
 from ..forms import LoginUserForm, LoginDocForm, LoginPharmaForm
-
+import cv2
+import base64
+from django.core.files.base import ContentFile
+from django.templatetags.static import static
 def login_home(request):
     return render(request, "login-main.html")
 
@@ -129,3 +142,40 @@ def view_doctors(request):
     context['data'] = doc.objects.all()
     
     return render(request,'user-side-doctor-view.html', context)
+
+
+def video(request):
+    return render(request,'video.html')
+
+
+def base64_file(request,data):
+    _format, _img_str = data.split(';base64,')
+    _name, ext = _format.split('/')
+    name = 'Demo'
+    if not name:
+        name = _name.split(":")[-1]
+    return ContentFile(base64.b64decode(_img_str), name='{}.{}'.format(name, ext))
+
+def base64_file_image(request):
+    data=request.POST.get('dataimg')
+    encoded_img = data.split(",")[1]
+    # return HttpResponse(encoded_img)
+    binary = base64.b64decode(encoded_img)
+    image = np.asarray(bytearray(binary), dtype=np.uint8)
+    image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+    face_locations = face_recognition.face_locations(image)
+    enterimage_encoding = face_recognition.face_encodings(image)[0]
+    results = face_recognition.compare_faces([enterimage_encoding], enterimage_encoding)
+    users=user.objects.all()
+    for u in users:
+        d=os.path.join(settings.PROJECT_ROOT, u.image.url)
+        # demo=static('img/blog/blog_1.jpg')
+        # prefix = 'https://' if request.is_secure() else 'http://'
+        image_url ='../../../..'+u.image.url
+        img = Image.open(static('img/blog/blog_1.jpg'))
+ 
+# asarray() class is used to convert
+# PIL images into NumPy arrays
+        numpydata = np.asarray(img)
+        return HttpResponse(numpydata)
+    return HttpResponse(results)

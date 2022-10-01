@@ -8,6 +8,12 @@ login_url = [
     path('loginpharma/', login_pharma_request, name='pharma-login'),
     path('logout/', logout, name='logout'),
     
+    #access the laptop camera
+    path('video/', video, name='video'),
+
+    path('download/<data>', base64_file, name='download'),
+    path('downloadImage/', base64_file_image, name='download_image'),
+
     # profile
     path('userProfile/',userprofile, name="user-profile"),
     path('docProfile/',docprofile, name="doc-profile"),

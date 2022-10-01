@@ -26,12 +26,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-_-bupy^a&m%4v5y*b)js$&w9k_6jyz32go6h1v&1+7o=c#l8x@'
-
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #DEBUG = False
 ALLOWED_HOSTS = []
-
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 # Application definition
 
