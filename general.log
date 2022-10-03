@@ -8228,3 +8228,438 @@ Traceback (most recent call last):
     fp = builtins.open(filename, "rb")
 FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
 appointment.middlewares ERROR 2022-10-01 13:54:49,925 middlewares 22756 20788 after opening url
+django.utils.autoreload INFO 2022-10-02 21:14:27,549 autoreload 10136 4212 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 21:14:30,654 middlewares 10136 16636 Before opening URL
+django.request ERROR 2022-10-02 21:14:32,937 log 10136 11444 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 161, in base64_file_image
+    encoded_img = data.split(",")[1]
+AttributeError: 'NoneType' object has no attribute 'split'
+appointment.middlewares ERROR 2022-10-02 21:14:32,939 middlewares 10136 11444 after opening url
+django.request ERROR 2022-10-02 21:14:35,757 log 10136 11444 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 161, in base64_file_image
+    encoded_img = data.split(",")[1]
+AttributeError: 'NoneType' object has no attribute 'split'
+appointment.middlewares ERROR 2022-10-02 21:14:35,759 middlewares 10136 11444 after opening url
+django.request ERROR 2022-10-02 21:15:01,871 log 10136 21276 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 21:15:01,873 middlewares 10136 21276 after opening url
+django.request ERROR 2022-10-02 21:21:08,572 log 10136 25888 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 21:21:08,575 middlewares 10136 25888 after opening url
+django.utils.autoreload INFO 2022-10-02 21:25:22,878 autoreload 10136 4212 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 21:25:23,634 autoreload 23528 17620 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 21:25:25,865 middlewares 23528 17836 Before opening URL
+django.request ERROR 2022-10-02 21:25:26,912 log 23528 20792 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 21:25:26,915 middlewares 23528 20792 after opening url
+django.utils.autoreload INFO 2022-10-02 21:25:30,712 autoreload 23528 17620 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 21:25:31,347 autoreload 8660 1908 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 21:25:33,587 middlewares 8660 22316 Before opening URL
+django.request ERROR 2022-10-02 21:25:34,721 log 8660 23564 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 21:25:34,724 middlewares 8660 23564 after opening url
+django.request ERROR 2022-10-02 22:07:29,632 log 8660 11140 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 22:07:29,635 middlewares 8660 11140 after opening url
+django.utils.autoreload INFO 2022-10-02 22:08:55,016 autoreload 8660 1908 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:08:55,954 autoreload 9372 12488 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:08:58,681 middlewares 9372 18552 Before opening URL
+django.request ERROR 2022-10-02 22:09:00,480 log 9372 11760 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('img/dist/blog/blog_1.jpg'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/img/dist/blog/blog_1.jpg'
+appointment.middlewares ERROR 2022-10-02 22:09:00,483 middlewares 9372 11760 after opening url
+django.utils.autoreload INFO 2022-10-02 22:09:45,902 autoreload 9372 12488 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:09:46,599 autoreload 6312 19156 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:09:48,927 middlewares 6312 1044 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:09:56,854 autoreload 6312 19156 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:09:57,528 autoreload 996 22968 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:09:59,825 middlewares 996 11860 Before opening URL
+django.request ERROR 2022-10-02 22:10:01,656 log 996 1380 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avtar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avtar.png'
+appointment.middlewares ERROR 2022-10-02 22:10:01,659 middlewares 996 1380 after opening url
+django.utils.autoreload INFO 2022-10-02 22:10:40,933 autoreload 996 22968 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:10:41,661 autoreload 5896 10472 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:10:44,107 middlewares 5896 8848 Before opening URL
+django.request ERROR 2022-10-02 22:10:45,289 log 5896 18976 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:10:45,292 middlewares 5896 18976 after opening url
+django.utils.autoreload INFO 2022-10-02 22:11:24,369 autoreload 5896 10472 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:11:25,241 autoreload 21556 4780 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:11:27,635 middlewares 21556 26544 Before opening URL
+django.request ERROR 2022-10-02 22:11:28,733 log 21556 26348 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:11:28,735 middlewares 21556 26348 after opening url
+django.utils.autoreload INFO 2022-10-02 22:11:53,837 autoreload 21556 4780 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:11:54,615 autoreload 17436 24200 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:11:57,043 middlewares 17436 13288 Before opening URL
+django.request ERROR 2022-10-02 22:11:58,241 log 17436 12700 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:11:58,244 middlewares 17436 12700 after opening url
+django.utils.autoreload INFO 2022-10-02 22:12:24,365 autoreload 17436 24200 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:12:25,192 autoreload 4736 21512 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:12:27,362 middlewares 4736 11996 Before opening URL
+django.request ERROR 2022-10-02 22:12:28,368 log 4736 22840 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:12:28,370 middlewares 4736 22840 after opening url
+django.request ERROR 2022-10-02 22:13:20,902 log 4736 22840 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:13:20,904 middlewares 4736 22840 after opening url
+django.utils.autoreload INFO 2022-10-02 22:14:26,394 autoreload 4736 21512 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:14:27,057 autoreload 23156 22948 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:14:29,372 middlewares 23156 5316 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:16:04,851 autoreload 23156 22948 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:16:05,586 autoreload 6992 10484 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:16:07,932 middlewares 6992 19276 Before opening URL
+django.request ERROR 2022-10-02 22:16:09,220 log 6992 11876 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(os.PATH.JOIN(STATIC_ROOT,'dist/img/avatar.png'))
+AttributeError: module 'os' has no attribute 'PATH'
+appointment.middlewares ERROR 2022-10-02 22:16:09,222 middlewares 6992 11876 after opening url
+django.utils.autoreload INFO 2022-10-02 22:16:27,209 autoreload 6992 10484 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:16:27,976 autoreload 15092 1348 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:16:30,290 middlewares 15092 2592 Before opening URL
+django.request ERROR 2022-10-02 22:16:31,917 log 15092 24320 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(os.PATH.JOIN(STATIC_ROOT,'dist/img/avatar.png'))
+AttributeError: module 'os' has no attribute 'PATH'
+appointment.middlewares ERROR 2022-10-02 22:16:31,919 middlewares 15092 24320 after opening url
+django.utils.autoreload INFO 2022-10-02 22:18:19,307 autoreload 15092 1348 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:18:19,994 autoreload 6360 1380 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:18:22,382 middlewares 6360 19900 Before opening URL
+django.request ERROR 2022-10-02 22:18:40,209 log 6360 11028 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar.png'
+appointment.middlewares ERROR 2022-10-02 22:18:40,211 middlewares 6360 11028 after opening url
+django.utils.autoreload INFO 2022-10-02 22:19:24,725 autoreload 6360 1380 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:19:25,403 autoreload 1040 16860 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:19:27,679 middlewares 1040 21160 Before opening URL
+django.request ERROR 2022-10-02 22:19:28,777 log 1040 18912 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:19:28,780 middlewares 1040 18912 after opening url
+django.utils.autoreload INFO 2022-10-02 22:21:01,284 autoreload 1040 16860 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:21:02,364 autoreload 18020 2296 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:21:05,334 middlewares 18020 17544 Before opening URL
+django.request ERROR 2022-10-02 22:21:14,501 log 18020 19276 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:21:14,504 middlewares 18020 19276 after opening url
+django.request ERROR 2022-10-02 22:21:22,763 log 18020 19276 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:21:22,766 middlewares 18020 19276 after opening url
+django.utils.autoreload INFO 2022-10-02 22:23:01,138 autoreload 18020 2296 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:23:01,908 autoreload 24988 22384 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:23:04,239 middlewares 24988 19956 Before opening URL
+django.request ERROR 2022-10-02 22:23:12,775 log 24988 17748 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:23:12,778 middlewares 24988 17748 after opening url
+django.utils.autoreload INFO 2022-10-02 22:23:29,512 autoreload 24988 22384 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:23:30,215 autoreload 12476 4620 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:23:32,534 middlewares 12476 25136 Before opening URL
+django.request ERROR 2022-10-02 22:23:33,668 log 12476 17056 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 175, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:23:33,671 middlewares 12476 17056 after opening url
+django.utils.autoreload INFO 2022-10-02 22:23:52,351 autoreload 12476 4620 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:23:53,141 autoreload 5472 16804 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:23:55,275 middlewares 5472 5380 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:23:56,230 middlewares 5472 1792 after opening url
+django.utils.autoreload INFO 2022-10-02 22:24:42,748 autoreload 5472 16804 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:24:43,406 autoreload 16224 21044 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:24:45,758 middlewares 16224 24828 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:25:08,658 autoreload 16224 21044 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:25:09,320 autoreload 21376 9628 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:25:11,504 middlewares 21376 25620 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:25:15,159 autoreload 21376 9628 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:25:15,929 autoreload 11620 21064 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:25:18,149 middlewares 11620 24876 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:25:19,064 middlewares 11620 11140 after opening url
+django.utils.autoreload INFO 2022-10-02 22:25:25,067 autoreload 11620 21064 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:25:25,757 autoreload 11684 4208 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:25:28,004 middlewares 11684 22308 Before opening URL
+django.request ERROR 2022-10-02 22:25:29,134 log 11684 7576 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 176, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:25:29,137 middlewares 11684 7576 after opening url
+django.utils.autoreload INFO 2022-10-02 22:25:40,269 autoreload 11684 4208 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:25:41,036 autoreload 23616 14780 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:25:43,225 middlewares 23616 6956 Before opening URL
+django.request ERROR 2022-10-02 22:25:46,783 log 23616 18040 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 177, in base64_file_image
+    img = Image.open(static('dist/img/avatar2.png'))
+  File "C:\Python310\lib\site-packages\PIL\Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/admin_side/static/dist/img/avatar2.png'
+appointment.middlewares ERROR 2022-10-02 22:25:46,786 middlewares 23616 18040 after opening url
+django.utils.autoreload INFO 2022-10-02 22:26:02,176 autoreload 23616 14780 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:26:02,917 autoreload 3044 22064 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:26:05,220 middlewares 3044 2512 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:26:06,279 middlewares 3044 18052 after opening url
+django.utils.autoreload INFO 2022-10-02 22:26:41,209 autoreload 3044 22064 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:26:41,910 autoreload 12468 18596 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:26:44,255 middlewares 12468 13568 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:26:53,298 autoreload 12468 18596 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:26:53,961 autoreload 26184 5960 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:26:56,186 middlewares 26184 2692 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:26:57,192 middlewares 26184 9876 after opening url
+django.utils.autoreload INFO 2022-10-02 22:27:07,322 autoreload 26184 5960 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:27:08,009 autoreload 1908 1736 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:27:10,253 middlewares 1908 11640 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:27:11,274 middlewares 1908 23776 after opening url
+django.utils.autoreload INFO 2022-10-02 22:27:59,027 autoreload 1908 1736 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:27:59,903 autoreload 5612 2064 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:28:02,246 middlewares 5612 7780 Before opening URL
+django.request ERROR 2022-10-02 22:28:03,293 log 5612 20756 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 177, in base64_file_image
+    return HttpResponse(image_url.rul)
+AttributeError: 'str' object has no attribute 'rul'
+appointment.middlewares ERROR 2022-10-02 22:28:03,295 middlewares 5612 20756 after opening url
+django.utils.autoreload INFO 2022-10-02 22:28:11,436 autoreload 5612 2064 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:28:12,207 autoreload 7708 5316 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:28:14,412 middlewares 7708 24352 Before opening URL
+django.request ERROR 2022-10-02 22:28:17,745 log 7708 10824 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 177, in base64_file_image
+    return HttpResponse(image_url.url)
+AttributeError: 'str' object has no attribute 'url'
+appointment.middlewares ERROR 2022-10-02 22:28:17,747 middlewares 7708 10824 after opening url
+django.utils.autoreload INFO 2022-10-02 22:28:31,075 autoreload 7708 5316 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:28:31,795 autoreload 9144 3560 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:28:34,049 middlewares 9144 3952 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:28:35,016 middlewares 9144 10724 after opening url
+django.utils.autoreload INFO 2022-10-02 22:31:21,779 autoreload 9144 3560 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:31:22,749 autoreload 22876 19192 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:31:25,258 middlewares 22876 11084 Before opening URL
+django.request ERROR 2022-10-02 22:31:29,460 log 22876 15764 Internal Server Error: /reg/downloadImage/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GitHub\medic-kit\register\views\login_view.py", line 177, in base64_file_image
+    cvShowImage("Display", image_url);
+NameError: name 'cvShowImage' is not defined
+appointment.middlewares ERROR 2022-10-02 22:31:29,462 middlewares 22876 15764 after opening url
+django.utils.autoreload INFO 2022-10-02 22:33:00,192 autoreload 22876 19192 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:33:01,102 autoreload 17696 19720 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:33:03,524 middlewares 17696 15944 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:33:06,997 middlewares 17696 14456 after opening url
+django.utils.autoreload INFO 2022-10-02 22:33:55,049 autoreload 17696 19720 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:33:55,917 autoreload 17016 23708 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:33:58,187 middlewares 17016 23908 Before opening URL
+django.utils.autoreload INFO 2022-10-02 22:34:07,271 autoreload 17016 23708 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:34:08,028 autoreload 13204 22612 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:34:10,392 middlewares 13204 16908 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:34:11,270 middlewares 13204 24496 after opening url
+django.utils.autoreload INFO 2022-10-02 22:34:20,490 autoreload 13204 22612 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:34:21,363 autoreload 2512 19988 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:34:23,757 middlewares 2512 20064 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:34:26,222 middlewares 2512 7144 after opening url
+django.utils.autoreload INFO 2022-10-02 22:34:37,392 autoreload 2512 19988 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:34:38,176 autoreload 15948 10292 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:34:40,466 middlewares 15948 18632 Before opening URL
+appointment.middlewares ERROR 2022-10-02 22:34:42,657 middlewares 15948 2448 after opening url
+django.utils.autoreload INFO 2022-10-02 22:34:50,911 autoreload 15948 10292 D:\GitHub\medic-kit\register\views\login_view.py changed, reloading.
+django.utils.autoreload INFO 2022-10-02 22:34:51,712 autoreload 2104 2584 Watching for file changes with StatReloader
+appointment.middlewares ERROR 2022-10-02 22:34:54,013 middlewares 2104 14064 Before opening URL
+appointment.middlewares ERROR 2022-10-02 23:36:19,756 middlewares 2104 25588 after opening url
+appointment.middlewares ERROR 2022-10-02 23:37:36,683 middlewares 2104 25588 after opening url
