@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'treatment',
     'prescription',
     'bmi',
+    'medicine',
 
 ]
 
