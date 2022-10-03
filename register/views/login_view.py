@@ -77,7 +77,7 @@ def login_doc_request(request):
                 #request.session['type']=1
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
-                return HttpResponseRedirect('/index')
+                return HttpResponseRedirect('/index/')
             else:
                 messages.error(request, "Invalid username or password.")
                 
@@ -143,7 +143,7 @@ def view_doctors(request):
     
     return render(request,'user-side-doctor-view.html', context)
 
-
+# ========================================= Face Login ===================================================
 def video(request):
     return render(request,'video.html')
 
@@ -183,4 +183,4 @@ def base64_file_image(request):
 # PIL images into NumPy arrays
         numpydata = np.asarray(d)
         return HttpResponse(numpydata)
-    return HttpResponse(results)
+    #return HttpResponse(results)

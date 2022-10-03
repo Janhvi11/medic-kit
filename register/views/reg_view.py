@@ -34,7 +34,7 @@ class MainView(View):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
 
-            return redirect(to='/')
+            return redirect(to='/index/')
 
         return render(request, self.template_name, {'form': form})
 
@@ -60,7 +60,7 @@ class RegisterView(View):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
 
-            return redirect(to='/reg/main')
+            return redirect(to='/index/')
 
         return render(request, self.template_name, {'form': form})
     
@@ -87,7 +87,7 @@ class RegisterDocView(View):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
 
-            return redirect(to='/index')
+            return redirect(to='/index/')
 
         return render(request, self.template_name, {'form': form})
     
@@ -114,6 +114,6 @@ class RegisterPharmaView(View):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
 
-            return redirect(to='/reg/main')
+            return redirect(to='/index/')
 
         return render(request, self.template_name, {'form': form})
