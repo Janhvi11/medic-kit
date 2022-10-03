@@ -170,14 +170,14 @@ def base64_file_image(request):
     users=user.objects.all()
     
     for u in users:
-        d=os.path.join(settings.PROJECT_ROOT, u.image.url)
-        # demo=static('img/blog/blog_1.jpg')
-        # prefix = 'https://' if request.is_secure() else 'http://'
-        image_url ='D:/GitHub/medic-kit - Copy'+u.image.url
-        #image_url = cv2.imread(u.image.url)
-        return HttpResponse(image_url)
-        #img = Image.open(static('dist/img/avatar2.png'))
-        #return HttpResponse(img)
+        module_dir = os.path.dirname(__file__)
+        sub=u.image.url.split('/')
+        x = module_dir.replace("views", "imgaes")
+        x=x+"\\"+sub[3]
+        mg=cv2.imread(x,cv2.IMREAD_COLOR)
+        dbenterimage_encoding = face_recognition.face_encodings(mg)[0]
+        dbresults = face_recognition.compare_faces([enterimage_encoding], dbenterimage_encoding)
+        return HttpResponse(dbresults)
 
 # asarray() class is used to convert
 # PIL images into NumPy arrays
