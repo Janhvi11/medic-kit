@@ -34,17 +34,10 @@
             <div class="site-info">
               <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="mailto:practice4488@gmail.co"><span class="mai-mail text-primary"></span>practice4488@gmail.com</a>
             </div>
           </div>
-          <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-            </div>
-          </div>
+          
         </div> <!-- .row -->
       </div> <!-- .container -->
     </div> <!-- .topbar -->
@@ -86,6 +79,8 @@
                 <p><span><a href="#">To-do List</a></p>
               {% elif request.session.type == 2 %}
                 <p><span><a href="#">To-do List</a></p>
+              {% else %}
+                <p><span>To-do List</p>
               {% endif %}
             </div>
           </div>
@@ -100,18 +95,26 @@
                 <p><span><a href="{% url 'view-doc-time' %}">Update timeline</a></p>
               {% elif request.session.type == 2 %}
                 <p><span><a href="{% url 'view-pharma-time' %}">Update timeline</a></p>
+              {% else %}
+                <p><span>To-do List</p>
               {% endif %}
             </div>
           </div>
           <div class="col-md-4 py-3 py-md-0">
-            <a href="buy.html">
             <div class="card-service wow fadeInUp">
               <div class="circle-shape bg-accent text-white">
                 <span class="mai-basket"></span>
               </div>
-              <p><span><a href="#">View</span> Hospital information</a></p>
+              {% if request.session.type == 0 %}
+                <p><span><a href="#">Hospital information</a></p>
+              {% elif request.session.type == 1 %}
+                <p><span><a href="#">Hospital information</a></p>
+              {% elif request.session.type == 2 %}
+                <p><span><a href="#">Hospital information</a></p>
+              {% else %}
+                <p><span>Hospital information</p>
+              {% endif %}
             </div>
-          </a>
           </div>
         </div>
       </div>

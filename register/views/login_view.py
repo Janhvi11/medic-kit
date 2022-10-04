@@ -147,7 +147,6 @@ def view_doctors(request):
 def video(request):
     return render(request,'video.html')
 
-
 def base64_file(request,data):
     _format, _img_str = data.split(';base64,')
     _name, ext = _format.split('/')
@@ -177,10 +176,4 @@ def base64_file_image(request):
         mg=cv2.imread(x,cv2.IMREAD_COLOR)
         dbenterimage_encoding = face_recognition.face_encodings(mg)[0]
         dbresults = face_recognition.compare_faces([enterimage_encoding], dbenterimage_encoding)
-        return HttpResponse(dbresults)
-
-# asarray() class is used to convert
-# PIL images into NumPy arrays
-        numpydata = np.asarray(d)
-        return HttpResponse(numpydata)
-    #return HttpResponse(results)
+        return HttpResponse(dbresults)  # session get -> redirect

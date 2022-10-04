@@ -8,7 +8,7 @@ class RegisterForm(forms.ModelForm):
 # not null field define karna
     class Meta:
         model = user
-        fields = ['first_name', 'last_name', 'username', 'email', 'address', 'password1','image']
+        fields = ['first_name', 'last_name', 'username', 'email', 'address', 'password1']
 
 class RegisterDocForm(forms.ModelForm):
 # not null field define karna
