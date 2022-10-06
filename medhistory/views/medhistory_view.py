@@ -58,3 +58,16 @@ def download_csv(request):
 		writer.writerow([data.patientId,data.doctorId,data.date,data.problems,data.prescription])
 
 	return response
+
+def docsideMedHistory_view(request):
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    
+    doctor = doc.objects.filter(username=username)
+    doc_id = doctor[0]
+    context['doc'] = doctor
+    data = medhistory.objects.filter(doctorId = doc_id)
+    context['medhis'] = data
+
+    return render(request,"docside-medhistory-view.html",context)

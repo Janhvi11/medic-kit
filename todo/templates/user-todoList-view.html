@@ -35,7 +35,13 @@
     
 
     <!-- Sidebar -->
-    {%include 'user-profile-sidebar.html' %}
+    {% if type == 0 %}
+      {%include 'user-profile-sidebar.html' %}
+    {% elif type == 1 %}
+      {%include 'doc-profile-sidebar.html' %}
+    {% elif type == 2 %}
+      {%include 'pharma-profile-sidebar.html' %}
+    {% endif %}
     <!-- /.sidebar -->
   </aside>
 

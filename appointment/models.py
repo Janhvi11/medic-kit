@@ -1,5 +1,7 @@
 from django.db import models
 from tkinter import CASCADE
+
+from traitlets import default
 from register.models import doc,user
 # Create your models here.
 
@@ -42,7 +44,7 @@ class Appointment(models.Model):
     day = models.CharField(max_length=500,choices=day)
     request = models.TextField(max_length=500)
     status = models.CharField(max_length=500,choices=status,default='Pending')
-    doctorId = models.IntegerField(null=True,default=0)
+    doctorId = models.ForeignKey(doc, on_delete=models.CASCADE, default=1)
 
 #class acceotappointment(models.Model):
 #    doctorId = models.ForeignKey(doc, on_delete=models.CASCADE)

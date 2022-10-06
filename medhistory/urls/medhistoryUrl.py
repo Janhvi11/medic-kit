@@ -7,5 +7,5 @@ medhistory_url = [
     path('medhistoryDelete/<id>', deleteMedhistory, name="medhistory-delete"),#
     path('medhistoryAdd/', addMedhistory, name="medhistory-add"),
     path('download',download_csv,name='download'),
-
+    path('docside-medhistory-view', docsideMedHistory_view, name='docside-medhistory-view')
 ]
