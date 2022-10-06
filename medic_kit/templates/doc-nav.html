@@ -16,7 +16,7 @@
             {% comment %} {% url 'about/' %} {% endcomment %}
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Appointments</a>
+              <a class="nav-link" href="{% url 'docside-viewappointment' %}">Appointments</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'news' %}">News</a>
@@ -27,9 +27,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
-            <li class="nav-item">
+            {% comment %} <li class="nav-item">
               <a class="nav-link" href="#">Patients</a>
-            </li>
+            </li> {% endcomment %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'doc-profile' %}">View Profile</a>
             </li>
