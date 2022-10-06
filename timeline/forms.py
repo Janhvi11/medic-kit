@@ -6,6 +6,11 @@ class timelineForm(forms.ModelForm):
         model = timeline
         fields=['userId','update']
         
+class user_timeline_edit_Form(forms.ModelForm):
+    class Meta:
+        model = timeline
+        fields=['userId','update']
+        
 class timeline_docForm(forms.ModelForm):
     class Meta:
         model = timeline_doc

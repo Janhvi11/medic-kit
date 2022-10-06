@@ -63,12 +63,9 @@
                 <form method="POST">
                     {% csrf_token %}
                     <ul class="list-group list-group-unbordered mb-3">
-                        {% for data in user %}
                         <li class="list-group-item">
-                            <input type="hidden" name="userId" value={{data.id}}>
+                            <input type="hidden" name="userId" value="1">
                         </li>
-                        
-                        {% endfor %}
                         <li class="list-group-item">
                             <b>Update</b> <a class="float-right">{{ form.update }}</a>
                         </li>
