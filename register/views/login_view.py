@@ -140,7 +140,7 @@ def pharmaprofile(request):
 def view_doctors(request):
     context = {}
     context['data'] = doc.objects.all()
-    
+    context['username'] = request.session.get('username')
     return render(request,'user-side-doctor-view.html', context)
 
 # ========================================= Face Login ===================================================
