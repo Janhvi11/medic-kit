@@ -176,4 +176,11 @@ def base64_file_image(request):
         mg=cv2.imread(x,cv2.IMREAD_COLOR)
         dbenterimage_encoding = face_recognition.face_encodings(mg)[0]
         dbresults = face_recognition.compare_faces([enterimage_encoding], dbenterimage_encoding)
-        return HttpResponse(dbresults)  # session get -> redirect
+        #return HttpResponse(dbresults)  # session get -> redirect
+        if dbresults:
+            request.session['username']=u.username
+            request.session['type']=0
+            messages.info(request, f"You are now logged in as {u.username}")
+            return redirect('/index/')
+        else:
+            return HttpResponse("else")
