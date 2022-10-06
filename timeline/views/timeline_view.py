@@ -15,7 +15,10 @@ def viewAdminTime(request):
 def viewTime(request):
     context = {}
     context['username'] = request.session.get('username')
+    # context['image'] = request.session.get('image')
     username = request.session.get('username')
+    
+    context['user'] = user.objects.filter(username = username)
     # return HttpResponse(username)
     user_filter = user.objects.filter(username = username)
     uid = user_filter[0]

@@ -29,6 +29,7 @@ def addAppointment_UserProfile(request):
     context = {}
     form = UserAppointmentForm(request.POST)
     username = request.session.get('username')
+    context['user'] = user.objects.filter(username = username)
     context['user_username'] = username
     if form.is_valid():
         #return HttpResponse(form)
@@ -78,6 +79,7 @@ def viewAppointment_UserSide(request):
     context = {}
     username = request.session.get('username')
     context['username'] = username
+    context['user'] = user.objects.filter(username = username)
     context['data'] = Appointment.objects.all()
     logger.info("Appointment has been viewed")
     return render(request, "user-side-appointment.html", context)

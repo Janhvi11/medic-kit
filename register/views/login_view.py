@@ -41,6 +41,7 @@ def login_request(request):
                 # login(request, username_got)
                 request.session['username']=form.cleaned_data.get('username')
                 request.session['type']=0
+                request.session['image'] = form.cleaned_data.get('image')
                 messages.info(request, f"You are now logged in as {username_got}")
       
                 return redirect('/index/')
@@ -140,7 +141,9 @@ def pharmaprofile(request):
 def view_doctors(request):
     context = {}
     context['data'] = doc.objects.all()
-    context['username'] = request.session.get('username')
+    username = request.session.get('username')
+    context['username'] = username
+    context['user'] = user.objects.filter(username = username)
     return render(request,'user-side-doctor-view.html', context)
 
 # ========================================= Face Login ===================================================
