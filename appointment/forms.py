@@ -19,8 +19,8 @@ class UserAppointmentForm(forms.ModelForm):
 # 'fname','lname','email','address','time','day','request','status'
 
 
-#class AcceptAppointmentForm(forms.ModelForm):
-## not null field define karna
-#    class Meta:
-#        model = acceptappointment
-#        fields = '__all__'
+class AcceptAppointmentForm(forms.ModelForm):
+# not null field define karna
+   class Meta:
+       model = Appointment
+       fields = '__all__'

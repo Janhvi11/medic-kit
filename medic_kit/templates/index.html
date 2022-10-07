@@ -106,13 +106,13 @@
                 <span class="mai-basket"></span>
               </div>
               {% if request.session.type == 0 %}
-                <p><span><a href="#">Hospital information</a></p>
+                <p><span><a href="{% url 'user-side-doctor-view' %}">Doctors information</a></p>
               {% elif request.session.type == 1 %}
-                <p><span><a href="#">Hospital information</a></p>
+                <p><span><a href="#">Doctors information</a></p>
               {% elif request.session.type == 2 %}
-                <p><span><a href="#">Hospital information</a></p>
+                <p><span><a href="#">Doctors information</a></p>
               {% else %}
-                <p><span>Hospital information</p>
+                <p><span>Doctors information</p>
               {% endif %}
             </div>
           </div>

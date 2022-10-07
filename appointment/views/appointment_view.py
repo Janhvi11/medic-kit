@@ -29,6 +29,7 @@ def addAppointment_UserProfile(request):
     context = {}
     form = UserAppointmentForm(request.POST)
     username = request.session.get('username')
+    context['user'] = user.objects.filter(username = username)
     context['user_username'] = username
     if form.is_valid():
         #return HttpResponse(form)
@@ -78,6 +79,7 @@ def viewAppointment_UserSide(request):
     context = {}
     username = request.session.get('username')
     context['username'] = username
+    context['user'] = user.objects.filter(username = username)
     context['data'] = Appointment.objects.all()
     logger.info("Appointment has been viewed")
     return render(request, "user-side-appointment.html", context)
@@ -129,5 +131,61 @@ def download_csv(request):
 
 	return response
 
+def docside_appointemnt(request):
+    context = {}
+    
+    username = request.session.get('username')
+    doctor = doc.objects.filter(username=username)
+    # docId = doctor[0]
+    data = Appointment.objects.filter(status = "Pending")
+    
+    context['data'] = data
+    context['username'] = username
+    context['user'] = doctor
+    return render(request,"docside-appointment.html",context)
 
+def fix_appointment(request,id):
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    
+    doctor = doc.objects.filter(username=username)
+    docId = doctor[0]
+    context['docId'] = docId
+    context['user'] = doctor
+    
+    obj = get_object_or_404(Appointment, id=id)
+    
+    # context['id']=obj['id']
+    # context['fname']=obj[1]
+    # context['lname']=obj[2]
+    # context['email']=obj[3]
+    # context['time']=obj[4]
+    # context['day']=obj[5]
+    # context['request']=obj[6]
+    # context['status']="Approved"
+    # context['doctorId']=docId
+    # context['username']=obj[9]
+    
+    form = AcceptAppointmentForm(request.POST or None, instance=obj)
+    # return HttpResponse(form)
+    if form.is_valid():
+        form.save()
+        return redirect("/appointment/docside-viewappointment/")
+    
+    context['form'] = form
+    
+    return render(request,'fix-appointment.html',context)
 
+def view_own_appointment(request):
+    context = {}
+    username = request.session.get('username')
+    doctor = doc.objects.filter(username=username)
+    docId = doctor[0]
+    
+    context['username'] = username
+    context['user'] = doctor
+
+    app = Appointment.objects.filter(doctorId = docId, status="Accepted")
+    context['data'] = app
+    return render(request,"doc-own-appointment.html",context)

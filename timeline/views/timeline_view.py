@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from ..models import timeline, timeline_doc, timeline_pharma
-from ..forms import timelineForm, timeline_pharmaForm, timeline_docForm
+from ..forms import timelineForm, timeline_pharmaForm, timeline_docForm,user_timeline_edit_Form
 from django.utils import timezone
 from register.models import user,doc,pharma
 
@@ -15,7 +15,10 @@ def viewAdminTime(request):
 def viewTime(request):
     context = {}
     context['username'] = request.session.get('username')
+    # context['image'] = request.session.get('image')
     username = request.session.get('username')
+    
+    context['user'] = user.objects.filter(username = username)
     # return HttpResponse(username)
     user_filter = user.objects.filter(username = username)
     uid = user_filter[0]
@@ -49,14 +52,15 @@ def deleteTime(request,id):
 def editTime(request,id):
     context = {}    
     obj = get_object_or_404(timeline, id=id)
-   
-    form = timelineForm(request.POST or None, instance=obj)
+
+    form = user_timeline_edit_Form(request.POST or None, instance=obj)
+    # return HttpResponse(form)
     if form.is_valid():
         form.save()
         return redirect("/timeline/viewTimeline/")
     
     context['form'] = form
-    return render(request, "timelineAdd.html",context)
+    return render(request, "edit-time.html",context)
 
 #============DOCTOR======================================================
 

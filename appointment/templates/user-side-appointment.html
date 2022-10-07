@@ -68,9 +68,11 @@
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
+                  {% for data in user %}
                   <img class="profile-user-img img-fluid img-circle"
-                       src="../../dist/img/user4-128x128.jpg"
+                       src="{{ data.image.url }}"
                        alt="User profile picture">
+                  {% endfor %}
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
@@ -78,52 +80,44 @@
 
               </div>
             </div>
-
-                <div class="card card-primary card-outline">
-                  <div class="card-body box-profile">
-                {% for data in data %}
-                <ul class="list-group list-group-unbordered mb-3">
-                  {% comment %} <li class="list-group-item">
-                    <b>User Id</b> <a class="float-right">{{ data.userId }}</a>
-                  </li> {% endcomment %}
-                  <li class="list-group-item">
-                    <b>First Name</b> <a class="float-right">{{ data.fname }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Last Name</b> <a class="float-right">{{ data.lname }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Email</b> <a class="float-right">{{ data.email }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Time</b> <a class="float-right">{{ data.time }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Day</b> <a class="float-right">{{ data.day }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Request</b> <a class="float-right">{{ data.request }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Status</b> <a class="float-right">{{ data.status }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Doctor ID</b> <a class="float-right">{{ data.doctorId }}</a>
-                  </li>
-                  
-                  {% comment %} <li class="list-group-item">
-                    <b>Password</b> <a class="float-right">{{ data.password1 }}</a>
-                  </li> {% endcomment %}
-                </ul>
-                
-
-                {% comment %} <a href="{% url 'edit-time' data.id %}" class="btn btn-primary btn-block"><b>Edit</b></a> {% endcomment %}
-                <a href="{% url 'delete-appointment' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a>
-                {% endfor %}
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">View User Timeline</h3>
               </div>
-              <!-- /.card-body -->
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <td>First Name</td>
+                      <td>Last Name</td>
+                      <td>email</td>
+                      <td>time</td>
+                      <td>day</td>
+                      <td>request</td> 
+                      <td>status</td>
+                      <td>doctorId</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for data in data %}
+                      <tr>
+                          <td>{{ data.fname }}</td>
+                          <td>{{ data.lname }}</td>
+                          <td>{{ data.email }}</td>
+                          <td>{{ data.time }}</td>
+                          <td>{{ data.day }}</td>
+                          <td>{{ data.request }}</td>
+                          <td>{{ data.status }}</td>
+                          <td>{{ data.doctorId }}</td>
+                          <td><a href="{% url 'delete-appointment' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a></td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <!-- /.card -->
+
           </div>
           <!-- /.col -->
         </div>

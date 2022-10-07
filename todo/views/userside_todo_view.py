@@ -8,23 +8,28 @@ from ..models import *
 
 def userside_viewToDoList(request):
     type = request.session.get('type')
-    
     if type == 0:
         context = {}
+        context['type'] = type
         username = request.session.get('username')
         context['username'] = username
+        context['user'] = user.objects.filter(username = username)
         context["todolist"] = ToDoList.objects.filter(username=username,type=0)
         return render(request, "user-ToDoList-view.html", context)
     elif type == 1:
         context = {}
+        context['type'] = type
         username = request.session.get('username')
         context['username'] = username
+        context['user'] = user.objects.filter(username = username)
         context["todolist"] = ToDoList.objects.filter(username=username,type=1)
         return render(request, "user-ToDoList-view.html", context)
     elif type == 2:
         context = {}
+        context['type'] = type
         username = request.session.get('username')
         context['username'] = username
+        context['user'] = user.objects.filter(username = username)
         context["todolist"] = ToDoList.objects.filter(username=username,type=2)
         return render(request, "user-ToDoList-view.html", context)
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Appointment</title>
+  <title>Doctors</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
@@ -68,47 +68,51 @@
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
+                  {% for data in user %}
                   <img class="profile-user-img img-fluid img-circle"
-                       src="../../dist/img/user4-128x128.jpg"
+                       src="{{ data.image.url }}"
                        alt="User profile picture">
+                  {% endfor %}
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
 
               </div>
             </div>
-
-                
-                {% for data in data %}
-                <div class="card card-primary card-outline">
-                    <div class="card-body box-profile">
-                <ul class="list-group list-group-unbordered mb-3">
-                  {% comment %} <li class="list-group-item">
-                    <b>User Id</b> <a class="float-right">{{ data.userId }}</a>
-                  </li> {% endcomment %}
-                  <li class="list-group-item">
-                    <b>Name</b> <a class="float-right">{{ data.name }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Experience</b> <a class="float-right">{{ data.experience }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Specialization</b> <a class="float-right">{{ data.degree }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Phone</b> <a class="float-right">{{ data.phone }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Hospital Name</b> <a class="float-right">{{ data.hosName }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Hospital Location</b> <a class="float-right">{{ data.hosLocation }}</a>
-                  </li>
-                </ul>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">View User Timeline</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <td>Name</td>
+                      <td>Experience</td>
+                      <td>Specialization</td>
+                      <td>Phone</td>
+                      <td>Hospital Name</td>
+                      <td>Hospital Location</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for data in data %}
+                      <tr>
+                          <td>{{ data.name }}</td>
+                          <td>{{ data.experience }}</td>
+                          <td>{{ data.degree }}</td>
+                          <td>{{ data.phone }}</td>
+                          <td>{{ data.hosName }}</td>
+                          <td>{{ data.hosLocation }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <!-- /.card-body -->
-          </div>
-                {% endfor %}
+                
+                
               
             <!-- /.card -->
           </div>
