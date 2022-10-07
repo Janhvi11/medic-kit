@@ -69,7 +69,8 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="small mb-1">Upload Image</label>
-                                            {{ form.image }}
+                                            {% comment %} <input type="file" name="image"/> {% endcomment %}
+                                        {{ form.image }}
                                         </div>
                                     </div>
                                     {% comment %} <div class="col-md-6">

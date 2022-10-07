@@ -160,27 +160,29 @@ def base64_file_image(request):
     encoded_img = data.split(",")[1]
     # return HttpResponse(encoded_img)
     binary = base64.b64decode(encoded_img)
+    
     image = np.asarray(bytearray(binary), dtype=np.uint8)
     image = cv2.imdecode(image, cv2.IMREAD_COLOR)
-    face_locations = face_recognition.face_locations(image)
-    enterimage_encoding = face_recognition.face_encodings(image)[0]
-    results = face_recognition.compare_faces([enterimage_encoding], enterimage_encoding)
-
+   
+    enterimage_encoding = face_recognition.face_encodings(image)[0]    #try
     users=user.objects.all()
-    
+    data=[]
     for u in users:
         module_dir = os.path.dirname(__file__)
         sub=u.image.url.split('/')
         x = module_dir.replace("views", "imgaes")
         x=x+"\\"+sub[3]
         mg=cv2.imread(x,cv2.IMREAD_COLOR)
-        dbenterimage_encoding = face_recognition.face_encodings(mg)[0]
-        dbresults = face_recognition.compare_faces([enterimage_encoding], dbenterimage_encoding)
-        #return HttpResponse(dbresults)  # session get -> redirect
-        if dbresults:
+        dbenterimage_encoding = face_recognition.face_encodings(mg)[0]  #try
+        dbresults = face_recognition.compare_faces([enterimage_encoding], dbenterimage_encoding) 
+     
+        if dbresults[0]:
             request.session['username']=u.username
             request.session['type']=0
             messages.info(request, f"You are now logged in as {u.username}")
             return redirect('/index/')
-        else:
-            return HttpResponse("else")
+            
+        
+       
+    return HttpResponse("No user found")
+     
