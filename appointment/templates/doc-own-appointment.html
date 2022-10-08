@@ -77,44 +77,45 @@
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
                 </div>
+                <div>
+                  <a href="{% url 'docside-viewappointment' %}" class="btn btn-primary btn-block"><b>Back to available appointments</b></a>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Your patients</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <td>First Name</td>
+                      <td>Last Name</td>
+                      <td>Email</td> 
+                      <td>Time</td> 
+                      <td>Day</td> 
+                      <td>Request</td> 
+                      <td>Status</td> 
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for data in data %}
+                      <tr>
+                          <td>{{ data.fname }}</td>
+                          <td>{{ data.lname }}</td>
+                          <td>{{ data.email }}</td>
+                          <td>{{ data.time }}</td>
+                          <td>{{ data.day }}</td>
+                          <td>{{ data.request }}</td>
+                          <td>{{ data.status }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
-                <div class="card card-primary card-outline">
-                  <div class="card-body box-profile">
-                {% for data in data %}
-                <ul class="list-group list-group-unbordered mb-3">
-                  <li class="list-group-item">
-                    <b>First Name</b> <a class="float-right">{{ data.fname }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Last Name</b> <a class="float-right">{{ data.lname }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Email</b> <a class="float-right">{{ data.email }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Time</b> <a class="float-right">{{ data.time }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Day</b> <a class="float-right">{{ data.day }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Request</b> <a class="float-right">{{ data.request }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Status</b> <a class="float-right">{{ data.status }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Doctor ID</b> <a class="float-right">{{ data.doctorId }}</a>
-                  </li>
-                </ul>
-                
-                <a href="{% url 'docside-fixappointment' data.id %}" class="btn btn-primary btn-block"><b>Fix Appointment</b></a>
-                {% endfor %}
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
           </div>
           <!-- /.col -->
         </div>

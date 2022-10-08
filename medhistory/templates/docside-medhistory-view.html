@@ -76,30 +76,35 @@
                 </div>
 
                 <h3 class="profile-username text-center">{{ username }}</h3>
-
-                {% for data in medhis %}
-                <ul class="list-group list-group-unbordered mb-3">
-                  <li class="list-group-item">
-                    <b>Patient ID</b> <a class="float-right">{{ data.patientId }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Date</b> <a class="float-right">{{ data.date }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Problems</b> <a class="float-right">{{ data.problems }}</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Prescription</b> <a class="float-right">{{ data.prescription }}</a>
-                  </li>
-                </ul>
-                
-
-                <a href="{% url 'edit-doc-profile' data.id %}" class="btn btn-primary btn-block"><b>Edit Profile</b></a>
-                {% endfor %}
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+<br><br><br>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">View User Timeline</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <td>Patient Id</td>
+                          <td>Date</td>
+                          <td>Problems</td> 
+                          <td>Prescription</td> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for data in medhis %}
+                          <tr>
+                              <td>{{ data.patientId }}</td>
+                              <td>{{ data.date }}</td>
+                              <td>{{ data.problems }}</td>
+                              <td>{{ data.prescription }}</td>
+                          </tr>
+                          {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
           </div>
           <!-- /.col -->
         </div>
@@ -107,12 +112,6 @@
       </div><!-- /.container-fluid -->
     </section>
   </div>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 

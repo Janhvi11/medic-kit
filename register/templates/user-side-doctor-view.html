@@ -35,8 +35,12 @@
     
 
     <!-- Sidebar -->
-    {%include 'user-profile-sidebar.html' %}
-    <!-- /.sidebar -->
+    {% if type == 0 %}
+      {%include 'user-profile-sidebar.html' %}
+    {% elif type == 1 %}
+      {%include 'doc-profile-sidebar.html' %}
+    {% endif %}
+      <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->

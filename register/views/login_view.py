@@ -140,6 +140,8 @@ def pharmaprofile(request):
 
 def view_doctors(request):
     context = {}
+    type = request.session.get('type')
+    context['type'] = type
     context['data'] = doc.objects.all()
     username = request.session.get('username')
     context['username'] = username
