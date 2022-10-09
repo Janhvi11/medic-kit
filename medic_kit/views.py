@@ -5,8 +5,12 @@ from django.contrib.auth.hashers import make_password
 from register.forms import RegisterForm,RegisterDocForm,RegisterPharmaForm
 # from django.shortcuts import render, redirect, ,HttpResponse
 
+from blogs.forms import *
+from blogs.models import *
+from django.core.paginator import Paginator
 from news.forms import *
 from news.models import *
+
 
 def about(request):
     type= request.session.get('type')
@@ -22,12 +26,12 @@ def about(request):
 #     else:    
 #         return render(request, 'news.html')
 
-def blog(request):
-    type= request.session.get('type')
-    if type == None:
-        return render(request,'index.html')
-    else:
-        return render(request, 'blog.html')
+# def blog(request):
+#     type= request.session.get('type')
+#     if type == None:
+#         return render(request,'index.html')
+#     else:
+#         return render(request, 'blog.html')
 
 def buy(request):
     type= request.session.get('type')
@@ -173,3 +177,20 @@ def viewNewss(request):
 	context = {}
 	context["news"] = news.objects.all()
 	return render(request, "news.html", context)
+
+#View Blogs user side
+def viewBlogss(request):
+    blogs = blog.objects.all()
+    p = Paginator(blogs, 1)
+    page_number = request.GET.get('page')
+    
+    try:
+        page_obj = p.get_page(page_number)
+    except PageNotAnInteger:
+        # if page_number is not an integer then assign the first page
+        page_obj = p.page(1)
+    except EmptyPage:
+        # if page is empty then return last page
+        page_obj = p.page(p.num_pages)
+    context ={'page_obj': page_obj}
+    return render(request,'blog.html',context)

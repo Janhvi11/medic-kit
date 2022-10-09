@@ -12,4 +12,4 @@ import os
 
 class news(models.Model):
     title = models.CharField(max_length=100, null=True)
-    image = models.ImageField(upload_to='news_img', null=True, blank=True)
+    image = models.ImageField(upload_to='news/news_img', null=True, blank=True)

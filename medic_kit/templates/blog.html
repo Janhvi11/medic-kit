@@ -10,7 +10,21 @@
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
   <title>Medic-Kit   Stay Fit AnyWhere EveryWhere</title>
-
+  <style>
+    .hm-gradient {
+      outline:none;
+      border:none;
+      color:white;
+      margin-right: 550px;
+      font-size: 16;
+      padding: 10px 30px;
+      background-color: #00D9A5;
+  }
+  .darken-grey-text {
+      color: #FF0000;
+  }
+  </style>
+  
   <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
 
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
@@ -68,7 +82,6 @@
             <ol class="breadcrumb bg-transparent py-0 mb-5">
               <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
               <li class="breadcrumb-item"><a href="{% url 'blog' %}">Blog</a></li>
-              <li class="breadcrumb-item active" aria-current="page">List of Countries without Coronavirus case</li>
             </ol>
           </nav>
         </div>
@@ -76,32 +89,14 @@
 
       <div class="row">
         <div class="col-lg-8">
+          {% for data in page_obj %}
           <article class="blog-details">
             <div class="post-thumb">
-              <img src="{% static 'img/blog/blog_1.jpg' %}" alt="">
+              <img src="{{ data.image.url }}" alt="" class="prod-size" width="800" height="700">
             </div>
-            <div class="post-meta">
-              <div class="post-author">
-                <span class="text-grey">By</span> <a href="#">Admin</a>  
-              </div>
-              <span class="divider">|</span>
-              <div class="post-date">
-                <a href="#">22 Jan, 2018</a>
-              </div>
-              <span class="divider">|</span>
-              <div>
-                <a href="#">StreetStyle</a>, <a href="#">Fashion</a>, <a href="#">Couple</a>  
-              </div>
-              <span class="divider">|</span>
-              <div class="post-comment-count">
-                <a href="#">8 Comments</a>
-              </div>
-            </div>
-            <h2 class="post-title h1">List of Countries without Coronavirus case</h2>
+            <h2 class="post-title h1">{{ data.title }}</h2>
             <div class="post-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet est vel orci luctus sollicitudin. Duis eleifend vestibulum justo, varius semper lacus condimentum dictum. Donec pulvinar a magna ut malesuada. In posuere felis diam, vel sodales metus accumsan in. Duis viverra dui eu pharetra pellentesque. Donec a eros leo. Quisque sed ligula vitae lorem efficitur faucibus. Praesent sit amet imperdiet ante. Nulla id tellus auctor, dictum libero a, malesuada nisi. Nulla in porta nibh, id vestibulum ipsum. Praesent dapibus tempus erat quis aliquet. Donec ac purus id sapien condimentum feugiat.</p>
-
-              <p>Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex, tristique sit amet suscipit in, mattis imperdiet enim. Integer tempus justo nec velit fringilla, eget eleifend neque blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum. Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum. Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate</p>
+              <p>{{ data.details }}</p>
             </div>
             <div class="post-tags">
               <a href="#" class="tag-link">LifeStyle</a>
@@ -135,10 +130,34 @@
               <div class="form-group">
                 <input type="submit" value="Post Comment" class="btn btn-primary">
               </div>
-  
             </form>
+            {% endfor %}
+            <div class="pagination">
+              {%if page_obj.has_previous %} {# whether the previous page exists #}
+              
+                  <a href="?page={{page_obj.previous_page_number}}" class="pagination-btn"><button class="hm-gradient"> <i class="fa fa-arrow-circle-right ml-1">prev</i></button></a> {# link to the prev page #}
+              
+                  {% endif %}
+              
+              {% comment %} {% if page_obj.number == 1 %}
+                  <p></p>
+              {% else %}
+                  <span>page: </span> {# the current page number #}
+                  <button class="btn btn-light-green">{{page_obj.number}} <i class="fa fa-arrow-circle-right ml-1"></i></button>                  
+              {% endif %} {% endcomment %}
+              
+              {%if page_obj.has_next %} {# whether the next page exists #}
+             
+                  <a href="?page={{page_obj.next_page_number}}" class="pagination-btn"><button class="hm-gradient"> <i class="fa fa-arrow-circle-right ml-1">next</i></button></a> {# link to the next page #}
+               
+                  {% endif %}
+            </div>
           </div>
+
         </div>
+        
+        
+
         <div class="col-lg-4">
           <div class="sidebar">
             <div class="sidebar-block">

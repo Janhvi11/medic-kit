@@ -5,7 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blogs</title>
- 
+  <style>
+    .image {
+      width: 20px;
+      height: 121px;
+    }
+    </style>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback' %}">
   <!-- Font Awesome Icons -->
@@ -45,20 +50,23 @@
                     <table class="table table-bordered">
                       <thead>
                         <tr>
-                          <th style="width: 10px">#</th>
+                          <th style="width: 10px">Sr.no</th>
                           <th>Image</th>
                           <th>Title</th>
                           <th>Details</th>
+                          {% comment %} <th>Update</th> {% endcomment %}
+                          <th>Delete</th>
                         </tr>
                       </thead>
                       <tbody>
                         {% for data in blogs %}
                         <tr>
                           <td>{{ data.id }}</td>
-                          <td><img src="{{ data.image.url }}" alt="" class="prod-size" width="250" height="300"></td>
+                          <td><img src="{{ data.image.url }}" alt="" class="prod-size" width="80" height="70"></td>
                           <td>{{ data.title }}</td>
                           <td>{{ data.details }}</td>
-                          <td> <a href="{% url 'blog-delete' data.id %}"> delete </a> </td>
+                          {% comment %} <td> <a href="{% url 'blog-edit' data.id %}">Update</a></td> {% endcomment %}
+                          <td> <a href="{% url 'blog-delete' data.id %}">Delete</a></td>
                         </tr>
                         {% endfor %}
                       </tbody>

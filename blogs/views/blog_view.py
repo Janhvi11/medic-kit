@@ -5,6 +5,7 @@ from django.views import View
 from django.http import HttpResponse
 from ..forms import *
 from ..models import *
+from django.contrib.auth.hashers import make_password
 
 
 import logging
@@ -20,7 +21,7 @@ def deleteBlog(request,id):
 	obj = get_object_or_404(blog, id=id)
 	if request.method == "GET":
 		obj.delete()
-		return redirect("/newss/viewBlog/")
+		return redirect("/blogss/viewBlog/")
 	return render(request, "blogs-view.html", context)
 
 #def addBlog(request):
@@ -39,8 +40,17 @@ def deleteBlog(request,id):
 #    context['form'] = form
 #    return render(request, "news/templates/blog-add.html",context)
 
+# def editBlog(request,id):
+# 	context = {}
+# 	obj = get_object_or_404(blog, id=id)
+# 	form = BlogForm(request.POST or None, instance=obj)
+# 	if form.is_valid():
+# 		sign_up = form.save(commit=False)
+# 		sign_up.save()
+# 		return redirect("/blogss/viewBlog/")
 
-
+# 	context['form'] = form
+# 	return render(request, "blogs-add.html",context)
 
 def addBlog(request):
 
