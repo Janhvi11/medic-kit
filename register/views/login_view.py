@@ -118,6 +118,34 @@ def login_pharma_request(request):
     # form = AuthenticationForm()
     return render(request, template_name = "login.html", context = {"form":form})
 
+def login_admin(request):
+    if request.method == 'POST':
+        form = LoginUserForm(request.POST)
+        if form.is_valid():
+            username_got = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            # obj = get_object_or_404(user, username=username_got)
+            res = check_password(password,"Admin")            #check_password is an hashing method
+            
+            if username_got == "Admin":
+                # login(request, username_got)
+                # request.session['username']=form.cleaned_data.get('username')
+                # request.session['type']=0
+                # request.session['image'] = form.cleaned_data.get('image')
+                # messages.info(request, f"You are now logged in as {username_got}")
+      
+                return redirect('/ad/home/')
+
+         
+            else:
+                messages.error(request, "Invalid username or password.")
+                
+    else:
+        form = LoginUserForm()
+        # messages.error(request, "error 2.")
+    # form = AuthenticationForm()
+    return render(request, template_name = "login.html", context = {"form":form})
+
 def logout(request):
     del request.session['type']
     del request.session['username']
