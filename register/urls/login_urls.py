@@ -7,6 +7,7 @@ login_url = [
     path('logindoctor/', login_doc_request, name='doc-login'),
     path('loginpharma/', login_pharma_request, name='pharma-login'),
     path('logout/', logout, name='logout'),
+    path('loginadmin/',login_admin,name="login-admin"),
     
     #access the laptop camera
     path('video/', video, name='video'),
