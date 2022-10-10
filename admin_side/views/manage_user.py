@@ -48,7 +48,7 @@ def editUser(request,id):
     return render(request, "UserAdd.html",context_3)
 
 
-def download_csv(request):
+def download_user_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=patients.csv'
 	writer = csv.writer(response)

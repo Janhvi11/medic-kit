@@ -54,7 +54,7 @@ def addNews(request):
     
     return render(request, 'news-add.html')
 
-def download_csv(request):
+def download_news_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=news.csv'
 	writer = csv.writer(response)

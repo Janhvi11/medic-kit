@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from ..models import bmi, ideal_bmi
 from ..forms import bmiForm, bmiIdealForm
 from register.models import user
+import csv
 
 import logging
 logger = logging.getLogger(__name__)
@@ -84,3 +85,23 @@ def editidealbmi(request,id):
     
     context['form'] = form
     return render(request, "idealBmiAdd.html",context)
+
+def download_bmi_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=BMI.csv'
+	writer = csv.writer(response)
+	writer.writerow(['ID','Age','Gender','User Weight','User hieght','User BMI'])
+	for data in bmi.objects.all():
+		writer.writerow([data.userId,data.age,data.gender,data.user_weight,data.user_height,data.user_bmi])
+
+	return response
+
+def download_ideal_bmi_csv(request):
+	response=HttpResponse('txt/csv')
+	response['content-Disposition'] = 'attachment; filename=Ideal_BMI.csv'
+	writer = csv.writer(response)
+	writer.writerow(['age_range','gender','ideal_weight','ideal_height','ideal_bmi'])
+	for data in ideal_bmi.objects.all():
+		writer.writerow([data.age_range,data.gender,data.ideal_weight,data.ideal_height,data.ideal_bmi])
+
+	return response

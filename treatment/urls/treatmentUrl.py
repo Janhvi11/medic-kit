@@ -6,6 +6,6 @@ treatment_url = [
     path('treatEdit/<id>', editTreatment, name="treatment-edit"),#id
     path('treatDelete/<id>', deleteTreatment, name="treatment-delete"),#
     path('treatAdd/', addTreatment, name="treatment-add"),
-    path('download',download_csv,name='download'),
+    path('downloadTreat',download_treatment_csv,name='download-treat'),
 
 ]

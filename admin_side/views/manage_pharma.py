@@ -57,9 +57,9 @@ def editPharma(request,id):
 
 
 
-def download_csv(request):
+def download_pharma_csv(request):
 	response=HttpResponse('txt/csv')
-	response['content-Disposition'] = 'attachment; filename=disease.csv'
+	response['content-Disposition'] = 'attachment; filename=pharmacist.csv'
 	writer = csv.writer(response)
     # fields = ('name', 'shopName', 'shopAddr', 'licenseNumber', 'city', 'nationwideDel', 'username', 'password', 'email')
 

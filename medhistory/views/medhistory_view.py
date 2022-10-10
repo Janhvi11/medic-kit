@@ -49,7 +49,7 @@ def editMedhistory(request,id):
     return render(request, "MedhistoryAdd.html",context)
 
 
-def download_csv(request):
+def download_medhis_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=medhistory.csv'
 	writer = csv.writer(response)

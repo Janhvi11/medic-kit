@@ -47,7 +47,7 @@ def editPrescription(request,id):
     context['form'] = form
     return render(request, "prescriptionAdd.html",context)
 
-def download_csv(request):
+def download_prescription_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=prescription.csv'
 	writer = csv.writer(response)

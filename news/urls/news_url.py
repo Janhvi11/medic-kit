@@ -8,6 +8,6 @@ news_url = [
     path('deleteNews<id>/',deleteNews,name="delete-news"),
 #    path('editNews/<id>', editNews, name="edit-news"),
     path('addNews',addNews,name="news-add"),
-    path('download',download_csv,name='download'),
+    path('downloadNews',download_news_csv,name='download-news'),
 
 ]

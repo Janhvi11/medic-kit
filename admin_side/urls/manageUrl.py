@@ -18,6 +18,6 @@ m_url = [
     path('addUser/', addUser, name="add-user"),
 
     path('downloadDoc',download_doc_csv,name='download-doc'),
-    # path('downloadUser',download_user_csv,name='download-user'),
-    # path('downloadPharma',download_pharma_csv,name='download-pharma'),
+    path('downloadUser',download_user_csv,name='download-user'),
+    path('downloadPharma',download_pharma_csv,name='download-pharma'),
 ] 

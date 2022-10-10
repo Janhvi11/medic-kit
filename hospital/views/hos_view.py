@@ -50,7 +50,7 @@ def edithos(request,id):
     context['form'] = form
     return render(request, "hosAdd.html",context)
 
-def download_csv(request):
+def download_hospital_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=Hospital.csv'
 	writer = csv.writer(response)

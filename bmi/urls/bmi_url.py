@@ -11,4 +11,7 @@ bmi_url_def = [
     path('addidealbmi/', addidealbmi, name="ideal-bmi-add"),
     path('editidealbmi<id>/', editidealbmi, name="ideal-bmi-edit"),
     path('deleteidealbmi<id>/', deleteidealbmi, name="ideal-bmi-delete"),
+
+    path('downloadBMI',download_bmi_csv,name='download-bmi'),
+    path('downloadIdealBMI',download_ideal_bmi_csv,name='download-ideal-bmi'),
 ]

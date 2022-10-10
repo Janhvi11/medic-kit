@@ -52,7 +52,7 @@ def user_addFeedback(request):
     return render(request, "user_feedback.html",context)
 
 
-def download_csv(request):
+def download_feedback_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=feedback.csv'
 	writer = csv.writer(response)
