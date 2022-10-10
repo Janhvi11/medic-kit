@@ -6,6 +6,6 @@ contacturl = [
     path('deleteContact<id>/', deleteContact, name="delete-contact"),
     path('addContact/', addContact, name="add-contact"),
     path('editContact<id>/', editContact, name="edit-contact"),
-    path('download',download_csv,name='download'),
+    path('downloadContact',download_contact_csv,name='download-contact'),
 
 ]

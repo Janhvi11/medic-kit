@@ -66,7 +66,7 @@ def addBlog(request):
     
     return render(request, 'blogs-add.html')
 
-def download_csv(request):
+def download_blog_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=blog.csv'
 	writer = csv.writer(response)

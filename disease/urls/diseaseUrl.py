@@ -9,5 +9,5 @@ disease_url = [
 
     path('bulkupload',bulk_upload,name="bulkUpload"),
     path('upload_csv',upload_csv,name='upload_csv'),
-    path('download',download_csv,name='download')
+    path('downloadDisease',download_disease_csv,name='download-disease')
 ]

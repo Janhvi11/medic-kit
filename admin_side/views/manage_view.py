@@ -48,7 +48,7 @@ def editDoc(request,id):
     return render(request, "docAdd.html",context)
 
 
-def download_csv(request):
+def download_doc_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=doctors.csv'
 	writer = csv.writer(response)

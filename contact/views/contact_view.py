@@ -64,7 +64,7 @@ def editContact(request,id):
     context['form'] = form
     return render(request, "editContact.html",context)
 
-def download_csv(request):
+def download_contact_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=contact.csv'
 	writer = csv.writer(response)

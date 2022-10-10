@@ -79,7 +79,7 @@ def upload_csv(request):
 			cform.save()
 			
 	return redirect("/ill/diseaseView/")
-def download_csv(request):
+def download_disease_csv(request):
 	response=HttpResponse('txt/csv')
 	response['content-Disposition'] = 'attachment; filename=disease.csv'
 	writer = csv.writer(response)

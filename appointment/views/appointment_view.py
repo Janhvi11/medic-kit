@@ -123,7 +123,7 @@ def addAppointment_UserSide(request):
 
 def download_csv(request):
 	response=HttpResponse('txt/csv')
-	response['content-Disposition'] = 'attachment; filename=disease.csv'
+	response['content-Disposition'] = 'attachment; filename=appointment.csv'
 	writer = csv.writer(response)
 	writer.writerow(['First Name','Last Name','Email','Time','Day','Request','Status','Doctor Id'])
 	for data in Appointment.objects.all():
