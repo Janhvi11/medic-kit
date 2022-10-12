@@ -3,7 +3,7 @@ from ..forms import *
 from ..models import *
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
-
+from register.models import user
 
 import logging
 logger = logging.getLogger(__name__)
@@ -12,6 +12,9 @@ logger = logging.getLogger(__name__)
 
 def viewTreatment(request):
     context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
     context["treatment"] = treatment.objects.all()
     return render(request, "treatmentview.html", context)
 

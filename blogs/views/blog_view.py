@@ -5,6 +5,7 @@ from django.views import View
 from django.http import HttpResponse
 from ..forms import *
 from ..models import *
+from register.models import user
 from django.contrib.auth.hashers import make_password
 
 
@@ -12,9 +13,15 @@ import logging
 logger = logging.getLogger(__name__)
 
 def viewBlog(request):
-	context = {}
-	context["blogs"] = blog.objects.all()
-	return render(request, "blogs-view.html", context)
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["blogs"] = blog.objects.all()
+    return render(request, "blogs-view.html", context)
 
 def deleteBlog(request,id):
 	context={}

@@ -43,6 +43,7 @@ urlpatterns = [
     path('timeline/', include('timeline.urls'), name="hospital"),
     path('appointment/', include('appointment.urls')),
     path('bmi/', include('bmi.urls')),
+    path('chat/',include('chat.urls')),
     
     path('about/', views.about, name="about"),
     path('news/', views.viewNewss, name="news"),

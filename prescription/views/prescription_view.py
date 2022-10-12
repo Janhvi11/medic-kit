@@ -11,6 +11,11 @@ logger = logging.getLogger(__name__)
 
 def viewPrescription(request):
     context = {}
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["prescription"] = prescription.objects.all()
     return render(request, "prescriptionview.html", context)
 

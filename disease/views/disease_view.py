@@ -2,6 +2,7 @@ import csv
 from django.http import HttpResponse
 from ..forms import *
 from ..models import *
+from register.models import *
 
 from django.shortcuts import render, redirect, get_object_or_404
 
@@ -10,6 +11,10 @@ logger = logging.getLogger(__name__)
 
 def viewDisease(request):
     context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
     context["disease"] = disease.objects.all()
     return render(request, "diseaseview.html", context)
 

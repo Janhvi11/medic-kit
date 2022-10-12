@@ -13,6 +13,12 @@ logger = logging.getLogger(__name__)
 
 def viewAppointment(request):
     context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["appointment"] = Appointment.objects.all()
     logger.info("Appointment has been viewed")
     return render(request, "appointment-view.html", context)

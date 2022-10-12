@@ -2,7 +2,7 @@ import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
-
+from register.models import *
 from ..forms import *
 from ..models import *
 
@@ -12,9 +12,15 @@ logger = logging.getLogger(__name__)
 
 
 def viewFeedback(request):
-	context = {}
-	context["feedback"] = feedback.objects.all()
-	return render(request, "feedback-view.html", context)
+    context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    # context["disease"] = disease.objects.all()
+    
+    context["feedback"] = feedback.objects.all()
+    return render(request, "feedback-view.html", context)
 
 def deleteFeedback(request,id):
 	context={}

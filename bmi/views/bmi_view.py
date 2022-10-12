@@ -12,6 +12,10 @@ logger = logging.getLogger(__name__)
 
 def viewbmi(request):
     context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["bmi"] = bmi.objects.all()
     return render(request, "bmi-view.html", context)
 
@@ -52,6 +56,10 @@ def editbmi(request,id):
 
 def viewidealbmi(request):
     context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["ideal_bmi"] = ideal_bmi.objects.all()
     return render(request, "idealBmi-view.html", context)
 

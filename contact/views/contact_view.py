@@ -2,6 +2,7 @@ import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
+from register.models import user
 
 from ..models import *
 from ..forms import *
@@ -11,6 +12,12 @@ logger = logging.getLogger(__name__)
 
 def viewContact(request):
     context = {}
+    
+    username = request.session.get('username')
+    context['username'] = username
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["contact"] = contact.objects.all()
     return render(request, "contact-view.html", context)
 

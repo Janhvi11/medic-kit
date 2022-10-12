@@ -2,7 +2,7 @@ import csv
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
-
+from register.models import *
 from ..forms import *
 from ..models import *
 
@@ -12,9 +12,13 @@ logger = logging.getLogger(__name__)
 
 
 def viewhos(request):
-	context = {}
-	context["hos"] = hos.objects.all()
-	return render(request, "hos-view.html", context)
+    context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["hos"] = hos.objects.all()
+    return render(request, "hos-view.html", context)
 
 def addhos(request):
     context = {}

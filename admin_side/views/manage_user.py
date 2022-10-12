@@ -6,9 +6,14 @@ from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib.auth.hashers import make_password
 
 def viewUser(request):
-	context = {}
-	context["users"] = user.objects.all()
-	return render(request, "user-view.html", context)
+    context = {}
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["users"] = user.objects.all()
+    return render(request, "user-view.html", context)
 
 def addUser(request):
 	context_1 = {}

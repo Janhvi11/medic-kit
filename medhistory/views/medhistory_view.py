@@ -12,6 +12,10 @@ logger = logging.getLogger(__name__)
 
 def viewMedhistory(request):
     context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context["medhistory"] = medhistory.objects.all()
     return render(request, "medhistoryview.html", context)
 

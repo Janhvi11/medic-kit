@@ -6,15 +6,20 @@ from django.http import HttpResponse
 from matplotlib.style import context
 from ..forms import *
 from ..models import *
+from register.models import *
 
 
 import logging
 logger = logging.getLogger(__name__)
 
 def viewMedicine(request):
-	context = {}
-	context["medicine"] = medicine.objects.all()
-	return render(request, "medicine-view.html", context)
+    context = {}
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["medicine"] = medicine.objects.all()
+    return render(request, "medicine-view.html", context)
 
 def deleteMedicine(request,id):
 	context={}

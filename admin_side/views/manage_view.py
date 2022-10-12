@@ -9,9 +9,14 @@ def index_manage(req):
     return render(req, "login.html")
 
 def viewDoc(request):
-	context = {}
-	context["doctor"] = doc.objects.all()
-	return render(request, "doc-view.html", context)
+    context = {}
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["doctor"] = doc.objects.all()
+    return render(request, "doc-view.html", context)
 
 def addDoc(request):
 	context = {}

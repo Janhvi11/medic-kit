@@ -1,14 +1,19 @@
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponse
 from django.contrib import messages
 from django.views import View
-
+from register.models import user
 from ..forms import *
 from ..models import *
 
 def viewToDoList(request):
-	context = {}
-	context["todolist"] = ToDoList.objects.all()
-	return render(request, "ToDoList-view.html", context)
+    context = {}
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["todolist"] = ToDoList.objects.all()
+    return render(request, "ToDoList-view.html", context)
 
 def addToDoList(request):
 	context = {}

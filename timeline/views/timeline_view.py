@@ -8,6 +8,11 @@ from register.models import user,doc,pharma
 def viewAdminTime(request):
     context = {}
     # obj = get_object_or_404(ToDoItem, id=id)
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
     context = {"user":timeline.objects.all(), "doc":timeline_doc.objects.all(), "pharma": timeline_pharma.objects.all()}
     return render(request, "timeline-view.html", context)
 

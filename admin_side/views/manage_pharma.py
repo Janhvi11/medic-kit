@@ -14,9 +14,14 @@ logger = logging.getLogger(__name__)
 
 
 def viewPharma(request):
-	context = {}
-	context["pharmacists"] = pharma.objects.all()
-	return render(request, "pharma-view.html", context)
+    context = {}
+    
+    context['username'] = request.session.get('username')
+    data = user.objects.filter(username="Admin")
+    context['data'] = data
+    
+    context["pharmacists"] = pharma.objects.all()
+    return render(request, "pharma-view.html", context)
 
 def addPharma(request):
 	context_1 = {}

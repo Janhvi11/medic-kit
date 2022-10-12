@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'prescription',
     'bmi',
     'medicine',
-
+    'chat',
 ]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
