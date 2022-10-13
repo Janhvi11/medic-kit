@@ -86,7 +86,11 @@ def viewAppointment_UserSide(request):
     username = request.session.get('username')
     context['username'] = username
     context['user'] = user.objects.filter(username = username)
-    context['data'] = Appointment.objects.all()
+    context['Appdata'] = Appointment.objects.all()
+    
+    data = user.objects.filter(username=username)
+    context['data'] = data
+    
     logger.info("Appointment has been viewed")
     return render(request, "user-side-appointment.html", context)
 

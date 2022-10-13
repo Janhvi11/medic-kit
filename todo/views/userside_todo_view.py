@@ -13,6 +13,8 @@ def userside_viewToDoList(request):
         context['type'] = type
         username = request.session.get('username')
         context['username'] = username
+        data = user.objects.filter(username=username)
+        context['data'] = data
         context['user'] = user.objects.filter(username = username)
         context["todolist"] = ToDoList.objects.filter(username=username,type=0)
         return render(request, "user-ToDoList-view.html", context)

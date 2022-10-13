@@ -81,6 +81,9 @@ def userProfile(request):
     uname = request.session.get('username')
     context['username'] = uname
     
+    data = user.objects.filter(username=uname)
+    context['data'] = data
+    
     # form : view and update:
     
     context['users'] = user.objects.filter(username=uname)
@@ -94,6 +97,12 @@ def userProfile(request):
     
 def edituserProfile(request,id):
     context_3 = {}
+    uname = request.session.get('username')
+    context_3['username'] = uname
+    
+    data = user.objects.filter(username=uname)
+    context_3['data'] = data
+    
     obj = get_object_or_404(user, id=id)
     form = RegisterForm(request.POST or None,request.FILES, instance=obj)
     if form.is_valid():

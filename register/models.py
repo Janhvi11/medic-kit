@@ -17,6 +17,8 @@ class user(models.Model):
     
     image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
 
+    def __str__(self):
+        return self.username
     # pfp = models.ImageField(upload_to="avatars/")
     # REQUIRED_FIELDS = ('username','password1',)  
     # USERNAME_FIELD = 'username'

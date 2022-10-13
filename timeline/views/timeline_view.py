@@ -22,6 +22,8 @@ def viewTime(request):
     context['username'] = request.session.get('username')
     # context['image'] = request.session.get('image')
     username = request.session.get('username')
+    data = user.objects.filter(username=username)
+    context['data'] = data
     
     context['user'] = user.objects.filter(username = username)
     # return HttpResponse(username)
