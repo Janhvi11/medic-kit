@@ -3,6 +3,7 @@ from ..models import bmi, ideal_bmi
 from ..forms import bmiForm, bmiIdealForm
 from register.models import user
 import csv
+from django.db.models import Q
 
 import logging
 logger = logging.getLogger(__name__)
@@ -113,3 +114,25 @@ def download_ideal_bmi_csv(request):
 		writer.writerow([data.age_range,data.gender,data.ideal_weight,data.ideal_height,data.ideal_bmi])
 
 	return response
+
+# ===========================USER SIDE=======================================================
+
+def user_bmi_view(request):
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    
+    data = user.objects.filter(username=username)
+    context['data'] = data
+    
+    user_bmi = bmi.objects.filter(userId = username)
+    context['user_bmi'] = user_bmi
+    
+    user_bmi_temp = bmi.objects.filter(userId = username).values_list('age')
+    # return HttpResponse(user_bmi_temp)
+    # age = user_bmi[1]
+    
+    # user_ideal_bmi = ideal_bmi.objects.filter(Q(age_range__bte =user_bmi_temp))
+    # context['user_ideal_bmi'] = user_ideal_bmi
+    
+    return render(request,"user-bmi-view.html",context)

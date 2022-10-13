@@ -15,3 +15,7 @@ bmi_url_def = [
     path('downloadBMI',download_bmi_csv,name='download-bmi'),
     path('downloadIdealBMI',download_ideal_bmi_csv,name='download-ideal-bmi'),
 ]
+
+user_bmi = [
+    path("user_bmi_view", user_bmi_view, name="user-bmi-view"),
+]
