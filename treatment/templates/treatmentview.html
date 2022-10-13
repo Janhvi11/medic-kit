@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <td> {{ data.remedies_1 }}</td>
                             <td> {{ data.remedies_2 }}</td>
                             <td> {{ data.remedies_3 }}</td>
-                            <td> <a href="{% url 'treatment-delete' data.id %}"> delete </a> </td>
+                            <td> <a href="{% url 'treatment-delete' data.id %}" onclick="return confirm('Are you sure you want to delete this?')"> delete </a> </td>
                             <td> <a href="{% url 'treatment-edit' data.id %}"> edit </a> </td>
                         </tr>
                         {% endfor %}

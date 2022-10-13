@@ -77,22 +77,41 @@ def userside_editToDoList(request,id):
 # TO-DO-ITEM
 # ==================================================================================
 
-def userside_viewToDoItem(request,id):
+def userside_viewToDoItem(request,title):
     context = {}
     # obj = get_object_or_404(ToDoItem, id=id)
-    context['todoList'] = id
-    context['username'] = request.session.get('username')
-    context["todoitem"] = ToDoItem.objects.filter(todo_list=id)
+    username = request.session.get('username')
+    data = user.objects.filter(username=username)
+    
+    context['data'] = data
+    context['todoList'] = title
+    context['username'] = username
+    
+    # todolist_add = ToDoList.objects.filter(title=title)
+    # # return HttpResponse(todolist_add)
+    # context['todolist_add'] = todolist_add
+    
+    context["todoitem"] = ToDoItem.objects.filter(todo_list=title)
     return render(request, "user-todoItem-view.html", context)
 
-def userside_addToDoItem(request,id):
+def userside_addToDoItem(request,title):
     context = {}
+    username = request.session.get('username')
+    data = user.objects.filter(username=username)
+    context['data'] = data
+    context['username'] = username
+    # ======================================================
     form = ToDoItemForm(request.POST)
-    context['todolist'] = id
+    # context['todolist'] = title
+    
+    todolist_name = ToDoList.objects.filter(title=title)
+    context['todolist_name'] = todolist_name
+    # return HttpResponse(todolist_name)
+    
     if form.is_valid():
         #return HttpResponse(form)
         form.save()
-        return redirect("/todo/user_viewToDoList")
+        return redirect("/todo/user_viewToDoList/")
     
     context['form'] = form
     return render(request, "user-todoItem-add.html",context)
@@ -102,11 +121,16 @@ def userside_deleteToDoItem(request,id):
 	obj = get_object_or_404(ToDoItem, id=id)
 	if request.method == "GET":
 		obj.delete()
-		return redirect("/todo/viewToDoList/")
-	return render(request, "ToDoItem-view.html", context)
+		return redirect("/todo/user_viewToDoList/")
+	return render(request, "user-todoItem-view.html", context)
 
 def userside_editToDoItem(request,id):
-    context = {}    
+    context = {}
+    username = request.session.get('username')
+    context['username'] = username
+    data = user.objects.filter(username=username)
+    context['data'] = data
+    
     obj = get_object_or_404(ToDoItem, id=id)
    
     form = ToDoItemForm(request.POST or None, instance=obj)
@@ -115,4 +139,4 @@ def userside_editToDoItem(request,id):
         return redirect("/todo/viewToDoList/")
     
     context['form'] = form
-    return render(request, "ToDoItemAdd.html",context)
+    return render(request, "user-todoItem-add.html",context)

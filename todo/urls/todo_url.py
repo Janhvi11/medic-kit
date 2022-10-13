@@ -11,7 +11,7 @@ to_do_url = [
 
 to_do_item_url = [
     # path('home/', todo_home, name='users-home'),
-    path('viewToDoItem/<id> ', viewToDoItem, name='todoItem-view'),
+    path('viewToDoItem/<title> ', viewToDoItem, name='todoItem-view'),
     path('addToDoItem/', addToDoItem, name='todoItem-add'),
     path('deleteToDoItem/<id>', deleteToDoItem, name='todoItem-delete'),
     path('editToDoItem/<id>', editToDoItem, name='todoItem-edit'),
@@ -25,8 +25,8 @@ userside_todolist_url = [
 ]
 
 userside_todoitem_url = [
-    path('user_viewToDoItem/<int:id>', userside_viewToDoItem, name='user-todoItem-view'),
-    path('user_addToDoItem/<int:id>', userside_addToDoItem, name='user-todoItem-add'),
+    path('user_viewToDoItem/<title>', userside_viewToDoItem, name='user-todoItem-view'),
+    path('user_addToDoItem/<title>', userside_addToDoItem, name='user-todoItem-add'),
     path('user_editToDoItem/<int:id>', userside_editToDoItem, name='user-todoItem-edit'),
     path('user_deleteToDoItem/<int:id>', userside_deleteToDoItem, name='user-todoItem-delete'),
 ]

@@ -56,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <td>{{ data.id }}</td>
                           <td>{{ data.rating }}</td>
                           <td>{{ data.message }}</td>
-                          <td> <a href="{% url 'delete-feedback' data.id %}"> delete </a> </td>
+                          <td> <a href="{% url 'delete-feedback' data.id %}" onclick="return confirm('Are you sure you want to delete this?')"> delete </a> </td>
                         </tr>
                         {% endfor %}
                     </tbody>

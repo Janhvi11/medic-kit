@@ -8,11 +8,12 @@ from ..models import *
 def viewToDoList(request):
     context = {}
     
-    context['username'] = request.session.get('username')
+    username = request.session.get('username')
+    context['username'] = username
     data = user.objects.filter(username="Admin")
     context['data'] = data
     
-    context["todolist"] = ToDoList.objects.all()
+    context["todolist"] = ToDoList.objects.filter(username=username)
     return render(request, "ToDoList-view.html", context)
 
 def addToDoList(request):
@@ -50,11 +51,11 @@ def editToDoList(request,id):
 # TO-DO-ITEM
 # ==================================================================================
 
-def viewToDoItem(request,id):
+def viewToDoItem(request,title):
     context = {}
     # obj = get_object_or_404(ToDoItem, id=id)
-    context["todoitem"] = ToDoItem.objects.filter(todo_list=id)
-    return render(request, "user-todoItem-view.html", context)
+    context["todoitem"] = ToDoItem.objects.filter(todo_list=title)
+    return render(request, "ToDoItem-view.html", context)
 
 def addToDoItem(request):
 	context = {}

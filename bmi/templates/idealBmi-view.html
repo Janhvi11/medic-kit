@@ -63,7 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <td>{{ data.ideal_weight }}</td>
                           <td>{{ data.ideal_height }}</td>
                           <td>{{ data.ideal_bmi }}</td>
-                          <td> <a href="{% url 'ideal-bmi-delete' data.id %}"> delete </a> </td>
+                          <td> <a href="{% url 'ideal-bmi-delete' data.id %}" onclick="return confirm('Are you sure you want to delete this?')"> delete </a> </td>
                           <td> <a href="{% url 'ideal-bmi-edit' data.id %}"> edit </a> </td>
                         </tr>
                       {% endfor %}

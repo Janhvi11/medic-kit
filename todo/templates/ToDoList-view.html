@@ -66,7 +66,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 Admin
                               {% endif %}
                             </td> 
-                            <td> <a href="{% url 'todolist-delete' data.id %}"> delete </a> </td>
+                            <td><a href="{% url 'todoItem-view' data.title %}">View content</a></td>
+                            <td> <a href="{% url 'todolist-delete' data.id %}" onclick="return confirm('Are you sure you want to delete this?')"> delete </a> </td>
                             <td> <a href="{% url 'todolist-edit' data.id %}"> edit </a> </td>
                         </tr>
                         {% endfor %}

@@ -39,11 +39,13 @@ def login_request(request):
             
             if res == True:
                 # login(request, username_got)
+                context={}
+                
                 request.session['username']=form.cleaned_data.get('username')
+                context['username'] = form.cleaned_data.get('username')
                 request.session['type']=0
                 request.session['image'] = form.cleaned_data.get('image')
                 messages.info(request, f"You are now logged in as {username_got}")
-      
                 return redirect('/index/')
 
          

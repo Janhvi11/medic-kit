@@ -100,7 +100,7 @@
                 
 
                 <a href="{% url 'edit-pharma-time' data.id %}" class="btn btn-primary btn-block"><b>Edit</b></a>
-                <a href="{% url 'delete-pharma-time' data.id %}" class="btn btn-primary btn-block"><b>Delete</b></a>
+                <a href="{% url 'delete-pharma-time' data.id %}" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-primary btn-block"><b>Delete</b></a>
                 {% endfor %}
               </div>
               <!-- /.card-body -->

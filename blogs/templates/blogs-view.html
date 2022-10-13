@@ -51,7 +51,7 @@
                           <th>Title</th>
                           <th>Details</th>
                           {% comment %} <th>Update</th> {% endcomment %}
-                          <th>Delete</th>
+                          {% comment %} <th>Delete</th> {% endcomment %}
                         </tr>
                       </thead>
                       <tbody>
@@ -62,7 +62,7 @@
                           <td>{{ data.title }}</td>
                           <td>{{ data.details }}</td>
                           {% comment %} <td> <a href="{% url 'blog-edit' data.id %}">Update</a></td> {% endcomment %}
-                          <td> <a href="{% url 'blog-delete' data.id %}">Delete</a></td>
+                          <td> <a href="{% url 'blog-delete' data.id %}" onclick="return confirm('Are you sure you want to delete this?')">Delete</a></td>
                         </tr>
                         {% endfor %}
                       </tbody>
