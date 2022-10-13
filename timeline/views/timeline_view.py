@@ -44,7 +44,7 @@ def addTime(request):
     form = timelineForm(request.POST)
     if form.is_valid():
         form.save()
-        return redirect("/timeline/viewTimeline")
+        return redirect("/timeline/viewTimeline/")
     context['form'] = form
     return render(request, "timelineAdd.html",context)
 
@@ -60,6 +60,10 @@ def editTime(request,id):
     context = {}    
     obj = get_object_or_404(timeline, id=id)
 
+    username = request.session.get('username')
+    context['username'] = username
+    context['user'] = user.objects.filter(username=username)
+    
     form = user_timeline_edit_Form(request.POST or None, instance=obj)
     # return HttpResponse(form)
     if form.is_valid():

@@ -44,7 +44,7 @@ class Appointment(models.Model):
     day = models.CharField(max_length=500,choices=day)
     request = models.TextField(max_length=500)
     status = models.CharField(max_length=500,choices=status,default='Pending')
-    doctorId = models.ForeignKey(doc, on_delete=models.CASCADE, default=1)
+    doctorId = models.ForeignKey(doc, to_field="username", on_delete=models.CASCADE, default="default")
 
 #class acceotappointment(models.Model):
 #    doctorId = models.ForeignKey(doc, on_delete=models.CASCADE)

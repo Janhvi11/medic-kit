@@ -3,7 +3,7 @@ from register.models import user
 # Create your models here.
 
 class bmi(models.Model):
-    userId = models.ForeignKey(user, on_delete=models.CASCADE)
+    userId = models.ForeignKey(user, to_field="username", on_delete=models.CASCADE)
     age = models.IntegerField(default=10)
     gender = models.CharField(max_length=20, default="male")
     user_weight = models.IntegerField(default=10)

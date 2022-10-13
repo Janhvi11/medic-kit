@@ -6,3 +6,6 @@ class disease(models.Model):
     symptom_1 = models.CharField(max_length=50)
     symptom_2 = models.CharField(max_length=50)
     symptom_3 = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.name

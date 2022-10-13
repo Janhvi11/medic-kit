@@ -44,6 +44,8 @@ class doc(models.Model):
 
     image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
 
+    def __str__(self):
+        return self.username
 
 class pharma(models.Model):
     city = models.CharField(max_length=500)
@@ -62,5 +64,7 @@ class pharma(models.Model):
     
     image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
 
+    def __str__(self):
+        return self.username
 # def __str__(self):
 # 		return self.title

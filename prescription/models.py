@@ -4,9 +4,9 @@ from register.models import *
 
 # Create your models here. 
 class prescription(models.Model):
-    u_id = models.ForeignKey(user, on_delete=models.CASCADE)
-    d_id = models.ForeignKey(doc, on_delete=models.CASCADE)
-    medh_pres = models.ForeignKey(medhistory, on_delete=models.CASCADE,related_name='+')
+    u_id = models.ForeignKey(user, to_field="username", on_delete=models.CASCADE)
+    d_id = models.ForeignKey(doc, to_field="username", on_delete=models.CASCADE)
+    medh_pres = models.ForeignKey(medhistory,on_delete=models.CASCADE,related_name='+')
     #med_name = models.ForeignKey(disease, on_delete=models.CASCADE)
     
     isavailable = models.BooleanField(default=False)
