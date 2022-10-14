@@ -30,10 +30,10 @@ def login_home(request):
 
 def login_request(request):
     if request.method == 'POST':
-        form = LoginUserForm(request.POST)
-        if form.is_valid():
-            username_got = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+        # form = LoginUserForm(request.POST)
+        # if form.is_valid():
+            username_got = request.POST['username']
+            password = request.POST['password']
             obj = get_object_or_404(user, username=username_got)
             res = check_password(password,obj.password1)            #check_password is an hashing method
             
@@ -41,10 +41,10 @@ def login_request(request):
                 # login(request, username_got)
                 context={}
                 
-                request.session['username']=form.cleaned_data.get('username')
-                context['username'] = form.cleaned_data.get('username')
+                request.session['username']=request.POST['username']
+                context['username'] = request.POST['username']
                 request.session['type']=0
-                request.session['image'] = form.cleaned_data.get('image')
+                # request.session['image'] = request.POST['image']
                 messages.info(request, f"You are now logged in as {username_got}")
                 return redirect('/index/')
 
@@ -56,17 +56,17 @@ def login_request(request):
         form = LoginUserForm()
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
-    return render(request, template_name = "login.html", context = {"form":form})
+    return render(request, template_name = "login.html")
 
 def login_doc_request(request):
     # template_name = "login.html"
     # form_class = LoginUserForm
     if request.method == 'POST':
-        form = LoginDocForm(request.POST)
-        # form = AuthenticationForm(request=request, data=request.POST)
-        if form.is_valid():
-            username_got = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+        # form = LoginDocForm(request.POST)
+        # # form = AuthenticationForm(request=request, data=request.POST)
+        # if form.is_valid():
+            username_got = request.POST['username']
+            password = request.POST['password']
             
             #     # password = make_password(request.POST['password'])
             #     # return render(request, 'demo.html') #, {'access':check_password}
@@ -76,7 +76,7 @@ def login_doc_request(request):
             
             if res == True:
                 request.session['type']=1
-                request.session['username'] = form.cleaned_data.get('username')
+                request.session['username'] = request.POST['username']
                 #request.session['type']=1
                 # login(request, user_check)
                 messages.info(request, f"You are now logged in as {username_got}")
@@ -88,7 +88,7 @@ def login_doc_request(request):
         form = LoginDocForm()
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
-    return render(request, template_name = "login.html", context = {"form":form})
+    return render(request, template_name = "login.html")
 
 def login_pharma_request(request):
     # template_name = "login.html"
@@ -97,8 +97,8 @@ def login_pharma_request(request):
         form = LoginPharmaForm(request.POST)
         # form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
-            username_got = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+            username_got = request.POST['username']
+            password = request.POST['password']
             
             #     # password = make_password(request.POST['password'])
             #     # return render(request, 'demo.html') #, {'access':check_password}
@@ -108,7 +108,7 @@ def login_pharma_request(request):
             
             if res == True:
                 request.session['type']=2
-                request.session['username'] = form.cleaned_data.get('username')
+                request.session['username'] = request.POST['username']
                 messages.info(request, f"You are now logged in as {username_got}")
                 return HttpResponseRedirect('/index/')
             else:
@@ -118,19 +118,20 @@ def login_pharma_request(request):
         form = LoginPharmaForm()
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
-    return render(request, template_name = "login.html", context = {"form":form})
+    return render(request, template_name = "login.html")
 
 def login_admin(request):
     if request.method == 'POST':
-        form = LoginUserForm(request.POST)
-        if form.is_valid():
-            username_got = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+        # form = LoginUserForm(request.POST)
+        # if form.is_valid():
+            username_got = request.POST['username']
+            password = request.POST['password']
             # obj = get_object_or_404(user, username=username_got)
-            res = check_password(password,"Admin")    #check_password is an hashing method
+            obj = get_object_or_404(user, username=username_got)
+            res = check_password(password,obj.password1)    #check_password is an hashing method
             
-            if username_got == "Admin":
-                request.session['username']=form.cleaned_data.get('username')
+            if res == True and obj.is_admin == 1:
+                request.session['username']=request.POST['username']
                 request.session['type']=3
                 messages.info(request, f"You are now logged in as {username_got}")
                 return redirect('/ad/home/')
@@ -141,7 +142,7 @@ def login_admin(request):
         form = LoginUserForm()
         # messages.error(request, "error 2.")
     # form = AuthenticationForm()
-    return render(request, template_name = "login.html", context = {"form":form})
+    return render(request, template_name = "login.html")
 
 def logout(request):
     del request.session['type']

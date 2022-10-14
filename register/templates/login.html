@@ -30,13 +30,15 @@
                                     <div class="col-md-10 offset-md-1">
                                         <div class="form-group">
                                           <label class="small mb-1">Username</label>
-                                          {{ form.username }}
+                                          <input type="text" name="username">
+                                          {% comment %} {{ form.username }} {% endcomment %}
                                         </div>
                                     </div>
                                     <div class="col-md-10 offset-md-1">
                                         <div class="form-group">
                                           <label class="small mb-1">Password</label>
-                                          {{ form.password }}
+                                          <input type="password" name="password">
+                                          {% comment %} {{ form.password }} {% endcomment %}
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +55,7 @@
                             <div class="small">
                                 <a href="{% url 'users-register' %}">Don't have an account yet? Go to signup</a><br>
                                 <a href="{% url 'video' %}">Wanna Sign-in through your face?</a><br>
-                                <a href="#"><i>Forgot Password?</i></a>
+                                {% comment %} <a href="#"><i>Forgot Password?</i></a> {% endcomment %}
                             </div>
                         </div>
                     </div>

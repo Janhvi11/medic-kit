@@ -17,6 +17,8 @@ class user(models.Model):
     
     image = models.ImageField(upload_to='register/imgaes', null=True, blank=True)
 
+    is_admin = models.BooleanField(default=False)
+
     def __str__(self):
         return self.username
     # pfp = models.ImageField(upload_to="avatars/")
