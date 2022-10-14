@@ -63,6 +63,7 @@ def addAppointmentUser(request):
         email = app.email
         fname = app.fname
         lname = app.lname
+        doctorId = request.POST['doctorId']
 
         #Email
         recipient_email = request.POST.get("email")
@@ -70,7 +71,7 @@ def addAppointmentUser(request):
         message = "Hello, \n"+username+" we have recorded your Appointment \n\nTime: "+time+"\nDay "+day+"\nFor Request: "+request1+" \n\n We will let you know on("+email+") once it has been approved \n\n Thank you\n"+fname +" "+ lname
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [recipient_email]
-        # return HttpResponse(subject)
+        # return HttpResponse(message)
         send_mail( subject, message, email_from, recipient_list, fail_silently=False )
         #########
         logger.info("User appointment has been added")

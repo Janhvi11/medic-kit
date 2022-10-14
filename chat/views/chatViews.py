@@ -15,7 +15,7 @@ def chatView(request):
     data = user.objects.filter(username="Admin")
     context['data'] = data
     
-    data = chat.objects.all()
+    data = chat.objects.filter(Q(senderId=username) | Q(receiverId = username))
     context['chat'] = data
     
     return render(request,"chatView.html",context)

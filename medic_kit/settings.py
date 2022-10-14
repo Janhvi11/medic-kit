@@ -203,4 +203,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'practice4488@gmail.com'
-EMAIL_HOST_PASSWORD = 'udjrkqclhdxakkslf'
+EMAIL_HOST_PASSWORD = 'krcfwpqgxehvwkbs'
