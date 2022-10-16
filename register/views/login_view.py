@@ -168,10 +168,12 @@ def view_doctors(request):
     context = {}
     type = request.session.get('type')
     context['type'] = type
-    context['data'] = doc.objects.all()
+    context['data2'] = doc.objects.all()
+    # context['username'] = username
+    # context['data'] = user.objects.filter(username = username)
     username = request.session.get('username')
     context['username'] = username
-    context['user'] = user.objects.filter(username = username)
+    context['data'] = user.objects.filter(username = username)
     return render(request,'user-side-doctor-view.html', context)
 
 # ========================================= Face Login ===================================================

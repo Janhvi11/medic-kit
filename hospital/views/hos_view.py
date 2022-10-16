@@ -28,7 +28,7 @@ def addhos(request):
         # return HttpResponse(form)
         form.save()
         logger.info("Hospital Information was added")
-        return redirect("/hospital/viewHos")
+        return redirect("/hospital/viewHos/")
 
     context['form'] = form
     return render(request, "hosAdd.html",context)

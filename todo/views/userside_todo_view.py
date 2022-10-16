@@ -40,6 +40,8 @@ def userside_addToDoList(request):
     context = {}
     username = request.session.get('username')
     context['username'] = username
+    data = user.objects.filter(username=username)
+    context['data'] = data
     context['type'] = request.session.get('type')
         
     form = TodoListForm(request.POST)

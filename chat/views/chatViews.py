@@ -32,6 +32,14 @@ def chatAdd(request):
     context['form'] = form
     return render(request, "chatAdd.html",context)
 
+def userchatDelete(request,id):
+	context={}
+	obj = get_object_or_404(chat, id=id)
+	if request.method == "GET":
+		obj.delete()
+		return redirect("/chat/chat_view/")
+	return render(request, "chatView.html", context)
+
 def chatDelete(request,id):
 	context={}
 	obj = get_object_or_404(chat, id=id)

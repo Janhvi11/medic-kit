@@ -51,7 +51,7 @@ def user_addContact(request):
         form.save()
         logger.info("User Contact Added")
 
-        return redirect("/index")
+        return redirect("/index/")
 
     context['form'] = form
     return render(request, "user_contact.html",context)
@@ -66,7 +66,7 @@ def editContact(request,id):
         form.save()
         logger.info("Contact Edited")
 
-        return redirect("/contact/viewContact")
+        return redirect("/contact/viewContact/")
 
     context['form'] = form
     return render(request, "editContact.html",context)

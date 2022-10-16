@@ -22,7 +22,7 @@ def addToDoList(request):
 
 	if form.is_valid():
 			form.save()
-			return redirect("/todo/viewToDoList")
+			return redirect("/todo/viewToDoList/")
 
 	context['form'] = form
 	return render(request, "ToDoListAdd.html",context)
@@ -63,7 +63,7 @@ def addToDoItem(request):
 	
 	if form.is_valid():
 			form.save()
-			return redirect("/todo/viewToDoList")
+			return redirect("/todo/viewToDoList/")
 
 	context['form'] = form
 	return render(request, "ToDoItemAdd.html",context)

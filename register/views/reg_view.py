@@ -1,5 +1,6 @@
+from http.client import HTTPResponse
 from urllib import request
-from django.shortcuts import render, redirect 
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
 from django.views import View
 from django.contrib.auth.hashers import make_password,check_password
@@ -102,7 +103,7 @@ class RegisterPharmaView(View):
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST,request.FILES)
-
+        # return HttpResponse(form)
         if form.is_valid():
             sign_up = form.save(commit=False)
             sign_up.password = make_password(form.cleaned_data['password'])

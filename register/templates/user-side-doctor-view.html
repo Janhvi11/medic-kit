@@ -72,7 +72,7 @@
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
-                  {% for data in user %}
+                  {% for data in data %}
                   <img class="profile-user-img img-fluid img-circle"
                        src="{{ data.image.url }}"
                        alt="User profile picture">
@@ -101,7 +101,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    {% for data in data %}
+                    {% for data in data2 %}
                       <tr>
                           <td>{{ data.name }}</td>
                           <td>{{ data.experience }}</td>
