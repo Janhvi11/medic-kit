@@ -9,7 +9,7 @@ medicine_url = [
     path('editMedicine/<id>', editMedicine, name="medicine-edit"),
     path('addMedicine',addMedicine,name="medicine-add"),
     
-    path('bulkupload',bulk_upload1,name="bulkUpload1"),
+    path('bulkupload1',bulk_upload1,name='bulkUpload1'),
     path('upload_csv1',upload_csv1,name='upload_csv1'),
     path('download',download_csv1,name='download1'),
 ]

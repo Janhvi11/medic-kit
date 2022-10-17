@@ -78,38 +78,39 @@ def editMedicine(request,id):
     return render(request, "medicineAdd.html",context)
 
 def bulk_upload1(request):
-	return render(request,"bulkUpload.html")
+	return render(request,"bulkUpload1.html")
 
 def upload_csv1(request):
 	if request.method == 'GET':
-		return render(request, "bulkUpload.html")
+		return render(request, "bulkUpload1.html")
 		
 		# return HttpResponse("Not Valid method")
 		
-	csv_file=request.FILES['csv_file']
+	csv_file=request.FILES['csv_file1']
 	if not csv_file.name.endswith('.csv'):
 		return HttpResponse("File not valid")
 	if csv_file.multiple_chunks():
 		return HttpResponse("Uploaded file is big")
-		
+	# return HttpResponse(csv_file)
+	
 	file_data = csv_file.read().decode("UTF-8")
 	lines = file_data.split("\n")
 	c = len(lines)
-	#return HttpResponse(lines[0])
 	for i in range(0,c-1):
 		fields = lines[i].split(",")
 		data_dict = {}
 		data_dict["med_name"] = fields[0]
 		data_dict["price"]=fields[1]
-		data_dict["image"]=fields[2]
-		data_dict["qty"]=fields[3]
+		data_dict["qty"]=fields[2]
+		data_dict["image"]=fields[3]
 		data_dict["description"]=fields[4]
-		#return HttpResponse(fields[1])
+		# return HttpResponse(fields[1])
 		cform=RegisterMedicineForm(data_dict)
+		# return HttpResponse(data_dict)
 		if cform.is_valid():
 			cform.save()
 			
-	return redirect("/medicine/MedicineView/")
+	return redirect("/medicine/viewMedicine/")
 
 def download_csv1(request):
 	response=HttpResponse()
